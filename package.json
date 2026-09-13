@@ -1,0 +1,38 @@
+{
+  "name": "rubra-a-ultima-lamina",
+  "productName": "RUBRA",
+  "version": "1.0.0",
+  "description": "RUBRA — A Última Lâmina: jogo offline para Windows",
+  "author": "RUBRA",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable --x64"
+  },
+  "build": {
+    "appId": "local.rubra.game",
+    "productName": "RUBRA",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "index.html",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "portable"
+      ],
+      "signAndEditExecutable": false
+    },
+    "portable": {
+      "artifactName": "RUBRA-Windows-x64.exe"
+    }
+  },
+  "devDependencies": {
+    "electron": "44.3.0",
+    "electron-builder": "26.15.3"
+  }
+}
