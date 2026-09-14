@@ -1,0 +1,794 @@
+[
+  {
+    "file": "assets/mapa1/bat-like-creature/bat-like-creature-1.png",
+    "width": 109,
+    "height": 132,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/bat-like-creature/bat-like-creature-10.png",
+    "width": 66,
+    "height": 94,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/bat-like-creature/bat-like-creature-11.png",
+    "width": 69,
+    "height": 79,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/bat-like-creature/bat-like-creature-12.png",
+    "width": 73,
+    "height": 78,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/bat-like-creature/bat-like-creature-2.png",
+    "width": 80,
+    "height": 108,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/bat-like-creature/bat-like-creature-3.png",
+    "width": 57,
+    "height": 52,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/bat-like-creature/bat-like-creature-4.png",
+    "width": 51,
+    "height": 58,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/bat-like-creature/bat-like-creature-5.png",
+    "width": 61,
+    "height": 74,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/bat-like-creature/bat-like-creature-6.png",
+    "width": 78,
+    "height": 60,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/bat-like-creature/bat-like-creature-7.png",
+    "width": 48,
+    "height": 47,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/bat-like-creature/bat-like-creature-8.png",
+    "width": 69,
+    "height": 74,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/bat-like-creature/bat-like-creature-9.png",
+    "width": 82,
+    "height": 95,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/blue-sparkles/blue-sparkles-1.png",
+    "width": 36,
+    "height": 22,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/blue-sparkles/blue-sparkles-2.png",
+    "width": 28,
+    "height": 21,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/blue-sparkles/blue-sparkles-3.png",
+    "width": 29,
+    "height": 22,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/blue-sparkles/blue-sparkles-4.png",
+    "width": 27,
+    "height": 15,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/blue-sparkles/blue-sparkles-5.png",
+    "width": 23,
+    "height": 16,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/blue-sparkles/blue-sparkles-6.png",
+    "width": 27,
+    "height": 18,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/heart-icon/heart-icon-1.png",
+    "width": 18,
+    "height": 19,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/heart-icon/heart-icon-2.png",
+    "width": 18,
+    "height": 18,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/heart-icon/heart-icon-3.png",
+    "width": 18,
+    "height": 18,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/heart-icon/heart-icon-4.png",
+    "width": 18,
+    "height": 18,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/heart-icon/heart-icon-5.png",
+    "width": 18,
+    "height": 18,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/hooded-figure.png",
+    "width": 46,
+    "height": 60,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/pause-button.png",
+    "width": 41,
+    "height": 43,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/player-character.png",
+    "width": 48,
+    "height": 61,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/red-foliage/red-foliage-1.png",
+    "width": 144,
+    "height": 210,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/red-foliage/red-foliage-10.png",
+    "width": 330,
+    "height": 72,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/red-foliage/red-foliage-11.png",
+    "width": 212,
+    "height": 72,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/red-foliage/red-foliage-12.png",
+    "width": 94,
+    "height": 70,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/red-foliage/red-foliage-13.png",
+    "width": 101,
+    "height": 56,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/red-foliage/red-foliage-14.png",
+    "width": 125,
+    "height": 65,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/red-foliage/red-foliage-2.png",
+    "width": 190,
+    "height": 134,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/red-foliage/red-foliage-3.png",
+    "width": 147,
+    "height": 256,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/red-foliage/red-foliage-4.png",
+    "width": 168,
+    "height": 85,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/red-foliage/red-foliage-5.png",
+    "width": 174,
+    "height": 107,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/red-foliage/red-foliage-6.png",
+    "width": 230,
+    "height": 162,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/red-foliage/red-foliage-7.png",
+    "width": 158,
+    "height": 275,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/red-foliage/red-foliage-8.png",
+    "width": 146,
+    "height": 282,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/red-foliage/red-foliage-9.png",
+    "width": 338,
+    "height": 220,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-1.png",
+    "width": 69,
+    "height": 78,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-10.png",
+    "width": 68,
+    "height": 74,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-11.png",
+    "width": 108,
+    "height": 58,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-12.png",
+    "width": 69,
+    "height": 38,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-13.png",
+    "width": 67,
+    "height": 94,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-14.png",
+    "width": 48,
+    "height": 47,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-15.png",
+    "width": 70,
+    "height": 58,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-16.png",
+    "width": 41,
+    "height": 49,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-17.png",
+    "width": 36,
+    "height": 54,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-18.png",
+    "width": 61,
+    "height": 74,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-19.png",
+    "width": 79,
+    "height": 61,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-2.png",
+    "width": 98,
+    "height": 63,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-20.png",
+    "width": 51,
+    "height": 59,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-21.png",
+    "width": 57,
+    "height": 53,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-3.png",
+    "width": 111,
+    "height": 133,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-4.png",
+    "width": 122,
+    "height": 72,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-5.png",
+    "width": 80,
+    "height": 108,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-6.png",
+    "width": 83,
+    "height": 95,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-7.png",
+    "width": 73,
+    "height": 78,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-8.png",
+    "width": 58,
+    "height": 55,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/spider-like-creature/spider-like-creature-9.png",
+    "width": 60,
+    "height": 52,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/stone-path.png",
+    "width": 1198,
+    "height": 748,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/stone-shrine/stone-shrine-1.png",
+    "width": 80,
+    "height": 115,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/stone-shrine/stone-shrine-2.png",
+    "width": 76,
+    "height": 102,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/stone-shrine/stone-shrine-3.png",
+    "width": 63,
+    "height": 105,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/stone-shrine/stone-shrine-4.png",
+    "width": 181,
+    "height": 211,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/sword.png",
+    "width": 16,
+    "height": 22,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/tombstone/tombstone-1.png",
+    "width": 79,
+    "height": 115,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/tombstone/tombstone-2.png",
+    "width": 76,
+    "height": 101,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/tombstone/tombstone-3.png",
+    "width": 64,
+    "height": 106,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/tombstone/tombstone-4.png",
+    "width": 185,
+    "height": 211,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/tombstone/tombstone-5.png",
+    "width": 53,
+    "height": 56,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/tombstone/tombstone-6.png",
+    "width": 96,
+    "height": 60,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/twisted-tree/twisted-tree-1.png",
+    "width": 157,
+    "height": 277,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/twisted-tree/twisted-tree-2.png",
+    "width": 147,
+    "height": 255,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/twisted-tree/twisted-tree-3.png",
+    "width": 229,
+    "height": 163,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/twisted-tree/twisted-tree-4.png",
+    "width": 145,
+    "height": 285,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/twisted-tree/twisted-tree-5.png",
+    "width": 144,
+    "height": 212,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/twisted-tree/twisted-tree-6.png",
+    "width": 336,
+    "height": 222,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mapa1/twisted-tree/twisted-tree-7.png",
+    "width": 175,
+    "height": 107,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/checkerboard-background.png",
+    "width": 1215,
+    "height": 848,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-dragon/pixel-art-dragon-1.png",
+    "width": 196,
+    "height": 179,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-dragon/pixel-art-dragon-2.png",
+    "width": 183,
+    "height": 174,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-dragon/pixel-art-dragon-3.png",
+    "width": 185,
+    "height": 179,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-dragon/pixel-art-dragon-4.png",
+    "width": 195,
+    "height": 184,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-dragon/pixel-art-dragon-5.png",
+    "width": 188,
+    "height": 163,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-1.png",
+    "width": 200,
+    "height": 188,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-10.png",
+    "width": 185,
+    "height": 179,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-11.png",
+    "width": 189,
+    "height": 183,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-12.png",
+    "width": 207,
+    "height": 140,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-13.png",
+    "width": 197,
+    "height": 165,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-14.png",
+    "width": 191,
+    "height": 176,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-15.png",
+    "width": 196,
+    "height": 102,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-16.png",
+    "width": 200,
+    "height": 171,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-17.png",
+    "width": 188,
+    "height": 164,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-18.png",
+    "width": 193,
+    "height": 121,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-19.png",
+    "width": 182,
+    "height": 173,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-2.png",
+    "width": 206,
+    "height": 154,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-20.png",
+    "width": 195,
+    "height": 171,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-21.png",
+    "width": 140,
+    "height": 97,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-22.png",
+    "width": 213,
+    "height": 98,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-23.png",
+    "width": 135,
+    "height": 92,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-3.png",
+    "width": 203,
+    "height": 155,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-4.png",
+    "width": 183,
+    "height": 174,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-5.png",
+    "width": 196,
+    "height": 179,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-6.png",
+    "width": 209,
+    "height": 176,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-7.png",
+    "width": 194,
+    "height": 177,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-8.png",
+    "width": 185,
+    "height": 193,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-tentacle-monsters/pixel-art-tentacle-monsters-9.png",
+    "width": 195,
+    "height": 184,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-1.png",
+    "width": 195,
+    "height": 184,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-10.png",
+    "width": 199,
+    "height": 169,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-11.png",
+    "width": 182,
+    "height": 171,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-12.png",
+    "width": 185,
+    "height": 193,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-13.png",
+    "width": 210,
+    "height": 175,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-14.png",
+    "width": 206,
+    "height": 139,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-15.png",
+    "width": 188,
+    "height": 164,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-16.png",
+    "width": 206,
+    "height": 154,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-17.png",
+    "width": 194,
+    "height": 171,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-18.png",
+    "width": 203,
+    "height": 155,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-19.png",
+    "width": 193,
+    "height": 120,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-2.png",
+    "width": 185,
+    "height": 179,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-20.png",
+    "width": 196,
+    "height": 101,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-21.png",
+    "width": 213,
+    "height": 97,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-22.png",
+    "width": 135,
+    "height": 91,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-23.png",
+    "width": 140,
+    "height": 97,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-3.png",
+    "width": 196,
+    "height": 179,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-4.png",
+    "width": 196,
+    "height": 165,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-5.png",
+    "width": 183,
+    "height": 174,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-6.png",
+    "width": 194,
+    "height": 177,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-7.png",
+    "width": 189,
+    "height": 183,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-8.png",
+    "width": 200,
+    "height": 187,
+    "colorType": 6
+  },
+  {
+    "file": "assets/mobs_mapa1/pixel-art-undead-creature/pixel-art-undead-creature-9.png",
+    "width": 191,
+    "height": 175,
+    "colorType": 6
+  }
+]
