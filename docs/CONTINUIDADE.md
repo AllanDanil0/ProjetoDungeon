@@ -1,3 +1,27 @@
+# Estado atual — atualização 1.3, 15/09/2026
+
+Base confirmada: 5488ae42494e12a05fad8b31c2fe5b71a8c7741f, main de AllanDanil0/ProjetoDungeon. A cópia de trabalho continua em Documentos/teste/dungeon-update.
+
+Leia [ATUALIZACAO-1.3.md](ATUALIZACAO-1.3.md): centralização e Controles corrigidos; seleção de Noctis preserva ficha e foco, com animação de retrato; Laboratório aplica marcações ao jogar e pode equipar arsenal imediatamente; Necrópole ampliada para 2880×1620 com câmera móvel, colisões e spawns. Save v3 e coordenadas antigas preservados. A expansão antes adiada está implementada. Nenhuma dependência ou asset externo novo.
+
+Verificações executadas na fonte final:
+
+- `npm run check`: aprovado, também no build.
+- `npm test`: 20 testes aprovados, também no build.
+- `npm run test:integration`: 45 verificações aprovadas, zero erros de renderer.
+- `npm run dist -- --publish never --config.compression=store`: portátil Windows 1.3 gerado.
+- `npm run verify:package`: aprovado; comparação de fontes/assets com ASAR e exclusão das ferramentas privadas de desenvolvimento.
+- `npm run test:integration -- --packaged`: 45 verificações aprovadas no ASAR final, usando perfil isolado.
+- Vídeo fornecido (1,344 segundo) analisado por quadros: reproduzida a ficha Rubra após selecionar Noctis. Capturas do menu centralizado, Noctis e mapa ampliado inspecionadas.
+
+Executável local: dist/RUBRA-Windows-x64.exe. SHA256: FC2D7949ED65DA545EA093282472A029AF23457030C47EF73B1A4DED9AB18FC8. Release pode ter hash diferente por ambiente e compactação.
+
+Não executados: partida manual completa, teste em outro PC, toque físico e medição prolongada de desempenho/balanceamento. O pacote foi validado no Electron pelo ASAR, sem abrir o portátil com saves reais. O mapa repete os setores existentes em grade 3×3; não foram criadas nove regiões com arte exclusiva. Noctis recebeu animação decorativa no menu; conserva as poses direcionais fornecidas na partida.
+
+A publicação é feita pelo workflow no push; confirmar Actions e Release pelo SHA do novo commit antes de anunciar o download. Os registros abaixo são históricos.
+
+---
+
 # Estado atual — atualização 1.2, 15/09/2026
 
 Repositório confirmado: AllanDanil0/ProjetoDungeon, branch main, base b69194f. Trabalho na cópia local `Documentos/teste/dungeon-update`, apontando para esse repositório. A pasta antiga `Documentos/ProjetoDungeon` e os arquivos de Downloads não foram alterados.

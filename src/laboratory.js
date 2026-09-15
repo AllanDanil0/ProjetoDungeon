@@ -16,6 +16,7 @@ function laboratoryScreen(){
   for(const [id,item]of Object.entries(C[type])){const label=document.createElement('label'),input=document.createElement('input');input.type='checkbox';input.dataset.kind=type;input.value=id;input.disabled=save[type].includes(id);input.checked=input.disabled;label.append(input,document.createTextNode(item.name+(input.disabled?' · liberado':'')));field.append(label);}
   $('labItems').append(field);
  }
+ $('labArsenal').checked=save.options.testArsenal!==false;
  $('labStatus').textContent='Save de testes ativo. A campanha normal não foi alterada.';
 }
 function grantLaboratory(all=false){
@@ -31,6 +32,7 @@ function grantLaboratory(all=false){
 $('openLaboratory').onclick=laboratoryScreen;
 $('labUnlockSelected').onclick=()=>grantLaboratory(false);
 $('labUnlockAll').onclick=()=>grantLaboratory(true);
-$('labPlay').onclick=charactersScreen;
+$('labPlay').onclick=()=>{if(grantLaboratory(false))charactersScreen();};
+$('labArsenal').onchange=()=>{if(profile==='laboratory'){save.options.testArsenal=$('labArsenal').checked;storeSave();}};
 $('labCampaign').onclick=()=>{if(switchProfile('campaign'))menu();};
 window.addEventListener('keydown',e=>{if(state==='laboratory'&&e.key==='Escape')$('labCampaign').click();});

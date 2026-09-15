@@ -1,6 +1,6 @@
 # RUBRA — A Última Lâmina
 
-Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. Versão 1.2: novos menus e personagens, seis armas combináveis, progressão tutorial → Necrópole e Laboratório opcional com save separado.
+Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. Versão 1.3: novos menus e personagens, seis armas combináveis, progressão tutorial → Necrópole e Laboratório opcional com save separado.
 
 [Baixar o executável mais recente](https://github.com/AllanDanil0/ProjetoDungeon/releases/latest/download/RUBRA-Windows-x64.exe)
 
@@ -12,9 +12,9 @@ O executável não tem assinatura digital de editor.
 
 Novos saves começam com **Rubra e o Bosque Esquecido**. Derrote Vhalkar no tutorial para liberar **Noctis e a Necrópole Carmesim**. O tutorial usa Lâmina ancestral e Estilhaço do bosque (30 segundos); as demais armas são liberadas para a Necrópole. Saves da versão anterior preservam o conteúdo já disponível e o progresso.
 
-Para testar rapidamente: **Opções → Laboratório de testes → marque os itens → Desbloquear marcados → Jogar nos testes**. Também há **Desbloquear tudo**. Nada é desbloqueado só por entrar. Esse modo público usa um save de testes separado, disponível no mesmo executável para você e seu amigo. **Voltar à campanha** recupera o progresso normal; reabrir o jogo também inicia na campanha.
+Para testar rapidamente: **Opções → Laboratório de testes → marque os itens → Jogar nos testes**. Também há **Desbloquear tudo**. Nada é desbloqueado só por entrar. Jogar nos testes aplica os itens marcados; a opção de arsenal permite iniciar com as armas liberadas do mapa já equipadas. Esse modo público usa um save de testes separado, disponível no mesmo executável para você e seu amigo. **Voltar à campanha** recupera o progresso normal; reabrir o jogo também inicia na campanha.
 
-A tela inicial usa a arte enviada. Rubra ganhou caminhada em quatro direções; Noctis usa as quatro poses fornecidas. A expansão da Necrópole e a câmera móvel ficam para a próxima atualização. [Detalhes, assets e balanceamento da versão 1.2](docs/ATUALIZACAO-1.2.md).
+A tela inicial usa a arte enviada. Rubra ganhou caminhada em quatro direções; Noctis usa as quatro poses fornecidas. A Necrópole agora tem 2.880 × 1.620 unidades, nove vezes a área anterior, com câmera seguindo o personagem e spawns locais. [Detalhes, assets e balanceamento da versão 1.2](docs/ATUALIZACAO-1.2.md).
 
 ## Controles
 
@@ -64,3 +64,5 @@ Leia [arquitetura e regras do save](docs/ARQUITETURA.md), [inspeção dos assets
 Vitória, morte e encerramento guardam o ouro uma vez. Salvar e voltar mantém a expedição pendente. Retomar não credita o saldo antecipadamente. Um processo encerrado à força pode perder até o último checkpoint (intervalo de 3 segundos).
 
 O cliente é offline: a separação de desenvolvimento não oferece proteção absoluta contra modificações locais. Exclusividade em produção exigiria servidor autenticado com progressão autoritativa.
+
+[Correções dos menus e expansão da versão 1.3](docs/ATUALIZACAO-1.3.md).

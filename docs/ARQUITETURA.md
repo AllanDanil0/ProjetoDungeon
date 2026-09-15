@@ -1,5 +1,7 @@
 # RUBRA — arquitetura e continuidade
 
+**Atualização 1.3:** [ATUALIZACAO-1.3.md](ATUALIZACAO-1.3.md) complementa a versão 1.2 com correções dos menus/Laboratório e mundo ampliado em `src/world.js`. Leia primeiro para as regras atuais.
+
 **Atualização 1.2:** leia [ATUALIZACAO-1.2.md](ATUALIZACAO-1.2.md) para as regras vigentes de personagens, menus, arsenais por mapa, save v3 e Laboratório público. As seções abaixo registram a base 1.1 e seus sistemas reutilizados. Onde houver diferença, vale a atualização 1.2.
 
 ## Estrutura reaproveitada
