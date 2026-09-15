@@ -1,4 +1,6 @@
-# RUBRA 1.1 — arquitetura e continuidade
+# RUBRA — arquitetura e continuidade
+
+**Atualização 1.2:** leia [ATUALIZACAO-1.2.md](ATUALIZACAO-1.2.md) para as regras vigentes de personagens, menus, arsenais por mapa, save v3 e Laboratório público. As seções abaixo registram a base 1.1 e seus sistemas reutilizados. Onde houver diferença, vale a atualização 1.2.
 
 ## Estrutura reaproveitada
 

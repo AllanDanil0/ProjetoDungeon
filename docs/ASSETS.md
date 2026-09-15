@@ -1,3 +1,7 @@
+# Assets atuais — versão 1.2
+
+Veja a [inspeção dos novos assets](ATUALIZACAO-1.2.md#assets-conferidos), incluindo dimensões reais, quadros de Rubra, poses de Noctis e prompts da geração. O inventário anterior permanece abaixo como histórico dos assets preservados.
+
 # Inspeção dos assets enviados
 
 O inventário de todos os PNGs está em asset-inventory.json: caminho original relativo, largura, altura e colorType do PNG. Os PNGs selecionados usam RGBA (tipo 6). Os arquivos originais foram copiados para assets/ sem modificar os fornecidos em Downloads.

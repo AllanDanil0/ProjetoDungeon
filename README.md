@@ -1,12 +1,20 @@
 # RUBRA — A Última Lâmina
 
-Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. Versão 1.1: Noctis e Rubra, tutorial do Bosque Esquecido, Necrópole Carmesim, cinco armas combináveis, experiência, bosses e ouro persistente.
+Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. Versão 1.2: novos menus e personagens, seis armas combináveis, progressão tutorial → Necrópole e Laboratório opcional com save separado.
 
 [Baixar o executável mais recente](https://github.com/AllanDanil0/ProjetoDungeon/releases/latest/download/RUBRA-Windows-x64.exe)
 
-O link fica disponível após a primeira compilação bem-sucedida na aba Actions.
+O link aponta para a última versão cuja compilação passou na aba Actions.
 Abra o arquivo com dois cliques. Não é necessário instalar Node.js nem ter internet para jogar.
 O executável não tem assinatura digital de editor.
+
+## Novidades e desbloqueios
+
+Novos saves começam com **Rubra e o Bosque Esquecido**. Derrote Vhalkar no tutorial para liberar **Noctis e a Necrópole Carmesim**. O tutorial usa Lâmina ancestral e Estilhaço do bosque (30 segundos); as demais armas são liberadas para a Necrópole. Saves da versão anterior preservam o conteúdo já disponível e o progresso.
+
+Para testar rapidamente: **Opções → Laboratório de testes → marque os itens → Desbloquear marcados → Jogar nos testes**. Também há **Desbloquear tudo**. Nada é desbloqueado só por entrar. Esse modo público usa um save de testes separado, disponível no mesmo executável para você e seu amigo. **Voltar à campanha** recupera o progresso normal; reabrir o jogo também inicia na campanha.
+
+A tela inicial usa a arte enviada. Rubra ganhou caminhada em quatro direções; Noctis usa as quatro poses fornecidas. A expansão da Necrópole e a câmera móvel ficam para a próxima atualização. [Detalhes, assets e balanceamento da versão 1.2](docs/ATUALIZACAO-1.2.md).
 
 ## Controles
 

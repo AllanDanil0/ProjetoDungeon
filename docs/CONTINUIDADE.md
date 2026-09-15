@@ -1,3 +1,28 @@
+# Estado atual — atualização 1.2, 15/09/2026
+
+Repositório confirmado: AllanDanil0/ProjetoDungeon, branch main, base b69194f. Trabalho na cópia local `Documentos/teste/dungeon-update`, apontando para esse repositório. A pasta antiga `Documentos/ProjetoDungeon` e os arquivos de Downloads não foram alterados.
+
+Implementação e decisões: [ATUALIZACAO-1.2.md](ATUALIZACAO-1.2.md). Telas novas, Rubra com 16 quadros, Noctis com quatro poses, tutorial inicial, desbloqueio de Noctis/Necrópole após Vhalkar, seis armas com arte própria, Laboratório público em save isolado. Saves v2 preservados. Expansão do mapa/câmera adiada.
+
+## Verificações efetivamente executadas na versão 1.2
+
+- `npm run check`: sintaxe aprovada.
+- `npm test`: 17 testes aprovados (também repetidos pelo build final). A primeira tentativa em sandbox falhou ao criar processo com EPERM; a execução autorizada concluiu normalmente.
+- `npm run test:integration`: 38 verificações aprovadas no Electron, zero erros de renderer. Inclui início bloqueado, tentativa direta de iniciar mapa bloqueado, direções, transparência e base dos pés dos 20 quadros, menus, colisões, spawns, HUD com seis armas, upgrades, ouro único, checkpoints, boss, tutorial liberando capítulo, reinício e Laboratório individual/tudo com isolamento.
+- `npm run dist -- --publish never --config.compression=store`: executável portátil Windows 1.2 gerado a partir da fonte final. Compactação mínima somente local; Release usa compactação normal.
+- `npm run verify:package`: aprovado. Código de src, HTML, main e todos os novos assets comparados byte a byte com o ASAR; dev/tests/scripts e API dev ausentes, Laboratório público presente. A primeira verificação encontrou um erro de normalização de separadores no próprio verificador Windows; os arquivos existiam. O verificador foi corrigido e reexecutado.
+- `npm run test:integration -- --packaged`: mesmas 38 verificações aprovadas carregando index.html diretamente do ASAR final em Electron com perfil de testes. Não usa o save real do jogador.
+- `git -c core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol diff --check`: aprovado; CRLF é aceito porque há arquivos legados com esse formato.
+- Capturas inspecionadas: início, caçadores, Necrópole em combate, Laboratório, caçadores em 800×600 e retrato 420×850, além de todos os novos quadros. Resoluções físicas nas capturas refletem a escala do Windows. Dados completos em test-output/integration.json e asset-dimensions.json (artefatos de teste ignorados pelo Git).
+
+Build local final: `dist/RUBRA-Windows-x64.exe`. SHA256 `86561190A3AB0544D249D1F875CBA0AEEC35723B48DC0E85797889A0B7793B53`. O hash da Release pode diferir pela compactação e ambiente de build.
+
+Não foi feita partida manual completa, avaliação prolongada de balanceamento, teste em outro PC ou toque físico. O pacote foi exercitado via Electron/ASAR, sem abrir o portátil contra saves reais. Noctis conserva poses estáticas por direção; as imagens têm proporções diferentes conforme a referência. Necrópole maior e câmera móvel permanecem para a próxima etapa.
+
+O registro de 14/09 abaixo é histórico; sua pendência de autenticação foi resolvida e a versão anterior foi publicada em windows-2-1. A versão 1.2 será publicada pelo workflow no push correspondente; conferir Actions e Release pelo SHA desse commit antes de anunciar o download.
+
+---
+
 # Estado da atualização — 14/09/2026
 
 Repositório: AllanDanil0/ProjetoDungeon. Base consultada: 6b69d315c674773185f9bb6502cf6a9d15a27ead. Desenvolvimento em cópia clonada, sem alterar os arquivos originais em Downloads nem a pasta antiga Documentos/ProjetoDungeon.

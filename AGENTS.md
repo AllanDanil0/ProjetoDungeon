@@ -6,6 +6,8 @@
 - Configurações editáveis ficam em src/config.js. Regras puras e migração em src/core.js.
 - Não gere sprites novos para completar animações sem autorização. Os JPEGs fornecidos têm fundo opaco; o importador de Canvas faz recorte explícito dos quadros existentes.
 - Ferramentas em dev/ e seus comandos não podem entrar no ASAR de distribuição. Não adicione atalhos dev ou flags privilegiadas ao cliente normal.
+- Desde a solicitação de 15/09/2026, o Laboratório público em src/laboratory.js entra na distribuição: é uma opção de testes solicitada pelo usuário, com save separado, sem autenticação ou privilégios exclusivos. Nunca aplique seus desbloqueios ao perfil campaign.
+- Saves v3 novos iniciam com Rubra/tutorial. Migração de v2 preserva personagens e mapas antes disponíveis. Não reinicie progresso existente para demonstrar bloqueios.
 - Antes de publicar execute npm run check, npm test, npm run test:integration, npm run dist -- --publish never e npm run verify:package.
 - Atualize docs/CONTINUIDADE.md com alterações, decisões, verificações reais e limitações.
 - Não coloque credenciais ou saves de testes no Git. Use os perfis separados configurados.
