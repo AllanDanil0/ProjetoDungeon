@@ -1,3 +1,28 @@
+# Estado atual — versão 1.4, 15/09/2026
+
+Base: 9f5ed68221e427c767c98cf71bcc35b5b8e804e2, main de AllanDanil0/ProjetoDungeon. Trabalho na cópia Documentos/teste/dungeon-update. A pasta antiga ProjetoDungeon e referências de Downloads permanecem intactas.
+
+Implementação: [ATUALIZACAO-1.4.md](ATUALIZACAO-1.4.md). Cinco trilhas sintetizadas e efeitos de combate/menu, volumes independentes; Ignivar por 500 de ouro após liberar Necrópole, nova de fogo no dash e +25% de dano; folha gerada com 16 poses; três armas novas (nove no total); limites de nível 6/7; arte de todas as armas ampliada e três árvores fornecidas integradas na Necrópole. Nenhuma dependência nova. Saves, reset do Laboratório e personagens antigos preservados.
+
+Verificações efetivamente concluídas:
+
+- `npm run check`: sintaxe aprovada.
+- `npm test`: 25 testes aprovados, incluindo compra única, bloqueio por mapa/saldo, migração sem liberar mago pago e níveis por mapa.
+- `npm run test:integration`: 54 verificações aprovadas, zero erros de renderer.
+- `npm run dist -- --publish never --config.compression=store`: executável portátil 1.4 gerado. Refeito após corrigir a interceptação de setas do controle legado nos sliders de volume.
+- `npm run verify:package`: aprovado; comparação byte a byte das fontes e assets da expansão, ferramentas dev excluídas.
+- `npm run test:integration -- --packaged`: mesmas 54 verificações aprovadas no ASAR final com perfil de testes.
+- Diff verificado com `core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol`.
+- Capturas inspecionadas do menu de Ignivar, seus 16 quadros, Necrópole e combate. Arquivos de diagnóstico ficam em test-output, ignorados pelo Git.
+
+As falhas intermediárias foram resolvidas: testes anteriores presumiam dois personagens/seis armas/nível máximo cinco; a verificação da foice passou a observar todo o retorno; setas de sliders eram interceptadas pelo handler legado. As suites foram reexecutadas após as correções.
+
+Áudio verificado por OfflineAudioContext: cinco saídas distintas, energia não nula, amostras finitas, ausência de saturação no cenário de teste e liberação de vozes. Não houve avaliação auditiva humana, partida manual completa, teste em outro PC nem benchmark prolongado. Números ficam no config para ajuste posterior. Ferramenta imagegen integrada usada para a folha do mago; prompt e dimensões em ATUALIZACAO-1.4.md.
+
+Publicação pelo workflow no push: confirmar SHA da Release antes de anunciar o download. Registros abaixo são históricos.
+
+---
+
 # Estado atual — atualização 1.3.1, 15/09/2026
 
 Nome público atualizado para **The night is yours**, incluindo janela, HTML, metadados e título da Release. O identificador do aplicativo, arquivo RUBRA-Windows-x64.exe e pasta %APPDATA%/RUBRA continuam por compatibilidade com downloads e saves existentes.

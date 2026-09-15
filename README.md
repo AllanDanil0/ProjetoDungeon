@@ -70,3 +70,7 @@ O cliente é offline: a separação de desenvolvimento não oferece proteção a
 ### Atualização 1.3.1
 
 Nome atualizado para The night is yours. No Laboratório, **Resetar desbloqueios** restaura Rubra, tutorial e arma inicial, mantendo ouro, recorde e opções. Uma partida de testes salva é encerrada e seu ouro coletado é guardado uma única vez. A campanha normal não é alterada. O arquivo RUBRA-Windows-x64.exe e o diretório de saves mantêm os nomes antigos para compatibilidade. Músicas e novos efeitos sonoros ficam para uma próxima atualização.
+
+### Atualização 1.4 — Fornalha Carmesim
+
+Ignivar por 500 de ouro após liberar a Necrópole; nove armas no catálogo, seis espaços e níveis máximos 6/7 por mapa. Músicas e efeitos originais, controles de volume, novas árvores e efeitos de combate. [Detalhes, balanceamento e verificações](docs/ATUALIZACAO-1.4.md).

@@ -1,6 +1,6 @@
 (function(root){
 const C={
- version:3,slots:6,maxWeaponLevel:5,contactCooldown:1.05,pickupRadius:25,checkpointSeconds:3,
+ version:3,slots:6,maxWeaponLevel:7,contactCooldown:1.05,pickupRadius:25,checkpointSeconds:3,
  profiles:{campaign:'rubra-save-v2',laboratory:'rubra-laboratory-v1'},
  limits:{enemies:65,projectiles:160,effects:100,drops:140,particles:180},
  combat:{spawnSafeDistance:175,bossSafeDistance:240,hpScaleMax:1.4,hpScaleRate:.85,rangedNear:135,rangedFar:185,rangedRetreat:.4,chargeSpeed:250,chargeSeconds:.65,bossProjectileSpeed:90,mobProjectileSpeed:110,projectileLife:5,healChance:.06,dropLife:60,phaseThreshold:.5,phaseInterval:.72,ringWindup:1.05,chargeWindup:1.1,enragedWindup:.75,shotWindup:.7,ringCount:9,enragedRingCount:14,spawnAcceleration:.9,bossSpawnMultiplier:2,enemyTierSeconds:40},
@@ -39,6 +39,15 @@ const C={
 C.characters.noctis.unlock='Conclua o tutorial derrotando Vhalkar';
 C.characters.rubra.unlock='Disponível desde o início';
 C.maps.necropolis.unlock='Conclua o tutorial derrotando Vhalkar';
+C.characters.ignivar={name:'Ignivar',description:'O herdeiro da fornalha. Seu fogo desperta entre os túmulos.',hp:6,speed:153,radius:8,weapon:'cinder',price:500,purchaseMap:'necropolis',passive:'Coração da fornalha · +25% de dano global e nova de fogo ao esquivar (32 de dano base).',dashCooldown:2.2,damage:1.25,attackSpeed:1,range:1,unlocked:false,unlock:'Libere a Necrópole e compre por 500 de ouro',fireDash:{damage:32,radius:64}};
+Object.assign(C.weapons,{
+ cinder:{name:'Cetro da fornalha',description:'Orbes de fogo explodem ao atingir o primeiro inimigo.',kind:'explosive',damage:23,interval:1.65,range:280,radius:37,count:1,speed:215,maxLevel:7,color:'#ff9848',icon:'✺',unlockSeconds:15,unlock:'Sobreviva 15 segundos na Necrópole ou compre Ignivar',growth:{damage:.26,interval:.045,range:.055}},
+ chain:{name:'Rosário da tempestade',description:'Raios saltam entre inimigos próximos sem atingir o mesmo alvo duas vezes.',kind:'chain',damage:20,interval:1.85,range:240,count:3,jumpRange:105,maxLevel:7,color:'#9ecfff',icon:'ϟ',unlockSeconds:45,unlock:'Sobreviva 45 segundos na Necrópole',growth:{damage:.24,interval:.04,range:.05}},
+ reaper:{name:'Foice do eclipse',description:'Uma foice atravessa os inimigos e retorna, atingindo cada um uma vez por trajeto.',kind:'returning',damage:28,interval:2.2,range:290,count:1,speed:255,pierce:99,maxLevel:7,color:'#cda3ff',icon:'☽',unlockSeconds:90,unlock:'Sobreviva 90 segundos na Necrópole',growth:{damage:.25,interval:.045,range:.05}}
+});
+for(const w of Object.values(C.weapons))w.maxLevel=7;
+C.maps.tutorial.maxWeaponLevel=6;C.maps.necropolis.maxWeaponLevel=7;
+C.audio={musicVolume:.32,effectsVolume:.55,maxVoices:48,killCooldown:.09,weaponCooldown:.12};
 C.maps.tutorial.weapons=['blade','acorn'];
 C.maps.necropolis.weapons=Object.keys(C.weapons);
 C.maps.necropolis.world={width:2880,height:1620,tileWidth:960,tileHeight:540,spawnOuter:420,despawnDistance:950};
@@ -48,6 +57,7 @@ C.maps.necropolis.obstacles=[];
 for(let row=0;row<3;row++)for(let col=0;col<3;col++)for(const [i,o]of originalObstacles.entries())C.maps.necropolis.obstacles.push({...o,x:o.x+col*960,y:o.y+row*540,kind:i<2?'tree':'pillar'});
 C.maps.necropolis.description='Uma necrópole extensa de caminhos de pedra e árvores retorcidas. Explore sob a lua; Morthar desperta após 3 minutos.';
 C.weapons.dagger.unlock='Conclua o tutorial; utilizável na Necrópole';
+Object.assign(C.assets,{ignivarSheet:'assets/expansion/ignivar-sheet.png',ignivarPortrait:'assets/expansion/ignivar-reference.png',crimsonTree1:'assets/expansion/tree-1.png',crimsonTree2:'assets/expansion/tree-2.png',crimsonTree3:'assets/expansion/tree-3.png'});
 C.visuals={frameSize:64,bodyHeight:48,worldHeight:38,walkFps:7,orbitSpeed:2.3};
 Object.assign(C.assets,{noctisLeft:'assets/visual-update/noctis-left.jpg',noctisRight:'assets/visual-update/noctis-right.jpg',noctisBack:'assets/visual-update/noctis-back.jpg',noctisFront:'assets/visual-update/noctis-front.png',noctisPortrait:'assets/visual-update/noctis-portrait.jpg',rubraPortrait:'assets/visual-update/rubra-portrait.jpg',rubraWalk:'assets/visual-update/rubra-walk.png',startArt:'assets/visual-update/start.jpg',castleMenu:'assets/visual-update/castle-menu.png'});
 root.RubraConfig=C;if(typeof module!=='undefined')module.exports=C;

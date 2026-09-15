@@ -29,3 +29,7 @@
 #help{z-index:40}#laboratory .dialog{padding-top:15px}
 
 @media(max-width:560px){.title-scene{background:none}.title-scene:before{content:'';position:absolute;inset:0 0 auto;height:295px;background:url('../assets/visual-update/start.jpg') center top/auto 400px no-repeat;pointer-events:none}.title-buttons{top:325px}.title-wallet{top:297px}.title-scene #saveNotice{top:305px}}
+
+/* Expansion: three champions and readable purchase information. */
+#characterCards{max-width:760px;gap:24px}#characterCards .champion{min-width:0}.champion[data-character=ignivar] .champion-frame{background:radial-gradient(ellipse at bottom,#6f301b,#241125 70%)}#buyCharacter{margin:10px auto 4px;display:block}#buyCharacter:disabled{opacity:.5;cursor:not-allowed}#options input[type=range]{width:130px;accent-color:#e7bc77}#labItems{margin:12px 0}#labItems label{margin:6px 0}#laboratory{overflow-y:auto}
+@media(max-width:560px){#characterCards{gap:10px}.champion h3{font-size:13px;letter-spacing:0}.champion-frame{height:118px}#characters .champion .portrait{width:110px!important;height:110px!important}.champion small{font-size:9px!important}.champion-frame:before,.champion-frame:after{left:-5px;right:-5px}}
