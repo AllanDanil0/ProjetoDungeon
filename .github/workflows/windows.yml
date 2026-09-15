@@ -48,5 +48,5 @@ jobs:
           if (!(Test-Path $exe)) { throw 'Executavel nao encontrado' }
           $hash = (Get-FileHash $exe -Algorithm SHA256).Hash
           "$hash  RUBRA-Windows-x64.exe" | Set-Content dist/SHA256.txt
-          gh release create $env:RELEASE_TAG $exe dist/SHA256.txt --target $env:COMMIT_SHA --title "RUBRA - Windows $env:RELEASE_TAG" --notes "Baixe RUBRA-Windows-x64.exe e abra com dois cliques. Windows 10/11 x64; funciona offline, sem instalacao. Executavel sem assinatura digital." --latest
+          gh release create $env:RELEASE_TAG $exe dist/SHA256.txt --target $env:COMMIT_SHA --title "The night is yours - Windows $env:RELEASE_TAG" --notes "Baixe RUBRA-Windows-x64.exe e abra com dois cliques. Windows 10/11 x64; funciona offline, sem instalacao. Executavel sem assinatura digital." --latest
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

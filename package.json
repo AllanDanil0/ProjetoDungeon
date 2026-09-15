@@ -1,8 +1,8 @@
 {
   "name": "rubra-a-ultima-lamina",
-  "productName": "RUBRA",
-  "version": "1.3.0",
-  "description": "RUBRA — A Última Lâmina: jogo offline para Windows",
+  "productName": "The night is yours",
+  "version": "1.3.1",
+  "description": "The night is yours: jogo offline para Windows",
   "author": "RUBRA",
   "private": true,
   "main": "main.js",
@@ -17,7 +17,7 @@
   },
   "build": {
     "appId": "local.rubra.game",
-    "productName": "RUBRA",
+    "productName": "The night is yours",
     "directories": {
       "output": "dist"
     },

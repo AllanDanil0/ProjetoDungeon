@@ -32,6 +32,7 @@ function grantLaboratory(all=false){
 $('openLaboratory').onclick=laboratoryScreen;
 $('labUnlockSelected').onclick=()=>grantLaboratory(false);
 $('labUnlockAll').onclick=()=>grantLaboratory(true);
+$('labReset').onclick=()=>{if(state!=='laboratory'||profile!=='laboratory')return;const next=K.migrate(save);if(!K.laboratoryReset(next,profile))return;const previous=save;save=next;if(!storeSave()){save=previous;$('labStatus').textContent='Falha ao salvar o reset. Tente novamente.';return;}menu();laboratoryScreen();$('labStatus').textContent='Desbloqueios resetados. Ouro, recorde e opções preservados. A campanha normal não foi alterada.';};
 $('labPlay').onclick=()=>{if(grantLaboratory(false))charactersScreen();};
 $('labArsenal').onchange=()=>{if(profile==='laboratory'){save.options.testArsenal=$('labArsenal').checked;storeSave();}};
 $('labCampaign').onclick=()=>{if(switchProfile('campaign'))menu();};

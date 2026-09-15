@@ -1,3 +1,17 @@
+# Estado atual — atualização 1.3.1, 15/09/2026
+
+Nome público atualizado para **The night is yours**, incluindo janela, HTML, metadados e título da Release. O identificador do aplicativo, arquivo RUBRA-Windows-x64.exe e pasta %APPDATA%/RUBRA continuam por compatibilidade com downloads e saves existentes.
+
+Laboratório: botão **Resetar desbloqueios** restaura Rubra/tutorial/blade, seleções e completedMaps, preservando ouro, recorde e opções. Encerra o checkpoint de testes e consolida ouro pendente uma única vez; bloqueia chamadas no perfil campaign. Gravação usa uma cópia do save e restaura o estado anterior se falhar. Regras em src/core.js (laboratoryReset), interface em src/laboratory.js e index.html. A campanha normal permanece isolada. Músicas e novos efeitos foram adiados para manter o escopo pequeno solicitado.
+
+Verificações: npm run check aprovado; npm test com 21 testes aprovados; npm run test:integration com 46 verificações aprovadas, incluindo reset pela interface, persistência do ouro e isolamento da campanha. Captura do Laboratório inspecionada. Primeira execução Node em sandbox encontrou EPERM; execução autorizada passou. A nova asserção de integração inicialmente comparava com uma serialização da campanha anterior à troca de perfil; foi ajustada para comparar o snapshot imediatamente anterior ao reset, mantendo a verificação de isolamento.
+
+Build `npm run dist -- --publish never --config.compression=store` concluído. `npm run verify:package` aprovado e `npm run test:integration -- --packaged` repetiu as 46 verificações no ASAR final com sucesso e sem erros de renderer. Diff conferido, sem atualização de dependências.
+
+Não houve teste em outro PC ou partida manual completa. Histórico abaixo.
+
+---
+
 # Estado atual — atualização 1.3, 15/09/2026
 
 Base confirmada: 5488ae42494e12a05fad8b31c2fe5b71a8c7741f, main de AllanDanil0/ProjetoDungeon. A cópia de trabalho continua em Documentos/teste/dungeon-update.

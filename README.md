@@ -1,4 +1,4 @@
-# RUBRA — A Última Lâmina
+# The night is yours
 
 Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. Versão 1.3: novos menus e personagens, seis armas combináveis, progressão tutorial → Necrópole e Laboratório opcional com save separado.
 
@@ -66,3 +66,7 @@ Vitória, morte e encerramento guardam o ouro uma vez. Salvar e voltar mantém a
 O cliente é offline: a separação de desenvolvimento não oferece proteção absoluta contra modificações locais. Exclusividade em produção exigiria servidor autenticado com progressão autoritativa.
 
 [Correções dos menus e expansão da versão 1.3](docs/ATUALIZACAO-1.3.md).
+
+### Atualização 1.3.1
+
+Nome atualizado para The night is yours. No Laboratório, **Resetar desbloqueios** restaura Rubra, tutorial e arma inicial, mantendo ouro, recorde e opções. Uma partida de testes salva é encerrada e seu ouro coletado é guardado uma única vez. A campanha normal não é alterada. O arquivo RUBRA-Windows-x64.exe e o diretório de saves mantêm os nomes antigos para compatibilidade. Músicas e novos efeitos sonoros ficam para uma próxima atualização.

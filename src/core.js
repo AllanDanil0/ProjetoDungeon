@@ -29,5 +29,6 @@ function unlock(save,run){const got=[];const add=id=>{if(!save.weapons.includes(
  if(run.map==='necropolis'){add('dagger');if(run.elapsed>=C.weapons.ember.unlockSeconds)add('ember');if(run.elapsed>=C.weapons.thorns.unlockSeconds)add('thorns');if(run.bossKilled){add('lance');if(!save.completedMaps.includes('necropolis'))save.completedMaps.push('necropolis');}}return got;}
 // Public offline testing feature. Profile isolation, not authentication.
 function laboratoryUnlock(save,profile,type,ids){if(profile!=='laboratory'||!['characters','maps','weapons'].includes(type))return false;const valid=unique(ids,C[type]);for(const id of valid)if(!save[type].includes(id))save[type].push(id);return valid.length>0;}
-const api={integer,defaults,migrate,load,persist,settle,choices,upgrade,stats,hit,validPoint,freePoint,spawnPoint,unlock,allowedWeapon,startWeapon,laboratoryUnlock};root.RubraCore=api;if(typeof module!=='undefined')module.exports=api;
+function laboratoryReset(save,profile){if(profile!=='laboratory')return false;if(save.active)settle(save,save.active,'abandon');const initial=defaults();for(const key of ['characters','maps','weapons','completedMaps','selectedCharacter','selectedMap'])save[key]=initial[key];return true;}
+const api={laboratoryReset,integer,defaults,migrate,load,persist,settle,choices,upgrade,stats,hit,validPoint,freePoint,spawnPoint,unlock,allowedWeapon,startWeapon,laboratoryUnlock};root.RubraCore=api;if(typeof module!=='undefined')module.exports=api;
 })(globalThis);
