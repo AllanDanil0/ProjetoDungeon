@@ -1,4 +1,16 @@
-# Estado atual — versão 1.6, 17/09/2026
+# Trabalho em andamento — próxima atualização, 17/09/2026
+
+Base publicada: eb7a08961c0693ba12c78f5c78802b482fe8044d, Release windows-9-2 (versão 1.6), Actions concluído com sucesso. Alterações seguintes ainda locais, não publicadas.
+
+Implementado: exceção da arma principal por personagem em qualquer mapa, incluindo melhorias, início e checkpoint; Arsenal abaixo de Jogar com ícones reais, bloqueios, dano base, função, origem e mapas; Aelthir por 1200 (compras antigas preservadas); movimento suave da pose no menu sem alternar quadros, preservando aura e opção de partículas; faixa sintetizada Aurora sobre as ruínas alternando com música anterior do gelo em blocos de 128 passos.
+
+Validação realizada: check, 34 testes unitários, 62 verificações de integração sem erros e 25 verificações de menus em três resoluções, incluindo início com arma própria para cada personagem/mapa e transição musical. Capturas do Arsenal (desktop e retrato) e tela inicial inspecionadas. Build final ainda não gerado.
+
+PENDENTE: usuário solicitou que pedíssemos duas imagens — menu com as informações a centralizar e moeda de ouro com morcego. Ambas solicitadas e ainda não recebidas. Não adivinhar a área do menu nem substituir a moeda sem referência. Finalizar esses ajustes, conferir animação em sequência, executar build/verificação/testes empacotados, atualizar versão/documentação e publicar somente após fechar o escopo.
+
+---
+
+# Estado publicado — versão 1.6, 17/09/2026
 
 Base 3e615ae98a8c2c8b1e52a50550428eb711cb8918 de main, AllanDanil0/ProjetoDungeon. Trabalho na cópia Documentos/teste/dungeon-update. Fetch não encontrou alterações concorrentes. Seis interfaces implementadas seguindo as referências: início, opções, controles, laboratório, personagens e mapas. Molduras e botões são controles reais; layout responsivo com rolagem em telas menores. Ver ATUALIZACAO-1.6.md para assets e prompts. Não há dependências novas.
 

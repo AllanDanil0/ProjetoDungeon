@@ -1,6 +1,6 @@
 # The night is yours
 
-Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. Versão 1.6: seis menus com interface gótica uniforme e responsiva, nova animação de Aelthir no menu e os mesmos personagens e progresso. [Novidades da interface](docs/ATUALIZACAO-1.6.md). Campanha tutorial → Necrópole → Santuário do Inverno, seis personagens, dezesseis armas e Laboratório com save separado.
+Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. Versão 1.7: armas principais acompanham seus caçadores em todos os mapas, catálogo Arsenal, nova música de gelo, animação de Aelthir e ajustes dos menus. [Novidades](docs/ATUALIZACAO-1.7.md).
 
 [Baixar o executável mais recente](https://github.com/AllanDanil0/ProjetoDungeon/releases/latest/download/RUBRA-Windows-x64.exe)
 
