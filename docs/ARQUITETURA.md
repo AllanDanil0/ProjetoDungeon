@@ -1,6 +1,8 @@
 # The night is yours — arquitetura e continuidade
 
-**Versão atual 1.4:** leia [ATUALIZACAO-1.4.md](ATUALIZACAO-1.4.md) para Ignivar, compra por ouro, áudio, nove armas e limites 6/7. As seções anteriores abaixo são histórico.
+**Versão atual 1.5:** leia [ATUALIZACAO-1.5.md](ATUALIZACAO-1.5.md) para o capítulo de gelo, três novos heróis e arsenal de dez armas no mapa.
+
+**Versão 1.4:** leia [ATUALIZACAO-1.4.md](ATUALIZACAO-1.4.md) para Ignivar, compra por ouro, áudio, nove armas e limites 6/7. As seções anteriores abaixo são histórico.
 
 **Atualização 1.3:** [ATUALIZACAO-1.3.md](ATUALIZACAO-1.3.md) complementa a versão 1.2 com correções dos menus/Laboratório e mundo ampliado em `src/world.js`. Leia primeiro para as regras atuais.
 

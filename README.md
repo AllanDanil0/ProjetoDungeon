@@ -1,6 +1,6 @@
 # The night is yours
 
-Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. Versão 1.3: novos menus e personagens, seis armas combináveis, progressão tutorial → Necrópole e Laboratório opcional com save separado.
+Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. Versão 1.5: campanha tutorial → Necrópole → Santuário do Inverno, seis personagens, quinze armas no catálogo e Laboratório opcional com save separado. [Novidades e balanceamento](docs/ATUALIZACAO-1.5.md).
 
 [Baixar o executável mais recente](https://github.com/AllanDanil0/ProjetoDungeon/releases/latest/download/RUBRA-Windows-x64.exe)
 

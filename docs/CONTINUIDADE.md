@@ -1,3 +1,26 @@
+# Estado atual — versão 1.5, 17/09/2026
+
+Base: 73626c1c93124314c71e73c286f2c823fdd1d9f8, main de AllanDanil0/ProjetoDungeon. Cópia de trabalho Documentos/teste/dungeon-update; remote confirmado. Fetch antes da publicação não encontrou alterações concorrentes.
+
+Implementação: [ATUALIZACAO-1.5.md](ATUALIZACAO-1.5.md). Santuário do Inverno ampliado a pedido para 3840×2360, maior que a Necrópole, com câmera, colisões e spawns finitos; três heróis (Nivor grátis, Vael 800, Aelthir 1000), seis novas armas mais quatro herdadas, seis mobs/elite/boss, trilha de gelo. Desbloqueio após Morthar; migração de vitórias antigas, compra única, ouro e Laboratório preservados. Sem dependências novas.
+
+Verificações concluídas:
+
+- `npm run check`: aprovado.
+- `npm test`: 29 aprovados, repetidos durante o build final.
+- `npm run test:integration`: 61 verificações aprovadas após ampliação, zero erros de renderer.
+- `npm run dist -- --publish never --config.compression=store`: executável 1.5 gerado novamente após ampliar o mapa.
+- `npm run verify:package`: aprovado, comparação das fontes/assets com o ASAR e exclusão das ferramentas dev.
+- `npm run test:integration -- --packaged`: 61 verificações aprovadas no ASAR final, zero erros de renderer.
+- Diff conferido com `core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol`.
+- Capturas inspecionadas: seleção dos novos heróis, mapa ampliado e composição com quatro direções dos heróis e sete recortes dos monstros. Diagnósticos ficam em test-output, ignorado pelo Git.
+
+Retomada: o teste de nevasca anterior observava 0,96s, antes do segundo pulso quantizado no passo de simulação. Passou a observar 1,2s e também confirma a expiração da lentidão. Menu rola até o personagem selecionado. Execuções inicialmente bloqueadas por EPERM no sandbox foram repetidas com autorização e passaram. A interrupção anterior por limite de uso não deixou publicação parcial.
+
+Limites: sem avaliação auditiva humana, partida manual completa, benchmark prolongado ou teste em outro PC. Monstros usam poses fornecidas, não ciclos inexistentes. Árvores/monólitos são parte da imagem plana com colisões separadas. Fontes de arte e instruções de geração estão no documento da versão. Confirmar o SHA da Release antes de anunciar o download.
+
+---
+
 # Estado atual — versão 1.4, 15/09/2026
 
 Base: 9f5ed68221e427c767c98cf71bcc35b5b8e804e2, main de AllanDanil0/ProjetoDungeon. Trabalho na cópia Documentos/teste/dungeon-update. A pasta antiga ProjetoDungeon e referências de Downloads permanecem intactas.

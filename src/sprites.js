@@ -34,7 +34,9 @@ const RubraSprites=(()=>{
   const sheet=images.ignivarSheet,ignivar={dash:{}};
   const cells=[];for(let row=0;row<4;row++)for(let col=0;col<4;col++){const x=Math.round(col*sheet.width/4),y=Math.round(row*sheet.height/4);cells.push(extract(sheet,[x,y,Math.round((col+1)*sheet.width/4)-x,Math.round((row+1)*sheet.height/4)-y]));}
   const common=Math.max(...cells.filter((_,i)=>i%4!==3).map(r=>r.height));rows.forEach((dir,row)=>{ignivar[dir]=cells.slice(row*4,row*4+3).map(r=>normalize(r,common));ignivar.dash[dir]=[normalize(cells[row*4+3],common)];});
-  portraits.ignivar=ignivar.front[1];return {noctis,rubra,ignivar,portraits};
+  portraits.ignivar=ignivar.front[1];const extra={};
+  for(const id of RubraConfig.ice.heroes){const im=images[id+'Sheet'],raw=[];for(let row=0;row<4;row++)for(let col=0;col<4;col++){const x=Math.round(col*im.width/4),y=Math.round(row*im.height/4);raw.push(extract(im,[x,y,Math.round((col+1)*im.width/4)-x,Math.round((row+1)*im.height/4)-y]));}const h=Math.max(...raw.filter((_,i)=>i%4!==3).map(r=>r.height));const hero={dash:{}};rows.forEach((dir,row)=>{hero[dir]=raw.slice(row*4,row*4+3).map(r=>normalize(r,h));hero.dash[dir]=[normalize(raw[row*4+3],h)];});extra[id]=hero;portraits[id]=hero.front[1];}
+  return {noctis,rubra,ignivar,...extra,portraits};
  }
  return {extract,normalize,build};
 })();
