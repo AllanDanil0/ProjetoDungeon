@@ -29,6 +29,7 @@ jobs:
         run: |
           npm test
           npm run test:integration
+          npm run test:menus
       - name: Gerar executavel
         run: npm run dist -- --publish never
         env:

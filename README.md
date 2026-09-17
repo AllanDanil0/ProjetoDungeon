@@ -1,6 +1,6 @@
 # The night is yours
 
-Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. Versão 1.5.1: campanha tutorial → Necrópole → Santuário do Inverno, seis personagens, dezesseis armas no catálogo e Laboratório opcional com save separado. [Novidades e balanceamento](docs/ATUALIZACAO-1.5.md).
+Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. Versão 1.6: seis menus com interface gótica uniforme e responsiva, nova animação de Aelthir no menu e os mesmos personagens e progresso. [Novidades da interface](docs/ATUALIZACAO-1.6.md). Campanha tutorial → Necrópole → Santuário do Inverno, seis personagens, dezesseis armas e Laboratório com save separado.
 
 [Baixar o executável mais recente](https://github.com/AllanDanil0/ProjetoDungeon/releases/latest/download/RUBRA-Windows-x64.exe)
 
@@ -58,6 +58,7 @@ O resultado fica em `dist/RUBRA-Windows-x64.exe`.
 - `npm run check`: sintaxe JavaScript.
 - `npm test`: regras de save, economia, combate, espaços e desbloqueios.
 - `npm run test:integration`: Electron fora da tela, com perfil isolado e capturas em test-output/.
+- `npm run test:menus`: seis menus em três resoluções, acesso aos controles e animação de Aelthir; aceita `-- --packaged` após compilar.
 - `npm run verify:package`: verifica o ASAR real após compilar; painel e comandos de desenvolvimento devem estar ausentes.
 - `npm run dev`: painel de desbloqueios com save separado em `.dev-profile`. Não entra no executável distribuído.
 

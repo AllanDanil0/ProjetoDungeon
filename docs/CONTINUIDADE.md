@@ -1,4 +1,16 @@
-# Estado atual — versão 1.5.1, 17/09/2026
+# Estado atual — versão 1.6, 17/09/2026
+
+Base 3e615ae98a8c2c8b1e52a50550428eb711cb8918 de main, AllanDanil0/ProjetoDungeon. Trabalho na cópia Documentos/teste/dungeon-update. Fetch não encontrou alterações concorrentes. Seis interfaces implementadas seguindo as referências: início, opções, controles, laboratório, personagens e mapas. Molduras e botões são controles reais; layout responsivo com rolagem em telas menores. Ver ATUALIZACAO-1.6.md para assets e prompts. Não há dependências novas.
+
+Sprites dos personagens, combate, atributos, progressão e chaves de save preservados. Somente o retrato de Aelthir troca o ciclo de caminhada por pose estável, aura e cristais ascendentes. Prévia de mapas usa cenário real em Canvas com cache e restauração do estado. Corrigida sobreposição da tela de controles e recorte do logotipo em retrato.
+
+Verificações efetivamente concluídas: check; 31 testes unitários; 62 verificações de integração no código e novamente no ASAR; 19 verificações de menus no código e novamente no ASAR, nas resoluções 1360×900, 960×640 e 420×850. Zero erros de renderer. Build portátil gerado com compressão store apenas para validação local; verify:package compara fonte/assets e confirma exclusão das ferramentas dev. Capturas dos seis menus inspecionadas, incluindo layouts estreitos. Diff sem erros de whitespace. Workflow passa a exigir test:menus antes de publicar.
+
+Limites: testes automatizados no Electron e revisão visual das capturas; sem partida manual completa, aparelho físico ou segundo PC. Publicação deve ser confirmada pelo commit e resultado do Actions antes de anunciar o download.
+
+---
+
+# Estado anterior — versão 1.5.1, 17/09/2026
 
 Base e1e18163f1a9383df964ef3fe8eada9ba54ef46b de main, AllanDanil0/ProjetoDungeon. Nova arma exclusiva da vitória contra Skarn: Lâmina do Zero Absoluto (`absolute`), a décima primeira do arsenal de gelo. Sete níveis, maior dano por pulso em todos os níveis, ataque automático em área e lentidão. Reutiliza dano periódico e limites de efeitos; arte Canvas própria com queda da espada, anéis, cristais e ondas. Não adiciona dependências ou arquivos de arte externos.
 

@@ -63,6 +63,8 @@ Isto não é autenticação segura de produção. Um usuário que controla um cl
 
 ## Ajustes e comandos
 
+Menus da versão 1.6: `src/ornate.css` é a apresentação dos seis menus; `assets/ornate` contém fundos e ornamentos. `src/menu-art.js` gera prévias reais em cache, restaurando mapa/canvas após renderizar. `tests/menus.cjs` valida centralização e acesso aos controles em três resoluções, além da animação de Aelthir. Os sprites de gameplay permanecem nos assets existentes.
+
 Balanceamento: `src/config.js` → characters, maps, enemies, weapons, combat, xp, economy, limits. Configurações de colisão ficam em maps.*.obstacles. Recortes dos quadros são explícitos em `makeHeroFrames`, em src/game.js.
 
 Instale dependências com `npm ci`; execute com `npm start`; desenvolvimento com `npm run dev`. Valide com `npm run check`, `npm test` e `npm run test:integration`. Compile com `npm run dist -- --publish never` e confira o pacote com `npm run verify:package`. Saída: dist/RUBRA-Windows-x64.exe. O teste de integração usa perfil próprio `.test-profile`, janela fora da tela e grava capturas e JSON em test-output/.

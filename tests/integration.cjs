@@ -40,6 +40,7 @@ await check('checkpoint after boss death before settlement recovers once',"run.b
 win.setSize(1360,960);await new Promise(r=>setTimeout(r,150));
 // Regressions from the supplied video: wait for queued focus callbacks, then hit-test real panels.
 await run("menu();$('menuControls').click()");await new Promise(r=>setTimeout(r,80));
+await shot('11-controls');
 await check('controls are visible above title screen and close correctly',"const b=$('closeHelp').getBoundingClientRect();const visible=state==='help'&&document.elementFromPoint(b.x+b.width/2,b.y+b.height/2)?.closest('#help');$('closeHelp').click();!!visible&&state==='menu'");await shot('12-centered-menu');
 await run("charactersScreen();document.querySelector('[data-character=noctis]').click()");await new Promise(r=>setTimeout(r,80));
 await check('Noctis selection and information survive asynchronous focus',"save.selectedCharacter==='noctis'&&document.activeElement.dataset.character==='noctis'&&$('characterInfo').querySelector('strong').textContent.startsWith('Noctis')");await shot('13-noctis-selected');
