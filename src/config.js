@@ -76,6 +76,7 @@ Object.assign(C.weapons,{
  glaive:iceWeapon({name:'Gume do inverno',description:'Uma lâmina ancestral corta na ida e na volta, deixando geada.',kind:'returning',damage:40,interval:2,range:320,speed:290,pierce:99,slow:.7,slowTime:1,color:'#d8f4ff',icon:'☽',unlockSeconds:120,unlock:'Sobreviva 120 segundos no Santuário ou compre Aelthir'}),
  blizzard:iceWeapon({name:'Cetro da nevasca',description:'Uma tempestade persistente causa pulsos de dano e lentidão.',kind:'storm',damage:18,interval:4,range:260,radius:64,duration:2.8,tick:.65,slow:.5,slowTime:1,color:'#b5cfff',icon:'✳',unlockSeconds:150,unlock:'Sobreviva 150 segundos no Santuário ou compre Vael'})
 });
+C.weapons.absolute=iceWeapon({name:'Lâmina do Zero Absoluto',description:'Relíquia de Skarn: uma espada rúnica invoca cristais que devastam uma grande área e retardam inimigos.',kind:'storm',damage:90,interval:3.2,range:400,radius:100,duration:2.8,tick:.5,slow:.35,slowTime:1.6,color:'#8df6ff',icon:'♜',unlock:'Derrote Skarn no Santuário do Inverno'});
 Object.assign(C.enemies,{
  frostguard:{name:'Legionário congelado',hp:90,damage:1,speed:42,xp:8,goldChance:.35,gold:4,r:13,behavior:'chase',asset:'frostguard',size:49},
  wraith:{name:'Espectro da geada',hp:75,damage:1,speed:53,xp:8,goldChance:.32,gold:4,r:12,behavior:'chase',asset:'wraith',size:52},
@@ -85,7 +86,7 @@ Object.assign(C.enemies,{
  frostlich:{name:'Arauto do inverno',hp:175,damage:2,speed:31,xp:16,goldChance:.5,gold:7,r:15,behavior:'ranged',asset:'frostlich',size:62,attackInterval:3},
  iceElite:{name:'Sentinela de cristal',hp:480,damage:2,speed:38,xp:34,goldChance:1,gold:22,r:25,behavior:'ranged',asset:'icegolem',size:82,ring:'#a8eaff',attackInterval:2.7}
 });
-C.maps.ice={name:'Santuário do Inverno',subtitle:'CAPÍTULO II',description:'Uma cruz de pedra sob neve e gelo. O portal de aurora guarda uma arena mais hostil.',duration:240,bossAt:240,finishOnBoss:true,unlock:'Derrote Morthar na Necrópole',spawn:{x:960,y:870},bounds:{x:150,y:180,w:1620,h:875},world:{width:1920,height:1180,spawnOuter:450,despawnDistance:1050},maxWeaponLevel:7,spawnInterval:1.1,minInterval:.3,enemyTierSeconds:30,eliteEvery:40,elite:'iceElite',enemies:['frostguard','wraith','icewolf','snowhulk','frostimp','frostlich'],weapons:['lance','ember','chain','reaper','frostbolt','halo','comet','prism','glaive','blizzard'],startWeapon:'lance',preview:'iceMap',boss:{name:'Skarn · Coração da Geleira',hp:4400,damage:2,speed:32,r:33,size:118,asset:'icegolem',gold:180,interval:3},obstacles:[
+C.maps.ice={name:'Santuário do Inverno',subtitle:'CAPÍTULO II',description:'Uma cruz de pedra sob neve e gelo. O portal de aurora guarda uma arena mais hostil.',duration:240,bossAt:240,finishOnBoss:true,unlock:'Derrote Morthar na Necrópole',spawn:{x:960,y:870},bounds:{x:150,y:180,w:1620,h:875},world:{width:1920,height:1180,spawnOuter:450,despawnDistance:1050},maxWeaponLevel:7,spawnInterval:1.1,minInterval:.3,enemyTierSeconds:30,eliteEvery:40,elite:'iceElite',enemies:['frostguard','wraith','icewolf','snowhulk','frostimp','frostlich'],weapons:['lance','ember','chain','reaper','frostbolt','halo','comet','prism','glaive','blizzard','absolute'],startWeapon:'lance',preview:'iceMap',boss:{name:'Skarn · Coração da Geleira',hp:4400,damage:2,speed:32,r:33,size:118,asset:'icegolem',gold:180,interval:3},obstacles:[
  {x:490,y:345,r:100,kind:'portal'}, {x:755,y:265,r:44,kind:'tree'}, {x:1430,y:300,r:58,kind:'tree'}, {x:1190,y:260,r:28,kind:'rune'}, {x:1550,y:390,r:30,kind:'rune'}, {x:1660,y:470,r:35,kind:'rune'}, {x:400,y:900,r:35,kind:'rune'}, {x:1625,y:850,r:35,kind:'rune'}, {x:460,y:1115,r:35,kind:'rune'}, {x:1305,y:1150,r:35,kind:'rune'}, {x:115,y:385,r:65,kind:'tree'}, {x:130,y:1010,r:75,kind:'tree'}, {x:1750,y:1065,r:60,kind:'tree'}
 ]};
 // Geometry above is authored against the reference image; scale the finite world together.
@@ -94,7 +95,7 @@ for(const key of ['width','height'])C.maps.ice.world[key]*=2;
 for(const key of ['x','y'])C.maps.ice.spawn[key]*=2;
 for(const key of ['x','y','w','h'])C.maps.ice.bounds[key]*=2;
 for(const obstacle of C.maps.ice.obstacles)for(const key of ['x','y','r'])obstacle[key]*=2;
-C.ice={inherited:['lance','ember','chain','reaper'],weapons:['frostbolt','halo','comet','prism','glaive','blizzard'],heroes:['nivor','vael','aelthir'],monsterCells:{frostguard:[0,0,355,260],wraith:[411,0,295,260],snowhulk:[709,0,244,260],icewolf:[0,511,375,257],frostimp:[953,0,220,260],frostlich:[405,511,300,257],icegolem:[710,511,242,257]}};
+C.ice={bossWeapon:'absolute',inherited:['lance','ember','chain','reaper'],weapons:['frostbolt','halo','comet','prism','glaive','blizzard'],heroes:['nivor','vael','aelthir'],monsterCells:{frostguard:[0,0,355,260],wraith:[411,0,295,260],snowhulk:[709,0,244,260],icewolf:[0,511,375,257],frostimp:[953,0,220,260],frostlich:[405,511,300,257],icegolem:[710,511,242,257]}};
 Object.assign(C.assets,{iceMap:'assets/ice/ice-map.png',iceMonsters:'assets/ice/monsters.jpg',nivorSheet:'assets/ice/nivor-sheet.png',vaelSheet:'assets/ice/vael-sheet.png',aelthirSheet:'assets/ice/aelthir-sheet.png'});
 
 root.RubraConfig=C;if(typeof module!=='undefined')module.exports=C;

@@ -1,5 +1,13 @@
 # Atualização 1.5 — Santuário do Inverno
 
+## Complemento 1.5.1 — Relíquia de Skarn
+
+A **Lâmina do Zero Absoluto** é a décima primeira arma do gelo, exclusiva da vitória contra Skarn (ou desbloqueio explícito no Laboratório). Vitórias registradas antes desta versão recebem a arma na migração, sem gastar ouro. Ao vencer, a tela de resultados anuncia a recompensa; a arma entra nas opções de evolução das próximas partidas. Não é equipada automaticamente nem substitui outras armas. Reset do Laboratório remove o desbloqueio junto da conclusão do mapa.
+
+Espada rúnica de cristal, guarda violeta e núcleo branco, queda animada, dois círculos rúnicos, cristais orbitais, ondas e fragmentos. Arte Canvas original compartilhada com HUD e ofertas; nenhum asset provisório. Reutiliza o sistema de dano periódico em área: 90 de dano base por pulso, pulsos a cada 0,5 s, duração 2,8 s, intervalo 3,2 s, alcance 400 e raio 100. Lentidão de 65% por 1,6 s; bosses mantêm sua resistência. Sete níveis, modificadores globais e seis espaços preservados. Maior dano por pulso do arsenal em todos os níveis e grande cobertura; balanceamento editável em `C.weapons.absolute`.
+
+Configuração e desbloqueios em `src/config.js`/`src/core.js`; arte em `src/weapon-art.js`; anúncio em `src/game.js`. Demais seções abaixo descrevem a base 1.5.
+
 Derrotar Morthar na Necrópole libera o Santuário do Inverno e Nivor. Saves que já registravam essa vitória recebem o capítulo automaticamente. Ouro e progresso existentes são preservados.
 
 ## Mapa e personagens

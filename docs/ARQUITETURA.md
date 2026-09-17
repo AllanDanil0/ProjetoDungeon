@@ -1,6 +1,6 @@
 # The night is yours — arquitetura e continuidade
 
-**Versão atual 1.5:** leia [ATUALIZACAO-1.5.md](ATUALIZACAO-1.5.md) para o capítulo de gelo, três novos heróis e arsenal de dez armas no mapa.
+**Versão atual 1.5.1:** leia [ATUALIZACAO-1.5.md](ATUALIZACAO-1.5.md) para o capítulo de gelo, três novos heróis e arsenal de onze armas no mapa, incluindo a relíquia desbloqueada ao vencer Skarn.
 
 **Versão 1.4:** leia [ATUALIZACAO-1.4.md](ATUALIZACAO-1.4.md) para Ignivar, compra por ouro, áudio, nove armas e limites 6/7. As seções anteriores abaixo são histórico.
 

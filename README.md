@@ -1,6 +1,6 @@
 # The night is yours
 
-Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. Versão 1.5: campanha tutorial → Necrópole → Santuário do Inverno, seis personagens, quinze armas no catálogo e Laboratório opcional com save separado. [Novidades e balanceamento](docs/ATUALIZACAO-1.5.md).
+Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. Versão 1.5.1: campanha tutorial → Necrópole → Santuário do Inverno, seis personagens, dezesseis armas no catálogo e Laboratório opcional com save separado. [Novidades e balanceamento](docs/ATUALIZACAO-1.5.md).
 
 [Baixar o executável mais recente](https://github.com/AllanDanil0/ProjetoDungeon/releases/latest/download/RUBRA-Windows-x64.exe)
 
@@ -9,6 +9,8 @@ Abra o arquivo com dois cliques. Não é necessário instalar Node.js nem ter in
 O executável não tem assinatura digital de editor.
 
 ## Novidades e desbloqueios
+
+Derrote Skarn no Santuário do Inverno para liberar a **Lâmina do Zero Absoluto**, a arma mais poderosa do gelo. Quem já concluiu o mapa recebe a relíquia automaticamente ao carregar o save. O arsenal do gelo passa a onze armas.
 
 Novos saves começam com **Rubra e o Bosque Esquecido**. Derrote Vhalkar no tutorial para liberar **Noctis e a Necrópole Carmesim**. O tutorial usa Lâmina ancestral e Estilhaço do bosque (30 segundos); as demais armas são liberadas para a Necrópole. Saves da versão anterior preservam o conteúdo já disponível e o progresso.
 

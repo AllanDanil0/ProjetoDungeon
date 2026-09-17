@@ -1,3 +1,13 @@
+# Estado atual — versão 1.5.1, 17/09/2026
+
+Base e1e18163f1a9383df964ef3fe8eada9ba54ef46b de main, AllanDanil0/ProjetoDungeon. Nova arma exclusiva da vitória contra Skarn: Lâmina do Zero Absoluto (`absolute`), a décima primeira do arsenal de gelo. Sete níveis, maior dano por pulso em todos os níveis, ataque automático em área e lentidão. Reutiliza dano periódico e limites de efeitos; arte Canvas própria com queda da espada, anéis, cristais e ondas. Não adiciona dependências ou arquivos de arte externos.
+
+Vitória concede uma vez e anuncia na tela de resultados. Conclusões antigas em completedMaps recebem a arma ao carregar; sobreviver sem matar Skarn não concede. Laboratório permite desbloqueio explícito e reset; campanha segue isolada. Ouro preservado. Configuração em src/config.js, desbloqueio/migração em src/core.js, visual em src/weapon-art.js, anúncio em src/game.js. Detalhes no complemento de ATUALIZACAO-1.5.md.
+
+Verificações executadas com sucesso: npm run check; npm test (31 testes); npm run test:integration (62 verificações, zero erros de renderer); npm run dist -- --publish never --config.compression=store; npm run verify:package; npm run test:integration -- --packaged (62 verificações, zero erros). Captura skarn-relic.png inspecionada com ícone e três momentos do efeito. Diff conferido. Sem partida manual completa ou benchmark prolongado. Fetch não encontrou alterações concorrentes.
+
+---
+
 # Estado atual — versão 1.5, 17/09/2026
 
 Base: 73626c1c93124314c71e73c286f2c823fdd1d9f8, main de AllanDanil0/ProjetoDungeon. Cópia de trabalho Documentos/teste/dungeon-update; remote confirmado. Fetch antes da publicação não encontrou alterações concorrentes.
