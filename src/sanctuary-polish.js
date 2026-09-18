@@ -13,12 +13,18 @@ const RubraSanctuary=(()=>{
  function hero(q,id,base,t,o={}){
   q.save();if(!o.menu){q.translate(o.x,o.y+3);q.scale((o.flip?-1:1)*o.height/64,o.height/64);q.translate(-32,-64);}q.imageSmoothingEnabled=false;
   if(o.menu&&!o.on){q.drawImage(base,0,0);q.restore();return;}
-  const phase=t*(id==='karn'?2.1:id==='malthor'?3:4),walk=o.moving?Math.sin(phase*3):0,attack=o.menu?Math.pow(Math.max(0,Math.sin(t*1.4)),8):Math.sin(Math.min(1,(o.attack||0)/.55)*Math.PI),sway=Math.sin(phase)*.45;
+  const phase=t*(id==='karn'?2.1:id==='malthor'?3:4),cycle=(t/(id==='karn'?3.8:id==='malthor'?3.1:2.8))%1;
+  const attack=o.menu?Math.pow(Math.max(0,Math.sin(cycle*Math.PI*2)),4):Math.sin(Math.min(1,(o.attack||0)/.55)*Math.PI);
+  const walk=(o.moving||o.menu)?Math.sin(phase*(o.menu?1.3:3))*(id==='karn'?1.5:2.3):0,sway=Math.sin(phase)*.65;
+  // Weight transfer, alternating feet and a separate upper-body gesture, anchored at the hips.
+  q.translate(o.menu?Math.sin(phase*.5)*(id==='vespera'?3.5:id==='malthor'?2.5:1.2):0,o.menu&&id==='vespera'?-Math.abs(Math.sin(phase*.5))*1.5:0);
+  q.save();q.translate(32,48);q.rotate((id==='karn'?-1:1)*attack*(id==='vespera'?.07:.035));q.translate(-32,-48);
   // Legs have independent contact phases; torso breathes without stretching the face.
-  q.drawImage(base,0,49,32,15,0,49+walk,32,15);q.drawImage(base,32,49,32,15,32,49-walk,32,15);
+  q.drawImage(base,0,47,32,17,walk*.35,47-Math.max(0,walk),32,17);q.drawImage(base,32,47,32,17,32-walk*.35,47-Math.max(0,-walk),32,17);
   const arm=id==='karn'?{x:0,y:16,w:27,h:27,px:26,py:35}:id==='malthor'?{x:40,y:30,w:24,h:19,px:41,py:32}:{x:42,y:33,w:22,h:16,px:43,py:35};
   q.save();q.translate(0,sway);q.beginPath();q.rect(0,0,64,49);q.rect(arm.x,arm.y,arm.w,arm.h);q.clip('evenodd');q.drawImage(base,0,0);q.restore();
-  q.save();q.translate(arm.px,arm.py+sway);q.rotate(id==='karn'?-attack*.12:id==='malthor'?attack*.14:Math.sin(phase)*.065);q.drawImage(base,arm.x,arm.y,arm.w,arm.h,arm.x-arm.px,arm.y-arm.py,arm.w,arm.h);q.restore();
+  q.save();q.translate(arm.px,arm.py+sway);q.rotate(id==='karn'?-attack*.34:id==='malthor'?-attack*.38:Math.sin(phase)*.24);q.drawImage(base,arm.x,arm.y,arm.w,arm.h,arm.x-arm.px,arm.y-arm.py,arm.w,arm.h);q.restore();
+  q.restore();
   q.globalAlpha=.65;q.lineWidth=.7;
   if(id==='karn'){q.strokeStyle='#dc9573';q.beginPath();q.ellipse(32,59,12+attack*9,2+attack*2,0,0,Math.PI*2);q.stroke();if(attack>.2){q.globalAlpha=attack*.45;q.strokeStyle='#f0aaa0';q.beginPath();q.arc(27,34,24,3.3-attack*.3,4.6-attack*.3);q.stroke();}}
   else if(id==='malthor'){q.strokeStyle='#cf365e';q.beginPath();q.moveTo(48,40);for(let j=1;j<=16;j++){const u=j/16;q.lineTo(48+Math.sin(u*5+phase)*u*10,40-u*(12+attack*17));}q.stroke();for(let j=0;j<4;j++){q.fillStyle='#ed758b';q.fillRect(47+Math.sin(phase+j)*8,24+j*5,1,1);}}

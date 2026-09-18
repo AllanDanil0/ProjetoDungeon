@@ -32,7 +32,11 @@ Object.assign(C.assets,{bloodwhipClean:'assets/profane/bloodwhip-clean.png',prof
 C.profane.braziers=[[114,165],[1421,165],[661,296],[875,296],[413,411],[1122,407],[413,585],[1122,585],[661,692],[875,692],[102,881],[1435,881]].map(([x,y])=>({x,y,flameY:y-22}));
 C.profane.pillars=[[46,137,26,17,111],[232,145,28,18,122],[451,137,28,18,117],[666,147,29,20,131],[871,142,29,20,129],[1085,145,28,19,123],[1305,143,29,19,128],[1488,144,28,18,118],[520,223,25,17,98],[1010,223,26,18,99],[428,310,25,18,103],[1106,311,28,18,101],[472,409,26,19,84],[1064,411,27,19,87],[472,650,27,20,99],[1064,650,27,20,100],[127,771,26,19,98],[435,778,28,20,106],[1107,778,28,20,109],[560,861,27,20,83],[896,898,27,20,98],[976,862,27,20,89],[640,914,28,20,99],[45,986,29,20,103],[354,985,29,20,100],[526,952,29,20,96],[702,986,28,20,93],[832,986,28,20,93],[1040,951,29,20,93],[1204,984,29,20,98],[1487,985,29,20,101],[30,319,22,21,106],[1504,317,22,21,106],[30,518,22,23,97],[1501,518,22,23,95],[31,817,24,22,107],[1501,816,24,22,110]];
 const box=(x,y,w,h,kind)=>({x:x*2.5,y:y*2.5,w:w*2.5,h:h*2.5,shape:'rect',r:0,kind});
-C.maps.profane.obstacles=[box(729,452,80,66,'altar'),...C.profane.pillars.map(([x,y,rx,ry])=>box(x-rx,y-ry,rx*2,ry*2,'pillar')),...C.profane.braziers.map(({x,y})=>box(x-19,y-8,38,29,'brazier'))];
+C.maps.profane.obstacles=[box(729,452,80,66,'altar'),...C.profane.pillars.map(([x,y,rx,ry,height])=>box(x-rx,y-height,rx*2,height+ry,'pillar')),...C.profane.braziers.map(({x,y})=>box(x-19,y-8,38,29,'brazier'))];
+// Solid masonry follows the projected silhouette; loose floor stones remain walkable.
+C.profane.walls=[[0,0,1536,145],[0,145,76,879],[1460,145,76,879],[76,210,78,111],[76,421,78,132],[76,650,91,134],[1379,213,81,115],[1381,422,79,133],[1379,652,81,132],[76,900,651,124],[809,900,651,124],[727,1000,82,24]];
+C.maps.profane.obstacles.push(...C.profane.walls.map(v=>box(...v,'wall')));
+C.maps.profane.bounds={x:190,y:365,w:3460,h:2135};
 // Explicit chapter progression: ordinary weapons at equal levels always advance.
 C.balance={bossWeapons:['lance','absolute','verdict'],tiers:[['acorn','blade'],['dagger','ember','thorns','cinder','chain','reaper'],C.ice.weapons,C.profane.weapons]};
 const damage={dagger:28,ember:42,thorns:28,cinder:36,chain:32,reaper:40,lance:70,frostbolt:52,halo:54,comet:78,prism:68,glaive:72,blizzard:56,absolute:150,execution:180,bloodwhip:118,rosary:104,censer:100,knell:175,nails:112,heresy:124,verdict:240};
@@ -50,8 +54,14 @@ for(const [id,hp]of Object.entries(durability))C.enemies[id].hp=hp;
 for(const [id,speed]of Object.entries({fanatic:42,templeHound:104,ethereal:62,flesh:35,zealot:72,fallenSeraph:45,fallenKnight:50,profaneGargoyle:46})){C.enemies[id].speed=speed;C.enemies[id].damage=['flesh','fallenKnight','profaneGargoyle'].includes(id)?3:2;}
 C.enemies.fallenSeraph.attackInterval=2.7;C.enemies.profaneGargoyle.attackInterval=3;
 C.maps.necropolis.boss.hp=6000;C.maps.ice.boss.hp=16000;
-Object.assign(C.maps.profane.boss,{hp:78000,damage:3,speed:32,interval:2.8,projectileSpeed:90});
-C.maps.profane.waves.forEach((w,i)=>w.interval=[1.2,.8,.5,.3][i]);
+Object.assign(C.maps.profane.boss,{hp:320000,damage:4,speed:58,interval:2.25,projectileSpeed:110});
+C.maps.profane.waves.forEach((w,i)=>w.interval=[.95,.62,.39,.25][i]);
+// Raise encounter pressure without reducing the purchased heroes' advantages.
+for(const id of ['fanatic','templeHound','ethereal','flesh','zealot','fallenSeraph','fallenKnight'])C.enemies[id].hp=Math.round(C.enemies[id].hp*1.55);
+C.enemies.profaneGargoyle.hp=34000;
+C.enemies.fallenSeraph.attackInterval=2.1;
+C.maps.profane.waves[2].pool.push('fallenSeraph');
+C.maps.profane.waves[3].pool.push('fallenSeraph','templeHound');
 C.assets.absoluteArt='assets/profane/absolute-v2.png';
 if(typeof module!=='undefined')module.exports=C;
 })(typeof RubraConfig!=='undefined'?RubraConfig:module.exports);

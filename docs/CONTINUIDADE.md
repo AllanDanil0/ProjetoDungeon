@@ -1,4 +1,10 @@
-# Estado atual — correção 1.9.1, 18/09/2026
+# Estado atual — versão 1.10, 18/09/2026
+
+Base 45c2968 (1.9.1). Colisões de colunas e paredes revistas mantendo arte intacta; Profano mais difícil com chefe reforçado, rajadas direcionadas e reforços; animações de movimento dos três heróis; painel persistente de informações; pausa/evolução ornamentadas e dano das escolhas; setas duplicadas removidas. Detalhes e limites em ATUALIZACAO-1.10.md. Verificação local concluída: check, 36 testes de regras, 62 de integração, 25 de menus, 11 do Profano, 12 de refinamento, 20 de resultados, 13 de inicialização e 16 da nova suíte. Build 1.10.0 gerado e verify:package aprovado. Suítes update (16) e boot (13) repetidas no ASAR. Portátil real passou em 11 verificações, incluindo pausa e evolução por clique. Capturas em três resoluções, sprites e sobreposição de colisões inspecionados. Arte do mapa mantém SHA256 original. Aguardando publicação e teste do download público.
+
+---
+
+# Estado anterior — correção 1.9.1, 18/09/2026
 
 Falha da versão pública 1.9 reproduzida no EXE baixado: campanha com Santuário Profano selecionado construía o cenário antes de carregar imagens, interrompendo a inicialização e deixando Jogar/Arsenal desabilitados e retratos ausentes. Detalhes e evidências em CORRECAO-1.9.1.md. Corrigida a ordem de preparação e acrescentados erro explícito e nova tentativa de carregamento. Saves existentes preservados.
 

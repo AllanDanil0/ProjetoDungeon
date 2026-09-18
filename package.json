@@ -1,7 +1,7 @@
 {
   "name": "rubra-a-ultima-lamina",
   "productName": "The night is yours",
-  "version": "1.9.1",
+  "version": "1.10.0",
   "description": "The night is yours: jogo offline para Windows",
   "author": "RUBRA",
   "private": true,
@@ -19,7 +19,8 @@
     "test:sanctuary": "electron tests/sanctuary.cjs",
     "test:results": "electron tests/results.cjs",
     "test:boot": "electron tests/boot.cjs",
-    "test:portable": "node tests/portable.cjs"
+    "test:portable": "node tests/portable.cjs",
+    "test:update": "electron tests/update-110.cjs"
   },
   "build": {
     "appId": "local.rubra.game",

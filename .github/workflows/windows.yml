@@ -39,6 +39,8 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           npm run test:results
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          npm run test:update
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           npm run test:boot
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Gerar executavel
