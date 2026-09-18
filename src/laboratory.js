@@ -10,7 +10,7 @@ function switchProfile(next){
  menu();return true;
 }
 function laboratoryScreen(){
- if(!switchProfile('laboratory'))return;screen('laboratory');$('labItems').replaceChildren();
+ if(!switchProfile('laboratory'))return;$('labPlay').disabled=!assetReady;screen('laboratory');$('labItems').replaceChildren();
  for(const [type,title]of [['characters','Personagens'],['maps','Mapas'],['weapons','Armas']]){
   const field=document.createElement('fieldset'),legend=document.createElement('legend');legend.textContent=title;field.append(legend);
   for(const [id,item]of Object.entries(C[type])){const label=document.createElement('label'),input=document.createElement('input');input.type='checkbox';input.dataset.kind=type;input.value=id;input.disabled=save[type].includes(id);input.checked=input.disabled;label.append(input,document.createTextNode(item.name+(input.disabled?' · liberado':'')));field.append(label);}

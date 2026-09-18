@@ -1,4 +1,12 @@
-# Estado atual — versão 1.9, 18/09/2026
+# Estado atual — correção 1.9.1, 18/09/2026
+
+Falha da versão pública 1.9 reproduzida no EXE baixado: campanha com Santuário Profano selecionado construía o cenário antes de carregar imagens, interrompendo a inicialização e deixando Jogar/Arsenal desabilitados e retratos ausentes. Detalhes e evidências em CORRECAO-1.9.1.md. Corrigida a ordem de preparação e acrescentados erro explícito e nova tentativa de carregamento. Saves existentes preservados.
+
+Verificado localmente: check, 36 testes unitários, integração (62), menus (25), Profano (11), refinamento (12), telas finais (20), inicialização (13). Build 1.9.1 e verify:package aprovados. Inicialização repetida no ASAR (13); executável portátil real aberto e reaberto com perfil isolado, cliques em Jogar/Arsenal/Laboratório, retratos, combate, derrota e reinício (8 verificações, nenhum erro). Pipeline exige testar o EXE antes de publicar. Publicação e verificação do download público ainda pendentes neste registro.
+
+---
+
+# Estado anterior — versão 1.9, 18/09/2026
 
 Base: 1ea5ce8, main sem alterações concorrentes no fetch. Atualização de física, animações e progressão concluída; detalhes em ATUALIZACAO-1.9.md e prompt em PROMPTS-1.9.md. A imagem do Santuário Profano foi preservada byte a byte. Colisões nas bases de 37 pilares, 12 braseiros e altar; movimento e projéteis sem atravessar estruturas; checkpoints reposicionados preservando vida, ouro e mini-chefes. Doze fogos animados; poses dos três personagens preservadas e animadas por partes; Lâmina do Zero Absoluto com novo PNG transparente e efeito glacial. Progressão de dano normal e personagens pagos verificada. Pedido adicional atendido: seta dourada nos botões vermelhos ornamentados, sem alterar botões comuns.
 

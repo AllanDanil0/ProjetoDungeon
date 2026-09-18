@@ -1,6 +1,8 @@
 # The night is yours — arquitetura e continuidade
 
-**Versão atual 1.8:** leia [ATUALIZACAO-1.8.md](ATUALIZACAO-1.8.md) para o Santuário Profano e sua progressão.
+**Versão atual 1.9.1:** leia [CORRECAO-1.9.1.md](CORRECAO-1.9.1.md) para inicialização segura e testes do executável real, e [ATUALIZACAO-1.9.md](ATUALIZACAO-1.9.md) para física, animações e telas finais.
+
+**Versão 1.8:** leia [ATUALIZACAO-1.8.md](ATUALIZACAO-1.8.md) para o Santuário Profano e sua progressão.
 
 **Versão 1.7:** leia [ATUALIZACAO-1.7.md](ATUALIZACAO-1.7.md) para armas por personagem, Arsenal, áudio e ajustes dos menus.
 

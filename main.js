@@ -3,7 +3,11 @@ const path = require('node:path');
 
 app.setName('The night is yours');
 // A stable location preserves the original localStorage record between launches.
-app.setPath('userData', path.join(app.getPath('appData'), 'RUBRA'));
+// Honor Electron's standard profile-directory switch; normal launches keep RUBRA.
+// Distribution smoke tests use an isolated directory, never the player's save.
+const profileDirectory = app.commandLine.getSwitchValue('user-data-dir');
+app.setPath('userData', profileDirectory && path.isAbsolute(profileDirectory)
+  ? profileDirectory : path.join(app.getPath('appData'), 'RUBRA'));
 const gotLock = app.requestSingleInstanceLock();
 let window;
 if (!gotLock) app.quit();
