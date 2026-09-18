@@ -11,3 +11,5 @@
 - Antes de publicar execute npm run check, npm test, npm run test:integration, npm run dist -- --publish never e npm run verify:package.
 - Atualize docs/CONTINUIDADE.md com alterações, decisões, verificações reais e limitações.
 - Não coloque credenciais ou saves de testes no Git. Use os perfis separados configurados.
+
+- Novas armas devem manter o nível de detalhe das relíquias do Santuário Profano: metal, runas, materiais, silhueta legível e fundo realmente transparente. Validar recortes no jogo sobre fundo escuro.

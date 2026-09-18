@@ -1,4 +1,14 @@
-# Estado atual — versão 1.8, 18/09/2026
+# Estado atual — versão 1.9, 18/09/2026
+
+Base: 1ea5ce8, main sem alterações concorrentes no fetch. Atualização de física, animações e progressão concluída; detalhes em ATUALIZACAO-1.9.md e prompt em PROMPTS-1.9.md. A imagem do Santuário Profano foi preservada byte a byte. Colisões nas bases de 37 pilares, 12 braseiros e altar; movimento e projéteis sem atravessar estruturas; checkpoints reposicionados preservando vida, ouro e mini-chefes. Doze fogos animados; poses dos três personagens preservadas e animadas por partes; Lâmina do Zero Absoluto com novo PNG transparente e efeito glacial. Progressão de dano normal e personagens pagos verificada. Pedido adicional atendido: seta dourada nos botões vermelhos ornamentados, sem alterar botões comuns.
+
+Validação: check e 36 testes unitários aprovados; integração geral, 25 verificações de menus, 11 do capítulo e 12 específicas desta atualização aprovadas na fonte. Integração geral e testes específicos repetidos no ASAR antes do ajuste exclusivamente visual da seta; após reconstruir, verify:package confirmou todos os arquivos finais idênticos à fonte, e menus e capítulo foram novamente aprovados no pacote. Capturas dos recortes, efeitos, colisores e botão inspecionadas. Hash do executável local 1.9: 3A5C78B298E93AA565C20E3E8AB7B3C0B5A07B38C1E2CF86D999B44592AFEA1A. Publicação remota ainda pendente neste registro.
+
+Limitações: dificuldade ajustada por parâmetros e testes automatizados; simulação de dez minutos usa invulnerabilidade para verificar estabilidade e eventos. Não houve partida humana completa de balanceamento. Animações utilizam transformações da pose original, não novas folhas direcionais. Nenhum save real foi alterado.
+
+---
+
+# Estado anterior — versão 1.8, 18/09/2026
 
 Base: 3fd2d90 de main em AllanDanil0/ProjetoDungeon, clone Documentos/teste/dungeon-update. Fetch antes da publicação não encontrou alterações concorrentes. A versão 1.7 anterior está publicada em windows-10-1.
 

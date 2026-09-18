@@ -35,6 +35,8 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           npm run test:profane
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          npm run test:sanctuary
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Gerar executavel
         run: npm run dist -- --publish never
         env:

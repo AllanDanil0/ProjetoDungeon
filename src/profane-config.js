@@ -28,5 +28,30 @@ Object.assign(C.enemies,{
 });
 C.maps.profane={name:'Santuário Profano',subtitle:'CAPÍTULO III',description:'Claustros arruinados, colunas e fogo espectral. Quatro ondas; Inquisidor aos 9 minutos.',duration:600,bossAt:540,finishOnBoss:true,unlock:'Derrote Skarn no Santuário do Inverno',spawn:{x:1920,y:1910},bounds:{x:200,y:260,w:3440,h:2100},world:{width:3840,height:2560,spawnOuter:470,despawnDistance:1100},maxWeaponLevel:7,spawnInterval:1.4,minInterval:.36,enemies:['fanatic','templeHound'],weapons:[...C.profane.inherited,...C.profane.weapons,'verdict'],startWeapon:'execution',preview:'profaneMap',boss:{name:'O Inquisidor Esquecido',hp:13500,damage:2,speed:25,r:32,size:112,asset:'inquisitor',gold:320,interval:3.6},obstacles:[{x:1920,y:1260,r:70,kind:'altar'},...[[430,310],[520,220],[470,405],[475,650],[435,760],[560,876],[648,905],[1105,308],[1015,220],[1062,405],[1062,650],[1105,770],[900,870]].map(([x,y])=>({x:x*2.5,y:y*2.5,r:36,kind:'pillar'}))],waves:[{at:0,name:'Onda 1 · O limiar',interval:1.4,pool:['fanatic','fanatic','templeHound']},{at:150,name:'Onda 2 · Vozes entre pilares',interval:.95,pool:['fanatic','templeHound','ethereal']},{at:300,name:'Onda 3 · Carne e penitência',interval:.62,pool:['zealot','zealot','flesh','ethereal','templeHound']},{at:450,name:'Onda 4 · A última liturgia',interval:.36,pool:['zealot','zealot','fallenSeraph','flesh','fallenKnight','ethereal']}]};
 Object.assign(C.assets,{bloodwhipClean:'assets/profane/bloodwhip-clean.png',profaneRelics:'assets/profane/relics.png',profaneMap:'assets/profane/map.png',profaneExtras:'assets/profane/extra-mobs.png',profaneMonsters1:'assets/profane/monsters-1.jpg',profaneMonsters2:'assets/profane/monsters-2.jpg',karnPortrait:'assets/profane/karn.jpg',malthorPortrait:'assets/profane/malthor.jpg',vesperaPortrait:'assets/profane/vespera.jpg',executionArt:'assets/profane/execution.jpg',bloodwhipArt:'assets/profane/bloodwhip.jpg',rosaryArt:'assets/profane/rosary.jpg'});
+// Authored in the unchanged 1536×1024 sanctuary artwork, then scaled to world space.
+C.profane.braziers=[[114,165],[1421,165],[661,296],[875,296],[413,411],[1122,407],[413,585],[1122,585],[661,692],[875,692],[102,881],[1435,881]].map(([x,y])=>({x,y,flameY:y-22}));
+C.profane.pillars=[[46,137,26,17,111],[232,145,28,18,122],[451,137,28,18,117],[666,147,29,20,131],[871,142,29,20,129],[1085,145,28,19,123],[1305,143,29,19,128],[1488,144,28,18,118],[520,223,25,17,98],[1010,223,26,18,99],[428,310,25,18,103],[1106,311,28,18,101],[472,409,26,19,84],[1064,411,27,19,87],[472,650,27,20,99],[1064,650,27,20,100],[127,771,26,19,98],[435,778,28,20,106],[1107,778,28,20,109],[560,861,27,20,83],[896,898,27,20,98],[976,862,27,20,89],[640,914,28,20,99],[45,986,29,20,103],[354,985,29,20,100],[526,952,29,20,96],[702,986,28,20,93],[832,986,28,20,93],[1040,951,29,20,93],[1204,984,29,20,98],[1487,985,29,20,101],[30,319,22,21,106],[1504,317,22,21,106],[30,518,22,23,97],[1501,518,22,23,95],[31,817,24,22,107],[1501,816,24,22,110]];
+const box=(x,y,w,h,kind)=>({x:x*2.5,y:y*2.5,w:w*2.5,h:h*2.5,shape:'rect',r:0,kind});
+C.maps.profane.obstacles=[box(729,452,80,66,'altar'),...C.profane.pillars.map(([x,y,rx,ry])=>box(x-rx,y-ry,rx*2,ry*2,'pillar')),...C.profane.braziers.map(({x,y})=>box(x-19,y-8,38,29,'brazier'))];
+// Explicit chapter progression: ordinary weapons at equal levels always advance.
+C.balance={bossWeapons:['lance','absolute','verdict'],tiers:[['acorn','blade'],['dagger','ember','thorns','cinder','chain','reaper'],C.ice.weapons,C.profane.weapons]};
+const damage={dagger:28,ember:42,thorns:28,cinder:36,chain:32,reaper:40,lance:70,frostbolt:52,halo:54,comet:78,prism:68,glaive:72,blizzard:56,absolute:150,execution:180,bloodwhip:118,rosary:104,censer:100,knell:175,nails:112,heresy:124,verdict:240};
+for(const [id,value]of Object.entries(damage))C.weapons[id].damage=value;
+C.weapons.knell.interval=2.2;C.weapons.heresy.interval=1.45;
+const heroBalance={ignivar:{hp:7,speed:158},vael:{hp:8,speed:164,damage:1.4,attackSpeed:1.16,range:1.08,dashCooldown:2},aelthir:{hp:9,speed:174,damage:1.6,attackSpeed:1.3,range:1.12,dashCooldown:1.8},karn:{damage:1.75,attackSpeed:.95},malthor:{hp:11,speed:182,damage:1.85,attackSpeed:1.5,range:1.16,dashCooldown:1.65},vespera:{hp:12,speed:192,damage:2.05,attackSpeed:1.85,range:1.22,dashCooldown:1.4}};
+for(const [id,values]of Object.entries(heroBalance))Object.assign(C.characters[id],values);
+C.characters.vael.passive='Inverno eterno · +40% de dano, +16% de cadência; dash glacial de 44 de dano base.';
+C.characters.aelthir.passive='Coração glacial · +60% de dano, +30% de cadência; dash de 54 de dano base.';
+C.characters.karn.passive='Execução · +75% de dano; arco frontal pesado empurra ameaças. Mais vida, menor mobilidade.';
+C.characters.malthor.passive='Herança sombria · +85% de dano e +50% de cadência; acertos acumulam até +50% de alcance, dissipando após 4 s.';
+C.characters.vespera.passive='Devoção veloz · +105% de dano, +85% de cadência, maior mobilidade e esquiva a cada 1,4 s.';
+const durability={undead:80,stalker:52,brute:220,caster:110,elite:480,frostguard:280,wraith:220,snowhulk:900,icewolf:180,frostimp:300,frostlich:550,iceElite:1500,fanatic:550,templeHound:380,ethereal:700,flesh:2600,zealot:850,fallenSeraph:1550,fallenKnight:1900,profaneGargoyle:20000};
+for(const [id,hp]of Object.entries(durability))C.enemies[id].hp=hp;
+for(const [id,speed]of Object.entries({fanatic:42,templeHound:104,ethereal:62,flesh:35,zealot:72,fallenSeraph:45,fallenKnight:50,profaneGargoyle:46})){C.enemies[id].speed=speed;C.enemies[id].damage=['flesh','fallenKnight','profaneGargoyle'].includes(id)?3:2;}
+C.enemies.fallenSeraph.attackInterval=2.7;C.enemies.profaneGargoyle.attackInterval=3;
+C.maps.necropolis.boss.hp=6000;C.maps.ice.boss.hp=16000;
+Object.assign(C.maps.profane.boss,{hp:78000,damage:3,speed:32,interval:2.8,projectileSpeed:90});
+C.maps.profane.waves.forEach((w,i)=>w.interval=[1.2,.8,.5,.3][i]);
+C.assets.absoluteArt='assets/profane/absolute-v2.png';
 if(typeof module!=='undefined')module.exports=C;
 })(typeof RubraConfig!=='undefined'?RubraConfig:module.exports);
