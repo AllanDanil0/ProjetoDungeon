@@ -1,3 +1,15 @@
+# Estado atual — versão 1.8, 18/09/2026
+
+Base: 3fd2d90 de main em AllanDanil0/ProjetoDungeon, clone Documentos/teste/dungeon-update. Fetch antes da publicação não encontrou alterações concorrentes. A versão 1.7 anterior está publicada em windows-10-1.
+
+Implementado: Santuário Profano 3840×2560 após Skarn; Karn gratuito, Malthor 1500 e Vespera 2000; sete armas novas mais Édito do Inquisidor e três herdadas do gelo. Quatro ondas, Gárgula única em 4:30, Inquisidor em 9:00 com invocações e projéteis lentos. Música original sintetizada Liturgia das cinzas. Compras, Arsenal, laboratório, mapas e checkpoints integrados. Mundo ligeiramente maior que o gelo. Detalhes em ATUALIZACAO-1.8.md.
+
+Arte: originais fornecidos preservados; recortes Canvas de personagens e monstros; mapa, Cães, Seraphs e cinco relíquias adicionais por ImageGen. Após pedido adicional, chicote foi preparado novamente para remover o halo claro do JPEG; chroma verde não aparece no jogo. Rosário recortado diretamente do original, sem quadriculado interno; crucifixo separado para a órbita e contas vermelhas ao redor de Vespera. Capturas ampliadas de ambos sobre fundo escuro inspecionadas. Personagens novos usam a pose original animada por transformações, sem inventar novas folhas direcionais. Prompts e referências em PROMPTS-1.8.md.
+
+Validação da fonte: check, 36 testes unitários, 62 verificações de integração, 25 de menus e 11 do novo capítulo. Build 1.8 gerado; verify:package aprovado. As 62 verificações de integração, 25 de menus e 11 do novo capítulo foram repetidas no ASAR final, todas aprovadas sem erros. SHA256 do portátil local: 35935C01C013E591A104EFBCE74EEC92CE130D0BAC01DD862314F5B304CBFAD7. Menus desktop/retrato e folhas de assets inspecionados. A simulação de dez minutos usa invulnerabilidade para verificar eventos e limites; não equivale a teste humano de balanceamento. Sem partida manual completa ou avaliação auditiva humana. Não anunciar publicação até confirmar Actions e Release do commit.
+
+---
+
 # Estado atual — versão 1.7, 17/09/2026
 
 Base publicada: eb7a08961c0693ba12c78f5c78802b482fe8044d, Release windows-9-2 (versão 1.6), Actions concluído com sucesso. Implementação enviada no commit ecd90d7. Fetch não encontrou alterações concorrentes.

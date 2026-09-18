@@ -98,5 +98,5 @@ for(const obstacle of C.maps.ice.obstacles)for(const key of ['x','y','r'])obstac
 C.ice={bossWeapon:'absolute',inherited:['lance','ember','chain','reaper'],weapons:['frostbolt','halo','comet','prism','glaive','blizzard'],heroes:['nivor','vael','aelthir'],monsterCells:{frostguard:[0,0,355,260],wraith:[411,0,295,260],snowhulk:[709,0,244,260],icewolf:[0,511,375,257],frostimp:[953,0,220,260],frostlich:[405,511,300,257],icegolem:[710,511,242,257]}};
 Object.assign(C.assets,{iceMap:'assets/ice/ice-map.png',iceMonsters:'assets/ice/monsters.jpg',nivorSheet:'assets/ice/nivor-sheet.png',vaelSheet:'assets/ice/vael-sheet.png',aelthirSheet:'assets/ice/aelthir-sheet.png'});
 
-root.RubraConfig=C;if(typeof module!=='undefined')module.exports=C;
+root.RubraConfig=C;if(typeof module!=='undefined'){module.exports=C;require('./profane-config.js');}
 })(globalThis);

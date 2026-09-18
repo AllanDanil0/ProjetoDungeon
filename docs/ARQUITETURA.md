@@ -1,6 +1,8 @@
 # The night is yours — arquitetura e continuidade
 
-**Versão atual 1.7:** leia [ATUALIZACAO-1.7.md](ATUALIZACAO-1.7.md) para armas por personagem, Arsenal, áudio e ajustes dos menus.
+**Versão atual 1.8:** leia [ATUALIZACAO-1.8.md](ATUALIZACAO-1.8.md) para o Santuário Profano e sua progressão.
+
+**Versão 1.7:** leia [ATUALIZACAO-1.7.md](ATUALIZACAO-1.7.md) para armas por personagem, Arsenal, áudio e ajustes dos menus.
 
 **Versão 1.5.1:** leia [ATUALIZACAO-1.5.md](ATUALIZACAO-1.5.md) para o capítulo de gelo, três novos heróis e arsenal de onze armas no mapa, incluindo a relíquia desbloqueada ao vencer Skarn.
 

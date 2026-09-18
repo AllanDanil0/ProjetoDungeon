@@ -35,3 +35,7 @@ html,body{height:100%;overflow:hidden}.sr-only{position:absolute;width:1px;heigh
 #options .dialog>p{margin-left:auto;margin-right:auto;text-align:center;width:100%;max-width:100%}
 .menu-wallet .gold-coin{width:38px;height:38px;border:0;box-shadow:none;border-radius:50%;background:url('../assets/ornate/gold-bat.jpg') 54% 51%/116% 116% no-repeat;flex:none}
 @media(max-width:600px){.menu-wallet .gold-coin{width:24px;height:24px}}
+
+/* Chapter III: nine hunters, four destinations; scroll stays inside the dialog. */
+@media(min-width:1001px){#characterCards{grid-template-columns:repeat(3,minmax(0,1fr));max-width:870px}.champion-frame{height:145px}#mapCards{grid-template-columns:repeat(4,minmax(0,1fr));max-width:1380px;gap:12px}.map-card h3{font-size:23px}.map-card .map-preview{height:170px}}
+@media(min-width:601px) and (max-width:1000px){#mapCards{grid-template-columns:repeat(2,minmax(0,1fr))}}
