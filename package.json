@@ -16,7 +16,8 @@
     "dist": "npm run check && npm test && electron-builder --win portable --x64",
     "test:menus": "electron tests/menus.cjs",
     "test:profane": "electron tests/profane.cjs",
-    "test:sanctuary": "electron tests/sanctuary.cjs"
+    "test:sanctuary": "electron tests/sanctuary.cjs",
+    "test:results": "electron tests/results.cjs"
   },
   "build": {
     "appId": "local.rubra.game",

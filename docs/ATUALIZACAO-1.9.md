@@ -13,3 +13,23 @@ A Lâmina do Zero Absoluto recebeu arte detalhada com transparência real, mater
 Testes específicos em `tests/sanctuary.cjs` cobrem integridade da imagem, colisões, travessia rápida, projéteis, recuperação de checkpoints, progressão, transparência e animação. Capturas de inspeção são geradas em `test-output/sanctuary/` (não distribuídas). O teste de dez minutos do capítulo usa invulnerabilidade para validar eventos, limites e estabilidade; não substitui avaliação humana de dificuldade.
 
 Pedido adicional: a marca em losango dos botões vermelhos ornamentados foi substituída por uma seta dourada desenhada em SVG, seguindo a referência. Botões secundários e controles comuns mantêm seus visuais.
+
+Telas finais: vitória e derrota agora usam o mesmo fundo, molduras e tipografia dos menus. Vitória exibe o chefe vencido, caçador, estatísticas e recompensa real do capítulo. Derrota mostra o arsenal e os níveis usados, sem anunciar recompensas de chefe. Ouro guardado, nova tentativa, escolha de destino, menu principal e navegação por teclado são preservados. A saída voluntária tem texto próprio. Layouts verificados em 1360×900, 960×640 e 420×850; telas estreitas permitem rolagem vertical.
+
+## Revisão consolidada dos pedidos
+
+| Pedido | Implementação / verificação |
+| --- | --- |
+| Manter aparência do mapa | SHA256 idêntico ao original 1.8 |
+| Animar fogos | 12 sobreposições extraídas da arte, teste em dois instantes |
+| Colisão de construções | 37 pilares, 12 braseiros e altar; pedras soltas livres |
+| Física coerente | Deslizamento, passos menores no dash, trajeto de projéteis e recuperação de checkpoint |
+| Dificuldade crescente | Inimigos/chefes e frequência das ondas ajustados por capítulo |
+| Armas e heróis mais fortes | Dano normal crescente no mesmo nível; estatísticas pagas progressivas |
+| Zero Absoluto detalhada | PNG com alpha e nova composição de efeito, inspecionados sobre fundo escuro |
+| Animações dos personagens | Guarda de Karn, energia do chicote de Malthor, rosário de Vespera |
+| Seta nos botões | SVG dourado apenas nos botões primários vermelhos ornamentados |
+| Tela de vitória | Chefe correto, recompensa do mapa, caçador, ouro e estatísticas |
+| Tela de morte | Arsenal real e seus níveis, ouro guardado, sem falsa recompensa |
+| Revisar interrupções | Alterações anteriores preservadas; novas telas verificadas por 20 cenários |
+| Publicar | Autorização explícita recebida na conversa após bloqueio inicial do envio remoto |
