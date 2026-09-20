@@ -98,5 +98,15 @@ for(const obstacle of C.maps.ice.obstacles)for(const key of ['x','y','r'])obstac
 C.ice={bossWeapon:'absolute',inherited:['lance','ember','chain','reaper'],weapons:['frostbolt','halo','comet','prism','glaive','blizzard'],heroes:['nivor','vael','aelthir'],monsterCells:{frostguard:[0,0,355,260],wraith:[411,0,295,260],snowhulk:[709,0,244,260],icewolf:[0,511,375,257],frostimp:[953,0,220,260],frostlich:[405,511,300,257],icegolem:[710,511,242,257]}};
 Object.assign(C.assets,{iceMap:'assets/ice/ice-map.png',iceMonsters:'assets/ice/monsters.jpg',nivorSheet:'assets/ice/nivor-sheet.png',vaelSheet:'assets/ice/vael-sheet.png',aelthirSheet:'assets/ice/aelthir-sheet.png'});
 
+// Chapter II silhouettes measured in the 1600 x 984 map reference. Paths stay open.
+const iceBox=(x,y,w,h,kind)=>({shape:'rect',x:x*2.4,y:y*2360/984,w:w*2.4,h:h*2360/984,r:0,kind});
+C.maps.ice.obstacles=[
+ [307,36,201,264,'portal'],[976,126,59,128,'rune'],[1258,201,56,147,'rune'],[1337,280,64,132,'rune'],
+ [303,607,65,147,'rune'],[1310,548,69,152,'rune'],[349,858,56,88,'rune'],[1030,909,60,75,'rune'],
+ [585,53,82,151,'tree'],[561,172,139,43,'tree'],[1106,74,87,200,'tree'],[1065,238,167,56,'tree'],
+ [0,166,77,176,'tree'],[0,585,112,303,'tree'],[95,676,112,51,'tree'],[1358,691,87,233,'tree'],[1425,589,145,62,'tree'],[1521,185,79,191,'tree'],
+ [1165,609,36,65,'sword'],[581,632,26,61,'sword'],[181,765,24,40,'sword'],[202,901,21,69,'sword'],[255,902,20,70,'sword']
+].map(([x,y,w,h,kind])=>iceBox(x,y,w,h,kind));
+Object.assign(C.assets,{prismArt:'assets/ice/prism-aurora.png',iceClean:'assets/ice/ground-clean.png',profaneClean:'assets/profane/braziers-unlit.png',fireAtlas:'assets/profane/flames-atlas.png'});
 root.RubraConfig=C;if(typeof module!=='undefined'){module.exports=C;require('./profane-config.js');}
 })(globalThis);

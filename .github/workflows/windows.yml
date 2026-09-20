@@ -41,12 +41,16 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           npm run test:update
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          npm run test:ice-polish
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           npm run test:boot
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Gerar executavel
         run: npm run dist -- --publish never
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      - name: Verificar janela e F11 no aplicativo empacotado
+        run: npx electron tests/window.cjs --packaged
       - name: Verificar isolamento do build
         run: npm run verify:package
       - name: Testar executavel real e reabertura de campanha

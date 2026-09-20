@@ -1,6 +1,8 @@
 # The night is yours — arquitetura e continuidade
 
-**Versão atual 1.10:** leia [ATUALIZACAO-1.10.md](ATUALIZACAO-1.10.md) para colisões, dificuldade e interfaces da expedição.
+**Versão atual 1.11:** [ATUALIZACAO-1.11.md](ATUALIZACAO-1.11.md): colisões e animações do gelo, camadas de fadas/fogo, HUD e ícone. `src/ice-polish.js` prepara e desenha as camadas visuais; `src/expedition.css` apresenta a arena em toda a janela.
+
+**Versão 1.10:** leia [ATUALIZACAO-1.10.md](ATUALIZACAO-1.10.md) para colisões, dificuldade e interfaces da expedição.
 
 **Versão 1.9.1:** leia [CORRECAO-1.9.1.md](CORRECAO-1.9.1.md) para inicialização segura e testes do executável real, e [ATUALIZACAO-1.9.md](ATUALIZACAO-1.9.md) para física, animações e telas finais.
 

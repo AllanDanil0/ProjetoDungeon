@@ -22,7 +22,7 @@ else {
     window = new BrowserWindow({
       width: 1360, height: 960, minWidth: 800, minHeight: 600,
       title: 'The night is yours', backgroundColor: '#080c15',
-      show: false,
+      show: false, fullscreen: true, icon: path.join(__dirname, 'assets/branding/rubra-icon.png'),
       webPreferences: { nodeIntegration: false, contextIsolation: true, sandbox: true }
     });
     window.webContents.setWindowOpenHandler(() => ({ action: 'deny' }));

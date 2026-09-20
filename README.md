@@ -1,6 +1,6 @@
 # The night is yours
 
-Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. Versão 1.7: armas principais acompanham seus caçadores em todos os mapas, catálogo Arsenal, nova música de gelo, animação de Aelthir e ajustes dos menus. [Novidades](docs/ATUALIZACAO-1.7.md).
+Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. **Versão 1.11.0:** colisões e animações do gelo revisadas, fadas voando acima dos personagens, Prisma da Aurora detalhado, novas chamas nos braseiros, HUD ornamentado, tela cheia e novo ícone com Rubra. [Novidades](docs/ATUALIZACAO-1.11.md).
 
 [Baixar o executável mais recente](https://github.com/AllanDanil0/ProjetoDungeon/releases/latest/download/RUBRA-Windows-x64.exe)
 
@@ -9,6 +9,10 @@ Abra o arquivo com dois cliques. Não é necessário instalar Node.js nem ter in
 O executável não tem assinatura digital de editor.
 
 ## Novidades e desbloqueios
+
+O **Santuário Profano (capítulo III)** sucede o gelo: Karn é liberado com o mapa; Malthor custa 1500 e Vespera 2000 de ouro. Quatro ondas, Gárgula em 4:30 e Inquisidor Esquecido em 9:00; vencê-lo libera o Édito do Inquisidor. Inclui música própria, sete armas normais novas e a relíquia do chefe.
+
+As versões 1.8–1.10 também acrescentaram telas de vitória/derrota, pausa e evolução ornamentadas, dano nas escolhas, informações persistentes dos personagens e correções de inicialização do executável. A versão 1.11 preserva essas melhorias e os saves.
 
 Derrote Skarn no Santuário do Inverno para liberar a **Lâmina do Zero Absoluto**, a arma mais poderosa do gelo. Quem já concluiu o mapa recebe a relíquia automaticamente ao carregar o save. O arsenal do gelo passa a onze armas.
 
@@ -23,7 +27,7 @@ A tela inicial usa a arte enviada. Rubra ganhou caminhada em quatro direções; 
 - WASD ou setas: mover.
 - Espaço ou Shift: esquivar.
 - P ou Esc: pausar.
-- F11: tela cheia.
+- F11: alternar entre tela cheia (padrão) e janela.
 - Clique em “Som: off” para ativar o áudio.
 
 Recorde, escolhas, ouro e checkpoint são salvos em `%APPDATA%\RUBRA` no computador usado para jogar. O recorde da versão antiga é preservado e importado. Saves não são sincronizados pelo GitHub.

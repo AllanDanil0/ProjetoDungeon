@@ -1,15 +1,12 @@
 'use strict';
 // Visual layers only: the supplied arena and character source pixels remain intact.
 const RubraSanctuary=(()=>{
- const fires=[];
  function prepare(images){
   const im=images.absoluteArt,c=document.createElement('canvas');c.width=im.width;c.height=im.height;const q=c.getContext('2d');q.drawImage(im,0,0);const p=q.getImageData(0,0,c.width,c.height);
   let left=c.width,top=c.height,right=0,bottom=0;
   for(let y=0;y<c.height;y++)for(let x=0;x<c.width;x++){const i=(y*c.width+x)*4;if(p.data[i+3]>80){left=Math.min(left,x);right=Math.max(right,x);top=Math.min(top,y);bottom=Math.max(bottom,y);}}
   const blade=document.createElement('canvas');blade.width=right-left+1;blade.height=bottom-top+1;blade.getContext('2d').drawImage(c,left,top,blade.width,blade.height,0,0,blade.width,blade.height);RubraProfane.weaponImages.absolute=blade;
-  fires.length=0;for(const b of RubraConfig.profane.braziers){const f=document.createElement('canvas');f.width=40;f.height=52;const g=f.getContext('2d');g.drawImage(images.profaneMap,b.x-20,b.flameY-32,40,52,0,0,40,52);const pixels=g.getImageData(0,0,40,52),d=pixels.data;for(let i=0;i<d.length;i+=4)if(!(d[i+1]>100&&d[i+1]>d[i]*1.12&&d[i+1]>d[i+2]*1.06))d[i+3]=0;g.putImageData(pixels,0,0);fires.push({image:f,...b});}
  }
- function flames(q,t,particles){q.save();q.imageSmoothingEnabled=false;for(const [i,f]of fires.entries()){const phase=t*4.5+i*2.37,x=f.x*2.5,y=(f.flameY+20)*2.5,h=130*(1+Math.sin(phase)*.055);q.globalAlpha=.7;q.drawImage(f.image,x-50+Math.sin(phase*.7)*2,y-h,100,h);if(particles){q.globalCompositeOperation='lighter';q.globalAlpha=.1+.025*Math.sin(phase);const glow=q.createRadialGradient(x,y-50,0,x,y-50,65);glow.addColorStop(0,'#81ff57');glow.addColorStop(1,'#000000');q.fillStyle=glow;q.fillRect(x-65,y-115,130,130);q.globalCompositeOperation='source-over';for(let j=0;j<4;j++){const life=(t*.55+j*.25+i*.137)%1;q.globalAlpha=(1-life)*.8;q.fillStyle=j%2?'#dfffc5':'#75f557';q.fillRect(Math.round(x+Math.sin(phase+j)*10),Math.round(y-25-life*85),2,3);}}}q.restore();}
  function hero(q,id,base,t,o={}){
   q.save();if(!o.menu){q.translate(o.x,o.y+3);q.scale((o.flip?-1:1)*o.height/64,o.height/64);q.translate(-32,-64);}q.imageSmoothingEnabled=false;
   if(o.menu&&!o.on){q.drawImage(base,0,0);q.restore();return;}
@@ -39,5 +36,5 @@ const RubraSanctuary=(()=>{
   for(let j=0;j<8;j++){const a=j*Math.PI/4+age*.12,r=e.r*.65,h=12+Math.sin(j*2+age*3)*5;q.save();q.translate(Math.cos(a)*r,Math.sin(a)*r);q.globalAlpha=fade*(.6+pulse*.25);q.fillStyle='#338cba';q.beginPath();q.moveTo(-5,4);q.lineTo(-2,-h);q.lineTo(4,-h*.6);q.lineTo(6,3);q.closePath();q.fill();q.fillStyle='#c5faff';q.beginPath();q.moveTo(-2,-h);q.lineTo(1,3);q.lineTo(-5,4);q.closePath();q.fill();q.restore();}
   q.globalAlpha=fade;const im=RubraProfane.weaponImages.absolute,h=112,w=h*im.width/im.height;q.drawImage(im,-w/2,-h-8-Math.sin(age*3)*3,w,h);q.globalAlpha=fade*(.25+pulse*.3);q.strokeStyle='#efffff';q.lineWidth=2;q.beginPath();q.ellipse(0,1,15+pulse*9,4+pulse*2,0,0,Math.PI*2);q.stroke();q.restore();return true;
  }
- return {prepare,hero,flames,absoluteEffect};
+ return {prepare,hero,flames:(q,t,on)=>RubraIcePolish.flames(q,t,on),absoluteEffect};
 })();
