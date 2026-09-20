@@ -26,25 +26,7 @@ jobs:
       - name: Verificar JavaScript
         run: npm run check
       - name: Testar logica e interface
-        run: |
-          npm test
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-          npm run test:integration
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-          npm run test:menus
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-          npm run test:profane
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-          npm run test:sanctuary
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-          npm run test:results
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-          npm run test:update
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-          npm run test:ice-polish
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-          npm run test:boot
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+        run: node scripts/ci-tests.cjs
       - name: Gerar executavel
         run: npm run dist -- --publish never
         env:
