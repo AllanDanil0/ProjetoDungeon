@@ -1,3 +1,15 @@
+# Estado atual — versão 1.12.0, 27/09/2026
+
+Base f857b09, main sem alterações concorrentes no fetch. Nove composições originais (três por menu), listas exclusivas e retomada por sessão; os dois temas antigos permanecem no menu inicial. Cinco armas dos anexos refeitas com ImageGen, alpha real e texturas preparadas de até 256 px; Cometa e Cetro também usam as artes no combate. Hordas em grupos e resistência/velocidade por capítulo, sem alterar o tutorial. Aplicativo e portátil renomeados RUBRA / RUBRA.exe mantendo saves. README atualizado. Detalhes, ordem e durações em ATUALIZACAO-1.12.md; prompts em PROMPTS-1.12.json.
+
+Validação local: check, 36 regras, 62 integração, 25 menus, 11 Profano, 12 refinamento, 20 resultados, 16 atualização anterior, 14 gelo/interface, 13 músicas/armas/hordas e 13 inicialização (222 verificações). A primeira execução de npm test no sandbox não pôde criar processo (EPERM); repetida com permissão e aprovada. Na primeira integração, a expectativa do título antigo precisou ser atualizada para RUBRA; os alvos parados dos testes também passaram a zerar a velocidade da entidade. Suíte completa aprovada em seguida. Revisão final detectou desenhos antigos nos renderizadores do Cometa/Cetro, corrigidos; nova verificação de consumo das cinco texturas aprovada.
+
+Build 1.12 e verify:package aprovados. Inicialização (13) e música/armas/hordas (13) repetidas no ASAR final. Janela nativa e F11 aprovados (3); metadados Windows confirmam RUBRA 1.12.0.0. RUBRA.exe real passou em 17 verificações com cliques e campanha isolada reaberta. SHA256 local (compressão store): D82492785D809A25CBD841C43478DC0C196390D83441458D7548B49C97C7FDDF. Capturas dos recortes em fundo escuro inspecionadas. Benchmark Inquisidor, arsenal máximo e contato contínuo: Malthor 39,8 s; Vespera 29,8 s. Partidas simuladas não substituem balanceamento com jogadores; áudio verificado por renderização/amostras, sem avaliação auditiva humana. Saves reais não foram alterados.
+
+Publicação remota e teste do download pendentes nesta etapa; serão registrados após o Actions concluir.
+
+---
+
 # Estado atual — versão 1.11.0, 20/09/2026
 
 Base 53c8ba7, alterações anteriores preservadas. Implementados colisões do gelo, animações dos monstros/Skarn, três fadas em camada superior, Prisma da Aurora e feixe detalhados, oito quadros de fogo nos doze braseiros, HUD ornamentado, arena em toda a janela, tela cheia nativa e ícone de Rubra. README atualizado. Detalhes e limites em ATUALIZACAO-1.11.md; prompts de ImageGen em PROMPTS-1.11.json.

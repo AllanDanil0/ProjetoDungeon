@@ -1,7 +1,7 @@
 const { app, BrowserWindow, Menu } = require('electron');
 const path = require('node:path');
 
-app.setName('The night is yours');
+app.setName('RUBRA');
 // A stable location preserves the original localStorage record between launches.
 // Honor Electron's standard profile-directory switch; normal launches keep RUBRA.
 // Distribution smoke tests use an isolated directory, never the player's save.
@@ -21,7 +21,7 @@ else {
     Menu.setApplicationMenu(null);
     window = new BrowserWindow({
       width: 1360, height: 960, minWidth: 800, minHeight: 600,
-      title: 'The night is yours', backgroundColor: '#080c15',
+      title: 'RUBRA', backgroundColor: '#080c15',
       show: false, fullscreen: true, icon: path.join(__dirname, 'assets/branding/rubra-icon.png'),
       webPreferences: { nodeIntegration: false, contextIsolation: true, sandbox: true }
     });

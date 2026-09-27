@@ -1,8 +1,8 @@
-# The night is yours
+# RUBRA
 
-Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. **Versão 1.11.0:** colisões e animações do gelo revisadas, fadas voando acima dos personagens, Prisma da Aurora detalhado, novas chamas nos braseiros, HUD ornamentado, tela cheia e novo ícone com Rubra. [Novidades](docs/ATUALIZACAO-1.11.md).
+Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. **Versão 1.12.0:** nove músicas novas com listas exclusivas por menu, hordas reforçadas fora do tutorial, cinco armas de gelo redesenhadas e aplicativo/download com o nome RUBRA. [Novidades, ordem e duração das músicas](docs/ATUALIZACAO-1.12.md).
 
-[Baixar o executável mais recente](https://github.com/AllanDanil0/ProjetoDungeon/releases/latest/download/RUBRA-Windows-x64.exe)
+[Baixar o executável mais recente](https://github.com/AllanDanil0/ProjetoDungeon/releases/latest/download/RUBRA.exe)
 
 O link aponta para a última versão cuja compilação passou na aba Actions.
 Abra o arquivo com dois cliques. Não é necessário instalar Node.js nem ter internet para jogar.
@@ -12,7 +12,7 @@ O executável não tem assinatura digital de editor.
 
 O **Santuário Profano (capítulo III)** sucede o gelo: Karn é liberado com o mapa; Malthor custa 1500 e Vespera 2000 de ouro. Quatro ondas, Gárgula em 4:30 e Inquisidor Esquecido em 9:00; vencê-lo libera o Édito do Inquisidor. Inclui música própria, sete armas normais novas e a relíquia do chefe.
 
-As versões 1.8–1.10 também acrescentaram telas de vitória/derrota, pausa e evolução ornamentadas, dano nas escolhas, informações persistentes dos personagens e correções de inicialização do executável. A versão 1.11 preserva essas melhorias e os saves.
+As versões 1.8–1.10 também acrescentaram telas de vitória/derrota, pausa e evolução ornamentadas, dano nas escolhas, informações persistentes dos personagens e correções de inicialização do executável. A versão 1.12 preserva essas melhorias, os refinamentos de gelo/interface da 1.11 e os saves.
 
 Derrote Skarn no Santuário do Inverno para liberar a **Lâmina do Zero Absoluto**, a arma mais poderosa do gelo. Quem já concluiu o mapa recebe a relíquia automaticamente ao carregar o save. O arsenal do gelo passa a onze armas.
 
@@ -55,7 +55,7 @@ Para gerar o executável:
 npm run dist -- --publish never
 ```
 
-O resultado fica em `dist/RUBRA-Windows-x64.exe`.
+O resultado fica em `dist/RUBRA.exe`.
 
 ## Testes e desenvolvimento
 
@@ -63,6 +63,7 @@ O resultado fica em `dist/RUBRA-Windows-x64.exe`.
 - `npm test`: regras de save, economia, combate, espaços e desbloqueios.
 - `npm run test:integration`: Electron fora da tela, com perfil isolado e capturas em test-output/.
 - `npm run test:menus`: seis menus em três resoluções, acesso aos controles e animação de Aelthir; aceita `-- --packaged` após compilar.
+- `npm run test:music-update`: playlists, áudio offline, cinco novas artes e pressão das hordas.
 - `npm run verify:package`: verifica o ASAR real após compilar; painel e comandos de desenvolvimento devem estar ausentes.
 - `npm run dev`: painel de desbloqueios com save separado em `.dev-profile`. Não entra no executável distribuído.
 
@@ -76,7 +77,7 @@ O cliente é offline: a separação de desenvolvimento não oferece proteção a
 
 ### Atualização 1.3.1
 
-Nome atualizado para The night is yours. No Laboratório, **Resetar desbloqueios** restaura Rubra, tutorial e arma inicial, mantendo ouro, recorde e opções. Uma partida de testes salva é encerrada e seu ouro coletado é guardado uma única vez. A campanha normal não é alterada. O arquivo RUBRA-Windows-x64.exe e o diretório de saves mantêm os nomes antigos para compatibilidade. Músicas e novos efeitos sonoros ficam para uma próxima atualização.
+Nome atualizado para The night is yours. No Laboratório, **Resetar desbloqueios** restaura Rubra, tutorial e arma inicial, mantendo ouro, recorde e opções. Uma partida de testes salva é encerrada e seu ouro coletado é guardado uma única vez. A campanha normal não é alterada. Na época, o arquivo ainda se chamava RUBRA-Windows-x64.exe. Na versão 1.12, o nome passa a RUBRA.exe e a pasta de saves continua preservada.
 
 ### Atualização 1.4 — Fornalha Carmesim
 

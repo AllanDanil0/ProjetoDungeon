@@ -1,8 +1,8 @@
 {
   "name": "rubra-a-ultima-lamina",
-  "productName": "The night is yours",
-  "version": "1.11.0",
-  "description": "The night is yours: jogo offline para Windows",
+  "productName": "RUBRA",
+  "version": "1.12.0",
+  "description": "RUBRA: jogo offline para Windows",
   "author": "RUBRA",
   "private": true,
   "main": "main.js",
@@ -22,11 +22,12 @@
     "test:portable": "node tests/portable.cjs",
     "test:update": "electron tests/update-110.cjs",
     "test:ice-polish": "electron tests/ice-polish.cjs",
-    "test:window": "electron tests/window.cjs"
+    "test:window": "electron tests/window.cjs",
+    "test:music-update": "electron tests/music-update.cjs"
   },
   "build": {
     "appId": "local.rubra.game",
-    "productName": "The night is yours",
+    "productName": "RUBRA",
     "directories": {
       "output": "dist"
     },
@@ -45,7 +46,7 @@
       "icon": "assets/branding/rubra.ico"
     },
     "portable": {
-      "artifactName": "RUBRA-Windows-x64.exe"
+      "artifactName": "RUBRA.exe"
     }
   },
   "devDependencies": {

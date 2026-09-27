@@ -1,0 +1,26 @@
+{
+  "tool": "Built-in image_gen",
+  "reference": "assets/ice/prism-aurora.png",
+  "assets": [
+    {
+      "id": "frostbolt",
+      "prompt": "Use case: stylized-concept. Production game inventory and combat sprite for RUBRA, gothic dark fantasy. Create ONE isolated highly detailed PIXEL ART weapon, crisp deliberate pixel clusters and stepped edges, dark outline, carved silver metal, tiny frost runes, rich icy cyan highlights and deep navy shadows. Match the craftsmanship/material complexity of the provided prism reference, but design the requested distinct item. Entire object centered with 8% clear margin. Genuinely transparent alpha background, no painted checkerboard, no floor, no shadow outside object, no lettering, no UI, no panels, no other items. Readable silhouette at small sizes. Agulhas boreais: one long slender lethal double-pointed frozen crystal needle, long diamond spearhead silhouette without a handle, bright faceted ice core, delicate engraved dark silver ribs along edges, luminous etched central rune and serrated tiny ice barbs. Vertical orientation."
+    },
+    {
+      "id": "halo",
+      "prompt": "Use case: stylized-concept. Production game inventory and combat sprite for RUBRA, gothic dark fantasy. Create ONE isolated highly detailed PIXEL ART weapon, crisp deliberate pixel clusters and stepped edges, dark outline, carved silver metal, tiny frost runes, rich icy cyan highlights and deep navy shadows. Match the craftsmanship/material complexity of the provided prism reference, but design the requested distinct item. Entire object centered with 8% clear margin. Genuinely transparent alpha background, no painted checkerboard, no floor, no shadow outside object, no lettering, no UI, no panels, no other items. Readable silhouette at small sizes. Coroa de estilhaços: one ornate three-bladed ice throwing crown, three sweeping crystalline blades radially arranged around an engraved silver circular hub, bright sapphire at center, frosty sharp pointed tips, delicate silver filigree, clearly open transparent spaces between the three blades. Not a wearable crown; rotating three-blade weapon."
+    },
+    {
+      "id": "comet",
+      "prompt": "Use case: stylized-concept. Production game inventory and combat sprite for RUBRA, gothic dark fantasy. Create ONE isolated highly detailed PIXEL ART weapon, crisp deliberate pixel clusters and stepped edges, dark outline, carved silver metal, tiny frost runes, rich icy cyan highlights and deep navy shadows. Match the craftsmanship/material complexity of the provided prism reference, but design the requested distinct item. Entire object centered with 8% clear margin. Genuinely transparent alpha background, no painted checkerboard, no floor, no shadow outside object, no lettering, no UI, no panels, no other items. Readable silhouette at small sizes. Cometa polar: one dense magical glacial comet orb, faceted spherical blue ice core cradled in broken engraved silver bands, frozen fragments contained close to its silhouette, a short upward trailing jagged cyan ice flame, bright white cyan core, dark blue bottom. Compact teardrop meteor silhouette."
+    },
+    {
+      "id": "glaive",
+      "prompt": "Use case: stylized-concept. Production game inventory and combat sprite for RUBRA, gothic dark fantasy. Create ONE isolated highly detailed PIXEL ART weapon, crisp deliberate pixel clusters and stepped edges, dark outline, carved silver metal, tiny frost runes, rich icy cyan highlights and deep navy shadows. Match the craftsmanship/material complexity of the provided prism reference, but design the requested distinct item. Entire object centered with 8% clear margin. Genuinely transparent alpha background, no painted checkerboard, no floor, no shadow outside object, no lettering, no UI, no panels, no other items. Readable silhouette at small sizes. Gume do inverno: one ancient winter glaive sword, elongated double-edged crystalline ice blade with finely etched frost runes, ornate winged dark silver crossguard with sapphire gem, leather wrapped navy grip, engraved pointed pommel. Full sword vertical point up; exquisite intricate metalwork and faceted icy blade. No second weapon."
+    },
+    {
+      "id": "blizzard",
+      "prompt": "Use case: stylized-concept. Production game inventory and combat sprite for RUBRA, gothic dark fantasy. Create ONE isolated highly detailed PIXEL ART weapon, crisp deliberate pixel clusters and stepped edges, dark outline, carved silver metal, tiny frost runes, rich icy cyan highlights and deep navy shadows. Match the craftsmanship/material complexity of the provided prism reference, but design the requested distinct item. Entire object centered with 8% clear margin. Genuinely transparent alpha background, no painted checkerboard, no floor, no shadow outside object, no lettering, no UI, no panels, no other items. Readable silhouette at small sizes. Cetro da nevasca: one tall elegant winter wizard scepter, six-pointed intricate crystalline snowflake crown inside a slender engraved silver ring at the top, glowing sapphire center, long dark silver engraved shaft with blue leather grip, small ice crystal pommel. Full staff vertical, lavish frost runes and filigree, strong snowflake silhouette."
+    }
+  ]
+}

@@ -1,6 +1,8 @@
 # The night is yours — arquitetura e continuidade
 
-**Versão atual 1.11:** [ATUALIZACAO-1.11.md](ATUALIZACAO-1.11.md): colisões e animações do gelo, camadas de fadas/fogo, HUD e ícone. `src/ice-polish.js` prepara e desenha as camadas visuais; `src/expedition.css` apresenta a arena em toda a janela.
+**Versão atual 1.12:** [ATUALIZACAO-1.12.md](ATUALIZACAO-1.12.md). `src/menu-music.js` contém nove composições e listas por menu; `src/audio.js` mantém a posição por sessão. `RubraCore.encounter` aplica pressão por mapa, configurada em `src/config.js`. Aplicativo e portátil: RUBRA.
+
+**Versão 1.11:** [ATUALIZACAO-1.11.md](ATUALIZACAO-1.11.md): colisões e animações do gelo, camadas de fadas/fogo, HUD e ícone. `src/ice-polish.js` prepara e desenha as camadas visuais; `src/expedition.css` apresenta a arena em toda a janela.
 
 **Versão 1.10:** leia [ATUALIZACAO-1.10.md](ATUALIZACAO-1.10.md) para colisões, dificuldade e interfaces da expedição.
 
