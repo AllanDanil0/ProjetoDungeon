@@ -2,7 +2,7 @@
 const C={
  version:3,slots:6,maxWeaponLevel:7,contactCooldown:1.05,pickupRadius:25,checkpointSeconds:3,
  profiles:{campaign:'rubra-save-v2',laboratory:'rubra-laboratory-v1'},
- limits:{enemies:65,projectiles:160,effects:100,drops:140,particles:180},
+ limits:{enemies:110,projectiles:160,effects:100,drops:140,particles:180},
  combat:{spawnSafeDistance:175,bossSafeDistance:240,hpScaleMax:1.4,hpScaleRate:.85,rangedNear:135,rangedFar:185,rangedRetreat:.4,chargeSpeed:250,chargeSeconds:.65,bossProjectileSpeed:90,mobProjectileSpeed:110,projectileLife:5,healChance:.06,dropLife:60,phaseThreshold:.5,phaseInterval:.72,ringWindup:1.05,chargeWindup:1.1,enragedWindup:.75,shotWindup:.7,ringCount:9,enragedRingCount:14,spawnAcceleration:.9,bossSpawnMultiplier:2,enemyTierSeconds:40},
  xp:{base:12,perLevel:9},economy:{fallbackGold:8,fallbackHeal:2},
  characters:{
@@ -109,7 +109,7 @@ C.maps.ice.obstacles=[
 ].map(([x,y,w,h,kind])=>iceBox(x,y,w,h,kind));
 Object.assign(C.assets,{prismArt:'assets/ice/prism-aurora.png',iceClean:'assets/ice/ground-clean.png',profaneClean:'assets/profane/braziers-unlit.png',fireAtlas:'assets/profane/flames-atlas.png'});
 // Map-local pressure leaves every tutorial statistic and spawn rule unchanged.
-C.pressure={necropolis:{interval:.84,packAt:.5,hp:1.16,hpGrowth:.2,speed:1.05,bossHp:1.3,bossInterval:1.65},ice:{interval:.82,packAt:.45,hp:1.2,hpGrowth:.25,speed:1.06,bossHp:1.35,bossInterval:1.55},profane:{interval:.85,packAt:.4,hp:1.2,hpGrowth:.3,speed:1.07,bossHp:1.3,bossInterval:1.45}};
+C.pressure={necropolis:{interval:1.2,packAt:.85,hp:.75,hpGrowth:.35,speed:1,bossHp:1.3,bossInterval:1.65},ice:{interval:1.35,packAt:.85,hp:.65,hpGrowth:.45,speed:1,bossHp:1.35,bossInterval:1.55},profane:{cap:110,packs:[{at:0,count:1},{at:60,count:2},{at:150,count:3},{at:300,count:4},{at:450,count:5}],interval:.8,packAt:.4,hp:1.2,hpGrowth:.3,speed:1.07,bossHp:1.3,bossInterval:1.45}};
 for(const id of ['frostbolt','halo','comet','glaive','blizzard'])C.assets[id+'Art']='assets/ice/'+id+'-v2.png';
 root.RubraConfig=C;if(typeof module!=='undefined'){module.exports=C;require('./profane-config.js');}
 })(globalThis);

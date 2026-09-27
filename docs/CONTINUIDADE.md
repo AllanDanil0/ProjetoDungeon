@@ -1,4 +1,14 @@
-# Estado atual — versão 1.12.0, 27/09/2026
+# Estado atual — versão 1.13.0, 27/09/2026
+
+Base 4ba5408, main conferida sem alterações concorrentes. Cinco efeitos glaciais implementados em src/ice-effects.js, com partículas reduzidas quando desativadas, preservando dano e artes da 1.12. Menu inicial corrigido: hover prevalece sobre foco, uma seta dourada e nenhum contorno residual. Profano com grupos progressivos de até cinco e limite 110; capítulos anteriores com limite 65 e pressão reduzida; tutorial preservado. Detalhes em ATUALIZACAO-1.13.md.
+
+Retomada: suíte anterior aprovou 36 regras, 62 integração, 25 menus, 11 Profano, 12 refinamento, 20 resultados, 16 atualização anterior, 14 gelo e 13 músicas. Teste de efeitos excedeu o tempo naquela execução; repetido e aprovado (10), incluindo três resoluções e teclado/mouse. Inicialização pendente repetida e aprovada (13). Interrupção durante build deixou pacote incompleto: verify:package detectou ausência do ASAR, sem tratar o EXE antigo como atualização concluída. Build repetido com sucesso, sintaxe e 36 regras novamente aprovadas. verify:package comprova fontes/assets idênticos e ausência de ferramentas de desenvolvimento. Efeitos repetidos no ASAR (10), janela/F11 (3) e portátil real com campanha isolada reaberta (19), todos aprovados, sem erros registrados. SHA256 local, compressão store: F488201D991B9645562BC21B37DB1EAACE4755757C2113A75A93FFD1B92ED604. Capturas do menu e efeitos inspecionadas.
+
+Balanceamento comparado por simulação com duas sementes por personagem e sem invulnerabilidade. Profano passou de seis/dez inimigos médios com Malthor na 1.12 para 14/28; Vespera passou de 10/11 para 15/31. As quatro simulações do Profano terminaram antes do chefe, enquanto os capítulos anteriores tiveram maior sobrevivência. Isso mede pressão e não garante dificuldade ideal para jogadores humanos; não houve partida humana completa. Saves reais preservados. Publicação e teste do download ainda pendentes neste registro.
+
+---
+
+# Estado anterior — versão 1.12.0, 27/09/2026
 
 Base f857b09, main sem alterações concorrentes no fetch. Nove composições originais (três por menu), listas exclusivas e retomada por sessão; os dois temas antigos permanecem no menu inicial. Cinco armas dos anexos refeitas com ImageGen, alpha real e texturas preparadas de até 256 px; Cometa e Cetro também usam as artes no combate. Hordas em grupos e resistência/velocidade por capítulo, sem alterar o tutorial. Aplicativo e portátil renomeados RUBRA / RUBRA.exe mantendo saves. README atualizado. Detalhes, ordem e durações em ATUALIZACAO-1.12.md; prompts em PROMPTS-1.12.json.
 
