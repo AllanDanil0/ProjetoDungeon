@@ -4,3 +4,9 @@ dist/
 test-output/
 .test-profile/
 .dev-profile/
+
+android/.gradle/
+android/**/build/
+.android-signing/
+*.jks
+*.keystore
