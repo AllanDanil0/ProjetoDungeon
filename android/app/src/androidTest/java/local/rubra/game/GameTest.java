@@ -19,7 +19,7 @@ public class GameTest extends ActivityInstrumentationTestCase2<MainActivity> {
  private void click(String id) throws Exception {
   js("document.getElementById('"+id+"').scrollIntoView({block:'center'})");SystemClock.sleep(250);
   JSONObject pos=new JSONObject(js("(()=>{const r=document.getElementById('"+id+"').getBoundingClientRect();return {x:(r.x+r.width/2)*devicePixelRatio,y:(r.y+r.height/2)*devicePixelRatio}})()"));
-  touch((float)pos.getDouble("x"),(float)pos.getDouble("y"),80);SystemClock.sleep(300);
+  try{touch((float)pos.getDouble("x"),(float)pos.getDouble("y"),80);}catch(RuntimeException e){throw new AssertionError("Tap "+id+" at "+pos+" viewport "+js("JSON.stringify({w:innerWidth,h:innerHeight,dpr:devicePixelRatio,state})"),e);}SystemClock.sleep(300);
  }
  private void touch(float x,float y,long duration){long t=SystemClock.uptimeMillis();getInstrumentation().sendPointerSync(MotionEvent.obtain(t,t,MotionEvent.ACTION_DOWN,x,y,0));SystemClock.sleep(duration);getInstrumentation().sendPointerSync(MotionEvent.obtain(t,SystemClock.uptimeMillis(),MotionEvent.ACTION_UP,x,y,0));}
  public void testOfflineGameAndTouch() throws Exception {
@@ -40,6 +40,11 @@ public class GameTest extends ActivityInstrumentationTestCase2<MainActivity> {
   getInstrumentation().runOnMainSync(()->getInstrumentation().callActivityOnPause(activity));SystemClock.sleep(300);expect("state==='paused'&&save.active!==null");getInstrumentation().runOnMainSync(()->getInstrumentation().callActivityOnResume(activity));
   click("saveQuit");
   getInstrumentation().runOnMainSync(()->activity.web.reload());ready();expect("save.gold===321&&save.active!==null");
-  click("optionsButton");click("openMusicLibrary");expect("state==='musicLibrary'&&document.querySelectorAll('[data-track]').length===11");click("musicBack");click("openBestiary");expect("state==='bestiary'");
+  click("optionsButton");
+  click("openMusicLibrary");
+  expect("state==='musicLibrary'&&document.querySelectorAll('[data-track]').length===11");
+  click("musicBack");
+  click("openBestiary");
+  expect("state==='bestiary'");
  }
 }
