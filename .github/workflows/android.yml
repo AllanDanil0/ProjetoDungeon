@@ -36,7 +36,7 @@ jobs:
           arch: x86_64
           profile: pixel_2
           disable-animations: true
-          script: gradle -p android connectedDebugAndroidTest
+          script: bash scripts/android-emulator-test.sh
       - name: Package signing tool and unsigned APK
         run: |
           mkdir -p android-output
@@ -50,4 +50,6 @@ jobs:
         if: always()
         with:
           name: android-test-results
-          path: android/app/build/reports/androidTests
+          path: |
+            android/app/build/reports/androidTests
+            android-diagnostics
