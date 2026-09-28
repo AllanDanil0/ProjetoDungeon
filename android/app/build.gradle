@@ -1,6 +1,8 @@
 plugins { id 'com.android.application' }
 android {
  namespace 'local.rubra.game'
+ useLibrary 'android.test.runner'
+ useLibrary 'android.test.base'
  compileSdk 35
  buildFeatures { buildConfig true }
  defaultConfig { applicationId 'local.rubra.game'; minSdk 26; targetSdk 35; versionCode 11400; versionName '1.14.0'; testInstrumentationRunner 'android.test.InstrumentationTestRunner' }
