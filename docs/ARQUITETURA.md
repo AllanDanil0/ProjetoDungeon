@@ -1,6 +1,8 @@
 # The night is yours — arquitetura e continuidade
 
-**Versão atual 1.13:** [ATUALIZACAO-1.13.md](ATUALIZACAO-1.13.md). Efeitos em `src/ice-effects.js`; limite de inimigos por capítulo em `RubraCore.enemyLimit`.
+**Versão atual 1.14:** [ATUALIZACAO-1.14.md](ATUALIZACAO-1.14.md). Estatísticas e normalização em `src/chronicle-core.js`; eventos e aproximação física do Profano em `src/chronicles.js`; bestiário, relatório e músicas em `src/collections.js`.
+
+**Versão 1.13:** [ATUALIZACAO-1.13.md](ATUALIZACAO-1.13.md). Efeitos em `src/ice-effects.js`; limite de inimigos por capítulo em `RubraCore.enemyLimit`.
 
 **Versão 1.12:** [ATUALIZACAO-1.12.md](ATUALIZACAO-1.12.md). `src/menu-music.js` contém nove composições e listas por menu; `src/audio.js` mantém a posição por sessão. `RubraCore.encounter` aplica pressão por mapa, configurada em `src/config.js`. Aplicativo e portátil: RUBRA.
 

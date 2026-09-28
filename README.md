@@ -1,6 +1,6 @@
 # RUBRA
 
-Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. **Versão 1.13.0:** efeitos próprios para cinco armas glaciais, seleção duplicada do menu corrigida, hordas maiores no Profano e progressão mais suave na Necrópole e no Inverno. [Novidades](docs/ATUALIZACAO-1.13.md). [Músicas: ordem e duração](docs/ATUALIZACAO-1.12.md).
+Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. **Versão 1.14.0:** eventos opcionais, relatório de combate, bestiário e relíquias, seletor de músicas e revisão das áreas e tropas físicas do Profano. [Novidades](docs/ATUALIZACAO-1.14.md). [Músicas: ordem e duração](docs/ATUALIZACAO-1.12.md).
 
 [Baixar o executável mais recente](https://github.com/AllanDanil0/ProjetoDungeon/releases/latest/download/RUBRA.exe)
 

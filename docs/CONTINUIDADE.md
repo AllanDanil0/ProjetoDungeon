@@ -1,4 +1,16 @@
-# Estado atual — versão 1.13.0, 27/09/2026
+# Estado atual — versão 1.14.0, 27/09/2026
+
+Base 2cfba98; main conferida sem alterações concorrentes. Implementados três objetivos opcionais em ordem variável fora do tutorial, relatório de dano efetivo/eliminação por arma e melhorias, bestiário com arte e descoberta gradual, coleção das três relíquias de chefes e seletor das onze músicas de menus, preservando a reprodução automática por contexto. Saves mantêm estatísticas e eventos nos checkpoints; contagens antigas não são inventadas. Campanha e Laboratório continuam separados. Nenhuma evolução especial de arma foi acrescentada.
+
+Revisão restrita ao Profano: uma área persistente por arma, coeficientes locais para Zero Absoluto/Édito/Turíbulo/Rosário, abertura interna da órbita, recuperação da lentidão contínua, investidas físicas sinalizadas e gárgula perseguidora com impacto circular. Combate dos outros mapas preservado. Parâmetros, acessos e limites em ATUALIZACAO-1.14.md. Comparação com ASAR 1.13: gárgula com arsenal máximo passou de 6,8/5,3 s para 15,6/12,4 s (Malthor/Vespera); áreas máximas 6/7 → 3. Experimento restaura vida do caçador parado a cada passo; não é uma campanha humana. Inquisidor, contato máximo e invulnerabilidade de teste: 96,3/66,1 s.
+
+Validação: sintaxe, 36 regras, 62 integração, 25 menus, 11 Profano, 12 refinamento, 20 resultados, 16 atualização anterior, 14 gelo, 13 músicas, 10 efeitos, 13 inicialização e 34 crônicas (estas últimas no ASAR final). O primeiro teste de crônicas criou efeitos artificiais sem coordenadas; corrigido o fixture e repetido sem erros. Expectativa antiga de dano no centro do Rosário atualizada para testar a nova faixa, com regressão explícita da abertura interna. Teste de hordas isolado dos eventos aleatórios. Foco nativo recuperado explicitamente no teste de teclado da janela estreita. Layouts em três resoluções e eventos em combate capturados e inspecionados.
+
+Build 1.14 concluído; verify:package confirma fontes e assets idênticos e nenhuma ferramenta dev. Janela/F11 (3) e portátil real (24) aprovados, incluindo abertura/reabertura, cliques, músicas manual/automática, bestiário, relíquias, relatório, combate e retomada, sem erros registrados. SHA256 local (store): A6944E7BA6EFC0B5CA924D7C7B8E001F889C0E1798BDF6FAA6A31C9CC70A76D2. Saves reais não foram utilizados. Publicação e teste do download pendentes neste registro.
+
+---
+
+# Estado anterior — versão 1.13.0, 27/09/2026
 
 Base 4ba5408, main conferida sem alterações concorrentes. Cinco efeitos glaciais implementados em src/ice-effects.js, com partículas reduzidas quando desativadas, preservando dano e artes da 1.12. Menu inicial corrigido: hover prevalece sobre foco, uma seta dourada e nenhum contorno residual. Profano com grupos progressivos de até cinco e limite 110; capítulos anteriores com limite 65 e pressão reduzida; tutorial preservado. Detalhes em ATUALIZACAO-1.13.md.
 
