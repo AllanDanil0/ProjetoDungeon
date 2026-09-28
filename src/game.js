@@ -40,7 +40,13 @@ async function loadAssets(){
  if(assetLoading)return;assetLoading=true;assetReady=false;document.body.dataset.assets='loading';$('saveNotice').textContent='Carregando personagens e mapas…';$('retryAssets').classList.add('hidden');
  for(const id of ['beginRun','startButton','armoryButton','continueRun','labPlay'])$(id).disabled=true;
  try{
-  for(const [id,path]of Object.entries(C.assets)){const img=new Image();img.src=path;try{await img.decode();}catch{throw new Error('Não foi possível carregar '+path);}assetImages[id]=img;}
+  for(const [id,path]of Object.entries(C.assets)){
+   const img=new Image();
+   // Canvas consumes loaded images directly. decode() can remain pending in a
+   // background/occluded Chromium window, leaving every menu disabled forever.
+   await new Promise((resolve,reject)=>{const done=error=>{clearTimeout(timer);img.onload=img.onerror=null;error?reject(error):resolve();};const timer=setTimeout(()=>done(new Error('Tempo esgotado ao carregar '+path)),30000);img.onload=()=>done();img.onerror=()=>done(new Error('Não foi possível carregar '+path));img.src=path;});
+   assetImages[id]=img;
+  }
   const sprites=RubraSprites.build(assetImages);characterFrames={noctis:sprites.noctis,rubra:sprites.rubra,ignivar:sprites.ignivar,...Object.fromEntries(C.ice.heroes.map(id=>[id,sprites[id]]))};heroFrames=sprites.noctis;portraitFrames=sprites.portraits;
   RubraWorld.prepareTrees(assetImages);RubraIce.prepareMonsters(assetImages);Object.assign(characterFrames,RubraProfane.prepare(assetImages));RubraSanctuary.prepare(assetImages);RubraIcePolish.prepare(assetImages);
   assetReady=true;buildGround();document.body.dataset.assets='ready';$('saveNotice').textContent='';for(const id of ['beginRun','startButton','armoryButton','continueRun','labPlay'])$(id).disabled=false;
