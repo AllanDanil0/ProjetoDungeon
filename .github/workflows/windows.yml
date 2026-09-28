@@ -36,6 +36,7 @@ jobs:
       - name: Verificar isolamento do build
         run: npm run verify:package
       - name: Testar executavel real e reabertura de campanha
+        timeout-minutes: 5
         run: npm run test:portable
       - name: Publicar nova versao
         shell: pwsh
