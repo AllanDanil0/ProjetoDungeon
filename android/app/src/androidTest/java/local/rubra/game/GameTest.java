@@ -15,7 +15,7 @@ public class GameTest extends ActivityInstrumentationTestCase2<MainActivity> {
   assertTrue("JS timed out",done.await(30,TimeUnit.SECONDS));return result[0];
  }
  private void expect(String code) throws Exception {assertEquals(code,"true",js(code));android.util.Log.i("RUBRA_TEST","PASS "+code);}
- private void ready() throws Exception {for(int i=0;i<240;i++){if("true".equals(js("document.body.dataset.assets==='ready'")))return;SystemClock.sleep(500);}fail("Assets failed: "+js("document.getElementById('saveNotice').textContent"));}
+ private void ready() throws Exception {for(int i=0;i<240;i++){if("true".equals(js("typeof window.testBeforeReload==='undefined'&&document.body?.dataset.assets==='ready'")))return;SystemClock.sleep(500);}fail("Assets failed: "+js("document.getElementById('saveNotice').textContent"));}
  private void click(String id) throws Exception {
   js("document.getElementById('"+id+"').scrollIntoView({block:'center'})");SystemClock.sleep(250);
   JSONObject pos=new JSONObject(js("(()=>{const r=document.getElementById('"+id+"').getBoundingClientRect();return {x:(r.x+r.width/2)*devicePixelRatio,y:(r.y+r.height/2)*devicePixelRatio}})()"));
@@ -39,7 +39,7 @@ public class GameTest extends ActivityInstrumentationTestCase2<MainActivity> {
   getInstrumentation().runOnMainSync(()->activity.onBackPressed());SystemClock.sleep(300);expect("state==='playing'");
   getInstrumentation().runOnMainSync(()->getInstrumentation().callActivityOnPause(activity));SystemClock.sleep(300);expect("state==='paused'&&save.active!==null");getInstrumentation().runOnMainSync(()->getInstrumentation().callActivityOnResume(activity));
   click("saveQuit");
-  getInstrumentation().runOnMainSync(()->activity.web.reload());ready();expect("save.gold===321&&save.active!==null");
+  js("window.testBeforeReload=true");getInstrumentation().runOnMainSync(()->activity.web.reload());ready();expect("save.gold===321&&save.active!==null");
   click("optionsButton");
   click("openMusicLibrary");
   expect("state==='musicLibrary'&&document.querySelectorAll('[data-track]').length===11");
