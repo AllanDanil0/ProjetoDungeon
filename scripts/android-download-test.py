@@ -10,6 +10,7 @@ def click(text):
   if text.lower() in (node.get('text','')+' '+node.get('content-desc','')).lower() and node.get('enabled')=='true':
    x1,y1,x2,y2=map(int,re.findall(r'\d+',node.get('bounds')));adb('shell','input','tap',str((x1+x2)//2),str((y1+y2)//2));return
  raise AssertionError('Missing Android control: '+text)
+adb('shell','settings','put','secure','immersive_mode_confirmations','confirmed')
 adb('install','-r','RUBRA.apk')
 adb('shell','svc','wifi','disable');adb('shell','svc','data','disable')
 adb('logcat','-c');adb('shell','am','start','-W','-n','local.rubra.game/.MainActivity')

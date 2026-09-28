@@ -2,7 +2,7 @@ name: Validar APK Android
 on:
   push:
     branches: [main]
-    paths: ['android/**', 'src/mobile.*', '.github/workflows/android.yml']
+    paths: ['android/**', 'src/mobile.*', 'scripts/android-emulator-test.sh', '.github/workflows/android.yml']
   workflow_dispatch:
 permissions:
   contents: read

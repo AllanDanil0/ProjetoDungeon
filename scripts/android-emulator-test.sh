@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set +e
+adb shell settings put secure immersive_mode_confirmations confirmed
 gradle -p android connectedDebugAndroidTest
 result=$?
 mkdir -p android-diagnostics
