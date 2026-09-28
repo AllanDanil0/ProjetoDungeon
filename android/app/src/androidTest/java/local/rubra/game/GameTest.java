@@ -14,7 +14,7 @@ public class GameTest extends ActivityInstrumentationTestCase2<MainActivity> {
   getInstrumentation().runOnMainSync(()->activity.web.evaluateJavascript(code,v->{result[0]=v;done.countDown();}));
   assertTrue("JS timed out",done.await(30,TimeUnit.SECONDS));return result[0];
  }
- private void expect(String code) throws Exception {assertEquals(code,"true",js(code));}
+ private void expect(String code) throws Exception {assertEquals(code,"true",js(code));android.util.Log.i("RUBRA_TEST","PASS "+code);}
  private void ready() throws Exception {for(int i=0;i<240;i++){if("true".equals(js("document.body.dataset.assets==='ready'")))return;SystemClock.sleep(500);}fail("Assets failed: "+js("document.getElementById('saveNotice').textContent"));}
  private void click(String id) throws Exception {
   js("document.getElementById('"+id+"').scrollIntoView({block:'center'})");SystemClock.sleep(250);
@@ -37,7 +37,7 @@ public class GameTest extends ActivityInstrumentationTestCase2<MainActivity> {
   click("continueRun");expect("state==='playing'");
   getInstrumentation().runOnMainSync(()->activity.onBackPressed());SystemClock.sleep(300);expect("state==='paused'");
   getInstrumentation().runOnMainSync(()->activity.onBackPressed());SystemClock.sleep(300);expect("state==='playing'");
-  getInstrumentation().callActivityOnPause(activity);SystemClock.sleep(300);expect("state==='paused'&&save.active!==null");getInstrumentation().callActivityOnResume(activity);
+  getInstrumentation().runOnMainSync(()->getInstrumentation().callActivityOnPause(activity));SystemClock.sleep(300);expect("state==='paused'&&save.active!==null");getInstrumentation().runOnMainSync(()->getInstrumentation().callActivityOnResume(activity));
   click("saveQuit");
   getInstrumentation().runOnMainSync(()->activity.web.reload());ready();expect("save.gold===321&&save.active!==null");
   click("optionsButton");click("openMusicLibrary");expect("state==='musicLibrary'&&document.querySelectorAll('[data-track]').length===11");click("musicBack");click("openBestiary");expect("state==='bestiary'");
