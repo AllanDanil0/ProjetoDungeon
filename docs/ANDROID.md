@@ -13,3 +13,7 @@ Após baixar o artefato validado, usar apksigner com essa chave, verificar a ass
 ## Limites de validação
 
 Testes de layout usam janela horizontal de celular. A instrumentação Android cobre carregamento offline, navegação com toque, joystick, esquiva, pausa, salvar/retomar, volta do aplicativo, reabertura, músicas e bestiário. Um emulador não comprova desempenho em todos os aparelhos; recomenda-se conferir aparelhos físicos antes de distribuir em loja. Não há versão iOS neste APK.
+
+## Publicação validada
+
+Release android-1.14.0, publicado em 29/09/2026. Suíte de instrumentação aprovada no Actions 36373793354. APK assinado com v2/v3, 222 arquivos do jogo comparados à fonte. Download público instalado e aberto offline no emulador Android 15 no Actions 36517474962, com navegação por toques reais. SHA256: 89DFA8A308AFCDAECCE1BA7215A89B0BB157D0869487AA8A881EEF6D2180B786. Testes em aparelho físico ainda não realizados.

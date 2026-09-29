@@ -1,12 +1,16 @@
 # RUBRA
 
-Jogo offline em pixel art, HTML/JavaScript e aplicativo portátil para Windows 10/11 x64. **Versão 1.14.0:** eventos opcionais, relatório de combate, bestiário e relíquias, seletor de músicas e revisão das áreas e tropas físicas do Profano. [Novidades](docs/ATUALIZACAO-1.14.md). [Músicas: ordem e duração](docs/ATUALIZACAO-1.12.md).
+Jogo offline em pixel art, HTML/JavaScript e aplicativos para Windows 10/11 x64 e Android 8 ou superior. **Versão 1.14.0:** eventos opcionais, relatório de combate, bestiário e relíquias, seletor de músicas e revisão das áreas e tropas físicas do Profano. [Novidades](docs/ATUALIZACAO-1.14.md). [Músicas: ordem e duração](docs/ATUALIZACAO-1.12.md).
 
-[Baixar o executável mais recente](https://github.com/AllanDanil0/ProjetoDungeon/releases/latest/download/RUBRA.exe)
+[Baixar para PC — RUBRA.exe](https://github.com/AllanDanil0/ProjetoDungeon/releases/latest/download/RUBRA.exe)
 
-O link aponta para a última versão cuja compilação passou na aba Actions.
+[Baixar para Android — RUBRA.apk](https://github.com/AllanDanil0/ProjetoDungeon/releases/download/android-1.14.0/RUBRA.apk)
+
+O link de PC aponta para a última compilação Windows validada na aba Actions.
 Abra o arquivo com dois cliques. Não é necessário instalar Node.js nem ter internet para jogar.
-O executável não tem assinatura digital de editor.
+O executável Windows não tem assinatura digital de editor.
+
+No Android, baixe e abra o APK; autorize a instalação dessa origem quando o sistema solicitar. Jogue offline na horizontal, com joystick à esquerda e esquiva à direita. Mantenha o Android System WebView atualizado. O progresso fica no celular, separado do PC; atualizar pelo APK preserva os dados, mas desinstalar apaga o progresso local. [Detalhes da edição Android](docs/ANDROID.md).
 
 ## Novidades e desbloqueios
 
@@ -34,7 +38,7 @@ Recorde, escolhas, ouro e checkpoint são salvos em `%APPDATA%\RUBRA` no computa
 
 ## Atualizações automáticas no GitHub
 
-Cada push para `main` inicia a compilação Windows e publica uma nova Release com o executável e seu SHA256. O link acima aponta para a versão publicada mais recente. Também é possível iniciar a compilação manualmente em Actions → Publicar jogo para Windows → Run workflow.
+Cada push para `main`, exceto commits específicos `[android]`, inicia a compilação Windows e publica uma nova Release com o executável e seu SHA256. O link acima aponta para a versão publicada mais recente. Também é possível iniciar a compilação manualmente em Actions → Publicar jogo para Windows → Run workflow.
 
 `index.html` é a entrada do jogo. Balanceamento fica em `src/config.js`, regras de save e progressão em `src/core.js`, integração em `src/game.js`. `src/legacy.js` preserva a base gráfica e controles do original. `rubra.html` e `index.html.html` são cópias anteriores e não entram no executável.
 
