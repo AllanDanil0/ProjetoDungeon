@@ -1,6 +1,6 @@
 # Atualização 01 — diagnóstico e padrão de qualidade
 
-Iniciada em 01/10/2026 sobre a versão 1.14, commit 78a49f5. A revisão visual será distribuída no PC 1.14.1 após validação do executável. O APK permanece na 1.14. Android fica para uma solicitação posterior do autor.
+Iniciada em 01/10/2026 sobre a versão 1.14, commit 78a49f5. A revisão visual foi publicada no PC 1.14.1 (windows-34-1), com validação do executável local e do download público. O APK permanece na 1.14. Android fica para uma solicitação posterior do autor.
 
 ## Entrega desta etapa
 
