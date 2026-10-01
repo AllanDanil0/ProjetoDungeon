@@ -1,0 +1,1121 @@
+{
+  "method": "Seed 17; neutral hero modifiers; one weapon; 10 s, 30 Hz; 1 or 12 fixed high-HP targets at radius 65; no waves/events. Placement may favor or disadvantage a weapon. Not campaign DPS or player survival.",
+  "rows": [
+    {
+      "arena": "necropolis",
+      "weapon": "acorn",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 135,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "acorn",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 135,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "acorn",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 1764,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "acorn",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 1764,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "blade",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 0,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "blade",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 0,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "blade",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 935,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "blade",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 11220,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "dagger",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 308,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "dagger",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 308,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "dagger",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 3998.4,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "dagger",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 3998.4,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "ember",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 168,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "ember",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 504,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "ember",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 588,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "ember",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 4116,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "thorns",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 252,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "thorns",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 3024,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "thorns",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 1019.2,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "thorns",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 12230.4,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "lance",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 490,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "lance",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 490,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "lance",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 6468,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "lance",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 8624,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "cinder",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 216,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "cinder",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 648,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "cinder",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 2211.84,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "cinder",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 11796.48,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "chain",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 192,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "chain",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 576,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "chain",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 546.56,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "chain",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 2732.8,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "reaper",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 360,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "reaper",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 200,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "reaper",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 3300,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "necropolis",
+      "weapon": "reaper",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 2900,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "lance",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 490,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "lance",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 490,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "lance",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 6468,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "lance",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 8624,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "ember",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 168,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "ember",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 504,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "ember",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 588,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "ember",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 4116,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "chain",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 192,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "chain",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 576,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "chain",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 546.56,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "chain",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 2732.8,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "reaper",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 360,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "reaper",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 360,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "reaper",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 3300,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "reaper",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 3900,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "frostbolt",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 624,
+      "slowTargetSeconds": 9.77
+    },
+    {
+      "arena": "ice",
+      "weapon": "frostbolt",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 624,
+      "slowTargetSeconds": 15.33
+    },
+    {
+      "arena": "ice",
+      "weapon": "frostbolt",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 6389.76,
+      "slowTargetSeconds": 9.8
+    },
+    {
+      "arena": "ice",
+      "weapon": "frostbolt",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 6389.76,
+      "slowTargetSeconds": 21.13
+    },
+    {
+      "arena": "ice",
+      "weapon": "halo",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 540,
+      "slowTargetSeconds": 9.6
+    },
+    {
+      "arena": "ice",
+      "weapon": "halo",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 6480,
+      "slowTargetSeconds": 115.2
+    },
+    {
+      "arena": "ice",
+      "weapon": "halo",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 1797.12,
+      "slowTargetSeconds": 9.9
+    },
+    {
+      "arena": "ice",
+      "weapon": "halo",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 21565.44,
+      "slowTargetSeconds": 118.8
+    },
+    {
+      "arena": "ice",
+      "weapon": "comet",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 390,
+      "slowTargetSeconds": 6.1
+    },
+    {
+      "arena": "ice",
+      "weapon": "comet",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 1560,
+      "slowTargetSeconds": 24.4
+    },
+    {
+      "arena": "ice",
+      "weapon": "comet",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 3594.24,
+      "slowTargetSeconds": 8
+    },
+    {
+      "arena": "ice",
+      "weapon": "comet",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 27555.84,
+      "slowTargetSeconds": 62.4
+    },
+    {
+      "arena": "ice",
+      "weapon": "prism",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 408,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "prism",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 408,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "prism",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 1392.64,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "prism",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 1392.64,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "ice",
+      "weapon": "glaive",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 648,
+      "slowTargetSeconds": 6.23
+    },
+    {
+      "arena": "ice",
+      "weapon": "glaive",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 648,
+      "slowTargetSeconds": 9.3
+    },
+    {
+      "arena": "ice",
+      "weapon": "glaive",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 6635.52,
+      "slowTargetSeconds": 9.2
+    },
+    {
+      "arena": "ice",
+      "weapon": "glaive",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 6266.88,
+      "slowTargetSeconds": 14.6
+    },
+    {
+      "arena": "ice",
+      "weapon": "blizzard",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 616,
+      "slowTargetSeconds": 7.6
+    },
+    {
+      "arena": "ice",
+      "weapon": "blizzard",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 3080,
+      "slowTargetSeconds": 38
+    },
+    {
+      "arena": "ice",
+      "weapon": "blizzard",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 2007.04,
+      "slowTargetSeconds": 9.6
+    },
+    {
+      "arena": "ice",
+      "weapon": "blizzard",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 20070.4,
+      "slowTargetSeconds": 99.57
+    },
+    {
+      "arena": "ice",
+      "weapon": "absolute",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 2250,
+      "slowTargetSeconds": 9.6
+    },
+    {
+      "arena": "ice",
+      "weapon": "absolute",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 20250,
+      "slowTargetSeconds": 89.4
+    },
+    {
+      "arena": "ice",
+      "weapon": "absolute",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 8064,
+      "slowTargetSeconds": 9.6
+    },
+    {
+      "arena": "ice",
+      "weapon": "absolute",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 96768,
+      "slowTargetSeconds": 115.2
+    },
+    {
+      "arena": "profane",
+      "weapon": "absolute",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 1296,
+      "slowTargetSeconds": 4.5
+    },
+    {
+      "arena": "profane",
+      "weapon": "absolute",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 9072,
+      "slowTargetSeconds": 31.5
+    },
+    {
+      "arena": "profane",
+      "weapon": "absolute",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 3317.76,
+      "slowTargetSeconds": 4.5
+    },
+    {
+      "arena": "profane",
+      "weapon": "absolute",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 39813.12,
+      "slowTargetSeconds": 54
+    },
+    {
+      "arena": "profane",
+      "weapon": "comet",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 390,
+      "slowTargetSeconds": 6.1
+    },
+    {
+      "arena": "profane",
+      "weapon": "comet",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 1560,
+      "slowTargetSeconds": 24.4
+    },
+    {
+      "arena": "profane",
+      "weapon": "comet",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 3594.24,
+      "slowTargetSeconds": 8
+    },
+    {
+      "arena": "profane",
+      "weapon": "comet",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 28753.92,
+      "slowTargetSeconds": 62.4
+    },
+    {
+      "arena": "profane",
+      "weapon": "prism",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 408,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "prism",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 408,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "prism",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 1392.64,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "prism",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 1392.64,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "execution",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 1080,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "execution",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 5400,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "execution",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 3301.2,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "execution",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 16506,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "bloodwhip",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 1298,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "bloodwhip",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 1298,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "bloodwhip",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 4637.4,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "bloodwhip",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 4637.4,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "rosary",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 1279.2,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "rosary",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 15350.4,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "rosary",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 4468.67,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "rosary",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 53624.06,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "censer",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 1300,
+      "slowTargetSeconds": 6.57
+    },
+    {
+      "arena": "profane",
+      "weapon": "censer",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 9100,
+      "slowTargetSeconds": 45.97
+    },
+    {
+      "arena": "profane",
+      "weapon": "censer",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 3930,
+      "slowTargetSeconds": 6
+    },
+    {
+      "arena": "profane",
+      "weapon": "censer",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 47160,
+      "slowTargetSeconds": 72
+    },
+    {
+      "arena": "profane",
+      "weapon": "knell",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 875,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "knell",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 6125,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "knell",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 2751,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "knell",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 33012,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "nails",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 2240,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "nails",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 2240,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "nails",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 11444.16,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "nails",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 15258.88,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "heresy",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 868,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "heresy",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 3472,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "heresy",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 3248.8,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "heresy",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 19492.8,
+      "slowTargetSeconds": 0
+    },
+    {
+      "arena": "profane",
+      "weapon": "verdict",
+      "level": 1,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 1958.4,
+      "slowTargetSeconds": 4.5
+    },
+    {
+      "arena": "profane",
+      "weapon": "verdict",
+      "level": 1,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 17625.6,
+      "slowTargetSeconds": 40.5
+    },
+    {
+      "arena": "profane",
+      "weapon": "verdict",
+      "level": 7,
+      "targets": 1,
+      "seconds": 10,
+      "effectiveDamage": 5131.01,
+      "slowTargetSeconds": 4.5
+    },
+    {
+      "arena": "profane",
+      "weapon": "verdict",
+      "level": 7,
+      "targets": 12,
+      "seconds": 10,
+      "effectiveDamage": 61572.1,
+      "slowTargetSeconds": 54
+    }
+  ]
+}

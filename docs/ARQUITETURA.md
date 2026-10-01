@@ -1,6 +1,8 @@
 # The night is yours — arquitetura e continuidade
 
-**Versão atual 1.14:** [ATUALIZACAO-1.14.md](ATUALIZACAO-1.14.md). Estatísticas e normalização em `src/chronicle-core.js`; eventos e aproximação física do Profano em `src/chronicles.js`; bestiário, relatório e músicas em `src/collections.js`.
+**PC 1.14.1:** [arte dos eventos e validação](ATUALIZACAO-1.14.1.md). Android permanece 1.14.0.
+
+**Versão 1.14:** [ATUALIZACAO-1.14.md](ATUALIZACAO-1.14.md). Estatísticas e normalização em `src/chronicle-core.js`; eventos e aproximação física do Profano em `src/chronicles.js`; bestiário, relatório e músicas em `src/collections.js`.
 
 **Versão 1.13:** [ATUALIZACAO-1.13.md](ATUALIZACAO-1.13.md). Efeitos em `src/ice-effects.js`; limite de inimigos por capítulo em `RubraCore.enemyLimit`.
 
@@ -23,6 +25,10 @@
 **Atualização 1.3:** [ATUALIZACAO-1.3.md](ATUALIZACAO-1.3.md) complementa a versão 1.2 com correções dos menus/Laboratório e mundo ampliado em `src/world.js`. Leia primeiro para as regras atuais.
 
 **Atualização 1.2:** leia [ATUALIZACAO-1.2.md](ATUALIZACAO-1.2.md) para as regras vigentes de personagens, menus, arsenais por mapa, save v3 e Laboratório público. As seções abaixo registram a base 1.1 e seus sistemas reutilizados. Onde houver diferença, vale a atualização 1.2.
+
+## Desenvolvimento após 1.14
+
+[Projeto RUBRA — Atualização 01](PROJETO-RUBRA-01.md): diagnóstico e arte nativa dos eventos em `src/event-art.js`, carregada antes de `chronicles.js`. Cache de três sprites; funções de desenho não alteram estado de campanha. `tests/quality-baseline.cjs` e `tests/weapon-baseline.cjs` ficam fora da distribuição.
 
 ## Estrutura reaproveitada
 

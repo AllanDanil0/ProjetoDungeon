@@ -1,7 +1,7 @@
 {
   "name": "rubra-a-ultima-lamina",
   "productName": "RUBRA",
-  "version": "1.14.0",
+  "version": "1.14.1",
   "description": "RUBRA: jogo offline para Windows",
   "author": "RUBRA",
   "private": true,
@@ -25,7 +25,8 @@
     "test:window": "electron tests/window.cjs",
     "test:music-update": "electron tests/music-update.cjs",
     "test:effects-update": "electron tests/effects-update.cjs",
-    "test:chronicles": "electron tests/chronicles.cjs"
+    "test:chronicles": "electron tests/chronicles.cjs",
+    "test:quality": "electron tests/quality-baseline.cjs"
   },
   "build": {
     "appId": "local.rubra.game",

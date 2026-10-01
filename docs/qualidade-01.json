@@ -1,0 +1,1618 @@
+{
+  "date": "2026-10-01T03:54:50.565Z",
+  "environment": {
+    "cpu": "Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz",
+    "platform": "win32",
+    "electron": "44.3.0",
+    "node": "24.20.0",
+    "render": "software offscreen; CPU draw-call time, not gameplay FPS"
+  },
+  "checks": [
+    "animated",
+    "reduced",
+    "corner",
+    "unchanged",
+    "cached sprites",
+    "necropolis altar",
+    "necropolis crystals",
+    "necropolis marked",
+    "ice altar",
+    "ice crystals",
+    "ice marked",
+    "profane altar",
+    "profane crystals",
+    "profane marked"
+  ],
+  "errors": [],
+  "animated": true,
+  "reduced": true,
+  "corner": true,
+  "unchanged": true,
+  "allocated": 0,
+  "eventDrawMs": {
+    "mean": 0.13625000029802323,
+    "p95": 0.20000004768371582,
+    "samples": 400
+  },
+  "weaponStats": [
+    {
+      "arena": "necropolis",
+      "id": "acorn",
+      "name": "Estilhaço do bosque",
+      "level": 1,
+      "damage": 15,
+      "interval": 1.1,
+      "radius": 0,
+      "kind": "aimed"
+    },
+    {
+      "arena": "necropolis",
+      "id": "acorn",
+      "name": "Estilhaço do bosque",
+      "level": 7,
+      "damage": 42,
+      "interval": 0.7040000000000001,
+      "radius": 0,
+      "kind": "aimed"
+    },
+    {
+      "arena": "necropolis",
+      "id": "blade",
+      "name": "Lâmina ancestral",
+      "level": 1,
+      "damage": 22,
+      "interval": 0.9,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "necropolis",
+      "id": "blade",
+      "name": "Lâmina ancestral",
+      "level": 7,
+      "damage": 55,
+      "interval": 0.5760000000000001,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "necropolis",
+      "id": "dagger",
+      "name": "Agulha carmesim",
+      "level": 1,
+      "damage": 28,
+      "interval": 0.9,
+      "radius": 0,
+      "kind": "aimed"
+    },
+    {
+      "arena": "necropolis",
+      "id": "dagger",
+      "name": "Agulha carmesim",
+      "level": 7,
+      "damage": 78.39999999999999,
+      "interval": 0.5760000000000001,
+      "radius": 0,
+      "kind": "aimed"
+    },
+    {
+      "arena": "necropolis",
+      "id": "ember",
+      "name": "Selo das cinzas",
+      "level": 1,
+      "damage": 42,
+      "interval": 2.8,
+      "radius": 46,
+      "kind": "area"
+    },
+    {
+      "arena": "necropolis",
+      "id": "ember",
+      "name": "Selo das cinzas",
+      "level": 7,
+      "damage": 117.6,
+      "interval": 1.9599999999999997,
+      "radius": 79.12,
+      "kind": "area"
+    },
+    {
+      "arena": "necropolis",
+      "id": "thorns",
+      "name": "Coroa de espinhos",
+      "level": 1,
+      "damage": 28,
+      "interval": 1.1,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "necropolis",
+      "id": "thorns",
+      "name": "Coroa de espinhos",
+      "level": 7,
+      "damage": 78.39999999999999,
+      "interval": 0.77,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "necropolis",
+      "id": "lance",
+      "name": "Lança do túmulo",
+      "level": 1,
+      "damage": 70,
+      "interval": 1.5,
+      "radius": 0,
+      "kind": "piercing"
+    },
+    {
+      "arena": "necropolis",
+      "id": "lance",
+      "name": "Lança do túmulo",
+      "level": 7,
+      "damage": 196,
+      "interval": 0.96,
+      "radius": 0,
+      "kind": "piercing"
+    },
+    {
+      "arena": "necropolis",
+      "id": "cinder",
+      "name": "Cetro da fornalha",
+      "level": 1,
+      "damage": 36,
+      "interval": 1.65,
+      "radius": 37,
+      "kind": "explosive"
+    },
+    {
+      "arena": "necropolis",
+      "id": "cinder",
+      "name": "Cetro da fornalha",
+      "level": 7,
+      "damage": 92.16,
+      "interval": 1.2045,
+      "radius": 63.64,
+      "kind": "explosive"
+    },
+    {
+      "arena": "necropolis",
+      "id": "chain",
+      "name": "Rosário da tempestade",
+      "level": 1,
+      "damage": 32,
+      "interval": 1.85,
+      "radius": 0,
+      "kind": "chain"
+    },
+    {
+      "arena": "necropolis",
+      "id": "chain",
+      "name": "Rosário da tempestade",
+      "level": 7,
+      "damage": 78.08,
+      "interval": 1.4060000000000001,
+      "radius": 0,
+      "kind": "chain"
+    },
+    {
+      "arena": "necropolis",
+      "id": "reaper",
+      "name": "Foice do eclipse",
+      "level": 1,
+      "damage": 40,
+      "interval": 2.2,
+      "radius": 0,
+      "kind": "returning"
+    },
+    {
+      "arena": "necropolis",
+      "id": "reaper",
+      "name": "Foice do eclipse",
+      "level": 7,
+      "damage": 100,
+      "interval": 1.606,
+      "radius": 0,
+      "kind": "returning"
+    },
+    {
+      "arena": "necropolis",
+      "id": "frostbolt",
+      "name": "Agulhas boreais",
+      "level": 1,
+      "damage": 52,
+      "interval": 0.85,
+      "radius": 0,
+      "kind": "aimed"
+    },
+    {
+      "arena": "necropolis",
+      "id": "frostbolt",
+      "name": "Agulhas boreais",
+      "level": 7,
+      "damage": 133.12,
+      "interval": 0.6204999999999999,
+      "radius": 0,
+      "kind": "aimed"
+    },
+    {
+      "arena": "necropolis",
+      "id": "halo",
+      "name": "Coroa de estilhaços",
+      "level": 1,
+      "damage": 54,
+      "interval": 1.05,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "necropolis",
+      "id": "halo",
+      "name": "Coroa de estilhaços",
+      "level": 7,
+      "damage": 138.24,
+      "interval": 0.7665,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "necropolis",
+      "id": "comet",
+      "name": "Cometa polar",
+      "level": 1,
+      "damage": 78,
+      "interval": 2.2,
+      "radius": 51,
+      "kind": "explosive"
+    },
+    {
+      "arena": "necropolis",
+      "id": "comet",
+      "name": "Cometa polar",
+      "level": 7,
+      "damage": 199.68,
+      "interval": 1.606,
+      "radius": 87.72,
+      "kind": "explosive"
+    },
+    {
+      "arena": "necropolis",
+      "id": "prism",
+      "name": "Prisma da aurora",
+      "level": 1,
+      "damage": 68,
+      "interval": 1.9,
+      "radius": 0,
+      "kind": "beam"
+    },
+    {
+      "arena": "necropolis",
+      "id": "prism",
+      "name": "Prisma da aurora",
+      "level": 7,
+      "damage": 174.08,
+      "interval": 1.387,
+      "radius": 0,
+      "kind": "beam"
+    },
+    {
+      "arena": "necropolis",
+      "id": "glaive",
+      "name": "Gume do inverno",
+      "level": 1,
+      "damage": 72,
+      "interval": 2,
+      "radius": 0,
+      "kind": "returning"
+    },
+    {
+      "arena": "necropolis",
+      "id": "glaive",
+      "name": "Gume do inverno",
+      "level": 7,
+      "damage": 184.32,
+      "interval": 1.46,
+      "radius": 0,
+      "kind": "returning"
+    },
+    {
+      "arena": "necropolis",
+      "id": "blizzard",
+      "name": "Cetro da nevasca",
+      "level": 1,
+      "damage": 56,
+      "interval": 4,
+      "radius": 64,
+      "duration": 2.8,
+      "kind": "storm"
+    },
+    {
+      "arena": "necropolis",
+      "id": "blizzard",
+      "name": "Cetro da nevasca",
+      "level": 7,
+      "damage": 143.36,
+      "interval": 2.92,
+      "radius": 110.08,
+      "duration": 2.8,
+      "kind": "storm"
+    },
+    {
+      "arena": "necropolis",
+      "id": "absolute",
+      "name": "Lâmina do Zero Absoluto",
+      "level": 1,
+      "damage": 150,
+      "interval": 3.2,
+      "radius": 100,
+      "duration": 2.8,
+      "kind": "storm"
+    },
+    {
+      "arena": "necropolis",
+      "id": "absolute",
+      "name": "Lâmina do Zero Absoluto",
+      "level": 7,
+      "damage": 384,
+      "interval": 2.336,
+      "radius": 172,
+      "duration": 2.8,
+      "kind": "storm"
+    },
+    {
+      "arena": "necropolis",
+      "id": "execution",
+      "name": "Machado da Execução",
+      "level": 1,
+      "damage": 180,
+      "interval": 1.95,
+      "radius": 0,
+      "kind": "cleave"
+    },
+    {
+      "arena": "necropolis",
+      "id": "execution",
+      "name": "Machado da Execução",
+      "level": 7,
+      "damage": 471.6,
+      "interval": 1.4235,
+      "radius": 0,
+      "kind": "cleave"
+    },
+    {
+      "arena": "necropolis",
+      "id": "bloodwhip",
+      "name": "Chicote de Sangue",
+      "level": 1,
+      "damage": 118,
+      "interval": 0.92,
+      "radius": 0,
+      "kind": "beam"
+    },
+    {
+      "arena": "necropolis",
+      "id": "bloodwhip",
+      "name": "Chicote de Sangue",
+      "level": 7,
+      "damage": 309.16,
+      "interval": 0.6716,
+      "radius": 0,
+      "kind": "beam"
+    },
+    {
+      "arena": "necropolis",
+      "id": "rosary",
+      "name": "Lâminas do Rosário",
+      "level": 1,
+      "damage": 104,
+      "interval": 0.68,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "necropolis",
+      "id": "rosary",
+      "name": "Lâminas do Rosário",
+      "level": 7,
+      "damage": 272.48,
+      "interval": 0.4964,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "necropolis",
+      "id": "censer",
+      "name": "Turíbulo das Almas",
+      "level": 1,
+      "damage": 100,
+      "interval": 3.8,
+      "radius": 90,
+      "duration": 3,
+      "kind": "storm"
+    },
+    {
+      "arena": "necropolis",
+      "id": "censer",
+      "name": "Turíbulo das Almas",
+      "level": 7,
+      "damage": 262,
+      "interval": 2.774,
+      "radius": 154.8,
+      "duration": 3,
+      "kind": "storm"
+    },
+    {
+      "arena": "necropolis",
+      "id": "knell",
+      "name": "Sino da Ruína",
+      "level": 1,
+      "damage": 175,
+      "interval": 2.2,
+      "radius": 96,
+      "kind": "area"
+    },
+    {
+      "arena": "necropolis",
+      "id": "knell",
+      "name": "Sino da Ruína",
+      "level": 7,
+      "damage": 458.5,
+      "interval": 1.606,
+      "radius": 165.12,
+      "kind": "area"
+    },
+    {
+      "arena": "necropolis",
+      "id": "nails",
+      "name": "Pregos do Mártir",
+      "level": 1,
+      "damage": 112,
+      "interval": 1.05,
+      "radius": 0,
+      "kind": "piercing"
+    },
+    {
+      "arena": "necropolis",
+      "id": "nails",
+      "name": "Pregos do Mártir",
+      "level": 7,
+      "damage": 293.44,
+      "interval": 0.7665,
+      "radius": 0,
+      "kind": "piercing"
+    },
+    {
+      "arena": "necropolis",
+      "id": "heresy",
+      "name": "Evangelho das Sombras",
+      "level": 1,
+      "damage": 124,
+      "interval": 1.45,
+      "radius": 0,
+      "kind": "chain"
+    },
+    {
+      "arena": "necropolis",
+      "id": "heresy",
+      "name": "Evangelho das Sombras",
+      "level": 7,
+      "damage": 324.88,
+      "interval": 1.0585,
+      "radius": 0,
+      "kind": "chain"
+    },
+    {
+      "arena": "necropolis",
+      "id": "verdict",
+      "name": "Édito do Inquisidor",
+      "level": 1,
+      "damage": 240,
+      "interval": 3.6,
+      "radius": 120,
+      "duration": 2.9,
+      "kind": "storm"
+    },
+    {
+      "arena": "necropolis",
+      "id": "verdict",
+      "name": "Édito do Inquisidor",
+      "level": 7,
+      "damage": 628.8000000000001,
+      "interval": 2.628,
+      "radius": 206.4,
+      "duration": 2.9,
+      "kind": "storm"
+    },
+    {
+      "arena": "ice",
+      "id": "acorn",
+      "name": "Estilhaço do bosque",
+      "level": 1,
+      "damage": 15,
+      "interval": 1.1,
+      "radius": 0,
+      "kind": "aimed"
+    },
+    {
+      "arena": "ice",
+      "id": "acorn",
+      "name": "Estilhaço do bosque",
+      "level": 7,
+      "damage": 42,
+      "interval": 0.7040000000000001,
+      "radius": 0,
+      "kind": "aimed"
+    },
+    {
+      "arena": "ice",
+      "id": "blade",
+      "name": "Lâmina ancestral",
+      "level": 1,
+      "damage": 22,
+      "interval": 0.9,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "ice",
+      "id": "blade",
+      "name": "Lâmina ancestral",
+      "level": 7,
+      "damage": 55,
+      "interval": 0.5760000000000001,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "ice",
+      "id": "dagger",
+      "name": "Agulha carmesim",
+      "level": 1,
+      "damage": 28,
+      "interval": 0.9,
+      "radius": 0,
+      "kind": "aimed"
+    },
+    {
+      "arena": "ice",
+      "id": "dagger",
+      "name": "Agulha carmesim",
+      "level": 7,
+      "damage": 78.39999999999999,
+      "interval": 0.5760000000000001,
+      "radius": 0,
+      "kind": "aimed"
+    },
+    {
+      "arena": "ice",
+      "id": "ember",
+      "name": "Selo das cinzas",
+      "level": 1,
+      "damage": 42,
+      "interval": 2.8,
+      "radius": 46,
+      "kind": "area"
+    },
+    {
+      "arena": "ice",
+      "id": "ember",
+      "name": "Selo das cinzas",
+      "level": 7,
+      "damage": 117.6,
+      "interval": 1.9599999999999997,
+      "radius": 79.12,
+      "kind": "area"
+    },
+    {
+      "arena": "ice",
+      "id": "thorns",
+      "name": "Coroa de espinhos",
+      "level": 1,
+      "damage": 28,
+      "interval": 1.1,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "ice",
+      "id": "thorns",
+      "name": "Coroa de espinhos",
+      "level": 7,
+      "damage": 78.39999999999999,
+      "interval": 0.77,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "ice",
+      "id": "lance",
+      "name": "Lança do túmulo",
+      "level": 1,
+      "damage": 70,
+      "interval": 1.5,
+      "radius": 0,
+      "kind": "piercing"
+    },
+    {
+      "arena": "ice",
+      "id": "lance",
+      "name": "Lança do túmulo",
+      "level": 7,
+      "damage": 196,
+      "interval": 0.96,
+      "radius": 0,
+      "kind": "piercing"
+    },
+    {
+      "arena": "ice",
+      "id": "cinder",
+      "name": "Cetro da fornalha",
+      "level": 1,
+      "damage": 36,
+      "interval": 1.65,
+      "radius": 37,
+      "kind": "explosive"
+    },
+    {
+      "arena": "ice",
+      "id": "cinder",
+      "name": "Cetro da fornalha",
+      "level": 7,
+      "damage": 92.16,
+      "interval": 1.2045,
+      "radius": 63.64,
+      "kind": "explosive"
+    },
+    {
+      "arena": "ice",
+      "id": "chain",
+      "name": "Rosário da tempestade",
+      "level": 1,
+      "damage": 32,
+      "interval": 1.85,
+      "radius": 0,
+      "kind": "chain"
+    },
+    {
+      "arena": "ice",
+      "id": "chain",
+      "name": "Rosário da tempestade",
+      "level": 7,
+      "damage": 78.08,
+      "interval": 1.4060000000000001,
+      "radius": 0,
+      "kind": "chain"
+    },
+    {
+      "arena": "ice",
+      "id": "reaper",
+      "name": "Foice do eclipse",
+      "level": 1,
+      "damage": 40,
+      "interval": 2.2,
+      "radius": 0,
+      "kind": "returning"
+    },
+    {
+      "arena": "ice",
+      "id": "reaper",
+      "name": "Foice do eclipse",
+      "level": 7,
+      "damage": 100,
+      "interval": 1.606,
+      "radius": 0,
+      "kind": "returning"
+    },
+    {
+      "arena": "ice",
+      "id": "frostbolt",
+      "name": "Agulhas boreais",
+      "level": 1,
+      "damage": 52,
+      "interval": 0.85,
+      "radius": 0,
+      "kind": "aimed"
+    },
+    {
+      "arena": "ice",
+      "id": "frostbolt",
+      "name": "Agulhas boreais",
+      "level": 7,
+      "damage": 133.12,
+      "interval": 0.6204999999999999,
+      "radius": 0,
+      "kind": "aimed"
+    },
+    {
+      "arena": "ice",
+      "id": "halo",
+      "name": "Coroa de estilhaços",
+      "level": 1,
+      "damage": 54,
+      "interval": 1.05,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "ice",
+      "id": "halo",
+      "name": "Coroa de estilhaços",
+      "level": 7,
+      "damage": 138.24,
+      "interval": 0.7665,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "ice",
+      "id": "comet",
+      "name": "Cometa polar",
+      "level": 1,
+      "damage": 78,
+      "interval": 2.2,
+      "radius": 51,
+      "kind": "explosive"
+    },
+    {
+      "arena": "ice",
+      "id": "comet",
+      "name": "Cometa polar",
+      "level": 7,
+      "damage": 199.68,
+      "interval": 1.606,
+      "radius": 87.72,
+      "kind": "explosive"
+    },
+    {
+      "arena": "ice",
+      "id": "prism",
+      "name": "Prisma da aurora",
+      "level": 1,
+      "damage": 68,
+      "interval": 1.9,
+      "radius": 0,
+      "kind": "beam"
+    },
+    {
+      "arena": "ice",
+      "id": "prism",
+      "name": "Prisma da aurora",
+      "level": 7,
+      "damage": 174.08,
+      "interval": 1.387,
+      "radius": 0,
+      "kind": "beam"
+    },
+    {
+      "arena": "ice",
+      "id": "glaive",
+      "name": "Gume do inverno",
+      "level": 1,
+      "damage": 72,
+      "interval": 2,
+      "radius": 0,
+      "kind": "returning"
+    },
+    {
+      "arena": "ice",
+      "id": "glaive",
+      "name": "Gume do inverno",
+      "level": 7,
+      "damage": 184.32,
+      "interval": 1.46,
+      "radius": 0,
+      "kind": "returning"
+    },
+    {
+      "arena": "ice",
+      "id": "blizzard",
+      "name": "Cetro da nevasca",
+      "level": 1,
+      "damage": 56,
+      "interval": 4,
+      "radius": 64,
+      "duration": 2.8,
+      "kind": "storm"
+    },
+    {
+      "arena": "ice",
+      "id": "blizzard",
+      "name": "Cetro da nevasca",
+      "level": 7,
+      "damage": 143.36,
+      "interval": 2.92,
+      "radius": 110.08,
+      "duration": 2.8,
+      "kind": "storm"
+    },
+    {
+      "arena": "ice",
+      "id": "absolute",
+      "name": "Lâmina do Zero Absoluto",
+      "level": 1,
+      "damage": 150,
+      "interval": 3.2,
+      "radius": 100,
+      "duration": 2.8,
+      "kind": "storm"
+    },
+    {
+      "arena": "ice",
+      "id": "absolute",
+      "name": "Lâmina do Zero Absoluto",
+      "level": 7,
+      "damage": 384,
+      "interval": 2.336,
+      "radius": 172,
+      "duration": 2.8,
+      "kind": "storm"
+    },
+    {
+      "arena": "ice",
+      "id": "execution",
+      "name": "Machado da Execução",
+      "level": 1,
+      "damage": 180,
+      "interval": 1.95,
+      "radius": 0,
+      "kind": "cleave"
+    },
+    {
+      "arena": "ice",
+      "id": "execution",
+      "name": "Machado da Execução",
+      "level": 7,
+      "damage": 471.6,
+      "interval": 1.4235,
+      "radius": 0,
+      "kind": "cleave"
+    },
+    {
+      "arena": "ice",
+      "id": "bloodwhip",
+      "name": "Chicote de Sangue",
+      "level": 1,
+      "damage": 118,
+      "interval": 0.92,
+      "radius": 0,
+      "kind": "beam"
+    },
+    {
+      "arena": "ice",
+      "id": "bloodwhip",
+      "name": "Chicote de Sangue",
+      "level": 7,
+      "damage": 309.16,
+      "interval": 0.6716,
+      "radius": 0,
+      "kind": "beam"
+    },
+    {
+      "arena": "ice",
+      "id": "rosary",
+      "name": "Lâminas do Rosário",
+      "level": 1,
+      "damage": 104,
+      "interval": 0.68,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "ice",
+      "id": "rosary",
+      "name": "Lâminas do Rosário",
+      "level": 7,
+      "damage": 272.48,
+      "interval": 0.4964,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "ice",
+      "id": "censer",
+      "name": "Turíbulo das Almas",
+      "level": 1,
+      "damage": 100,
+      "interval": 3.8,
+      "radius": 90,
+      "duration": 3,
+      "kind": "storm"
+    },
+    {
+      "arena": "ice",
+      "id": "censer",
+      "name": "Turíbulo das Almas",
+      "level": 7,
+      "damage": 262,
+      "interval": 2.774,
+      "radius": 154.8,
+      "duration": 3,
+      "kind": "storm"
+    },
+    {
+      "arena": "ice",
+      "id": "knell",
+      "name": "Sino da Ruína",
+      "level": 1,
+      "damage": 175,
+      "interval": 2.2,
+      "radius": 96,
+      "kind": "area"
+    },
+    {
+      "arena": "ice",
+      "id": "knell",
+      "name": "Sino da Ruína",
+      "level": 7,
+      "damage": 458.5,
+      "interval": 1.606,
+      "radius": 165.12,
+      "kind": "area"
+    },
+    {
+      "arena": "ice",
+      "id": "nails",
+      "name": "Pregos do Mártir",
+      "level": 1,
+      "damage": 112,
+      "interval": 1.05,
+      "radius": 0,
+      "kind": "piercing"
+    },
+    {
+      "arena": "ice",
+      "id": "nails",
+      "name": "Pregos do Mártir",
+      "level": 7,
+      "damage": 293.44,
+      "interval": 0.7665,
+      "radius": 0,
+      "kind": "piercing"
+    },
+    {
+      "arena": "ice",
+      "id": "heresy",
+      "name": "Evangelho das Sombras",
+      "level": 1,
+      "damage": 124,
+      "interval": 1.45,
+      "radius": 0,
+      "kind": "chain"
+    },
+    {
+      "arena": "ice",
+      "id": "heresy",
+      "name": "Evangelho das Sombras",
+      "level": 7,
+      "damage": 324.88,
+      "interval": 1.0585,
+      "radius": 0,
+      "kind": "chain"
+    },
+    {
+      "arena": "ice",
+      "id": "verdict",
+      "name": "Édito do Inquisidor",
+      "level": 1,
+      "damage": 240,
+      "interval": 3.6,
+      "radius": 120,
+      "duration": 2.9,
+      "kind": "storm"
+    },
+    {
+      "arena": "ice",
+      "id": "verdict",
+      "name": "Édito do Inquisidor",
+      "level": 7,
+      "damage": 628.8000000000001,
+      "interval": 2.628,
+      "radius": 206.4,
+      "duration": 2.9,
+      "kind": "storm"
+    },
+    {
+      "arena": "profane",
+      "id": "acorn",
+      "name": "Estilhaço do bosque",
+      "level": 1,
+      "damage": 15,
+      "interval": 1.1,
+      "radius": 0,
+      "kind": "aimed"
+    },
+    {
+      "arena": "profane",
+      "id": "acorn",
+      "name": "Estilhaço do bosque",
+      "level": 7,
+      "damage": 42,
+      "interval": 0.7040000000000001,
+      "radius": 0,
+      "kind": "aimed"
+    },
+    {
+      "arena": "profane",
+      "id": "blade",
+      "name": "Lâmina ancestral",
+      "level": 1,
+      "damage": 22,
+      "interval": 0.9,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "profane",
+      "id": "blade",
+      "name": "Lâmina ancestral",
+      "level": 7,
+      "damage": 55,
+      "interval": 0.5760000000000001,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "profane",
+      "id": "dagger",
+      "name": "Agulha carmesim",
+      "level": 1,
+      "damage": 28,
+      "interval": 0.9,
+      "radius": 0,
+      "kind": "aimed"
+    },
+    {
+      "arena": "profane",
+      "id": "dagger",
+      "name": "Agulha carmesim",
+      "level": 7,
+      "damage": 78.39999999999999,
+      "interval": 0.5760000000000001,
+      "radius": 0,
+      "kind": "aimed"
+    },
+    {
+      "arena": "profane",
+      "id": "ember",
+      "name": "Selo das cinzas",
+      "level": 1,
+      "damage": 42,
+      "interval": 2.8,
+      "radius": 46,
+      "kind": "area"
+    },
+    {
+      "arena": "profane",
+      "id": "ember",
+      "name": "Selo das cinzas",
+      "level": 7,
+      "damage": 117.6,
+      "interval": 1.9599999999999997,
+      "radius": 79.12,
+      "kind": "area"
+    },
+    {
+      "arena": "profane",
+      "id": "thorns",
+      "name": "Coroa de espinhos",
+      "level": 1,
+      "damage": 28,
+      "interval": 1.1,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "profane",
+      "id": "thorns",
+      "name": "Coroa de espinhos",
+      "level": 7,
+      "damage": 78.39999999999999,
+      "interval": 0.77,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "profane",
+      "id": "lance",
+      "name": "Lança do túmulo",
+      "level": 1,
+      "damage": 70,
+      "interval": 1.5,
+      "radius": 0,
+      "kind": "piercing"
+    },
+    {
+      "arena": "profane",
+      "id": "lance",
+      "name": "Lança do túmulo",
+      "level": 7,
+      "damage": 196,
+      "interval": 0.96,
+      "radius": 0,
+      "kind": "piercing"
+    },
+    {
+      "arena": "profane",
+      "id": "cinder",
+      "name": "Cetro da fornalha",
+      "level": 1,
+      "damage": 36,
+      "interval": 1.65,
+      "radius": 37,
+      "kind": "explosive"
+    },
+    {
+      "arena": "profane",
+      "id": "cinder",
+      "name": "Cetro da fornalha",
+      "level": 7,
+      "damage": 92.16,
+      "interval": 1.2045,
+      "radius": 63.64,
+      "kind": "explosive"
+    },
+    {
+      "arena": "profane",
+      "id": "chain",
+      "name": "Rosário da tempestade",
+      "level": 1,
+      "damage": 32,
+      "interval": 1.85,
+      "radius": 0,
+      "kind": "chain"
+    },
+    {
+      "arena": "profane",
+      "id": "chain",
+      "name": "Rosário da tempestade",
+      "level": 7,
+      "damage": 78.08,
+      "interval": 1.4060000000000001,
+      "radius": 0,
+      "kind": "chain"
+    },
+    {
+      "arena": "profane",
+      "id": "reaper",
+      "name": "Foice do eclipse",
+      "level": 1,
+      "damage": 40,
+      "interval": 2.2,
+      "radius": 0,
+      "kind": "returning"
+    },
+    {
+      "arena": "profane",
+      "id": "reaper",
+      "name": "Foice do eclipse",
+      "level": 7,
+      "damage": 100,
+      "interval": 1.606,
+      "radius": 0,
+      "kind": "returning"
+    },
+    {
+      "arena": "profane",
+      "id": "frostbolt",
+      "name": "Agulhas boreais",
+      "level": 1,
+      "damage": 52,
+      "interval": 0.85,
+      "radius": 0,
+      "kind": "aimed"
+    },
+    {
+      "arena": "profane",
+      "id": "frostbolt",
+      "name": "Agulhas boreais",
+      "level": 7,
+      "damage": 133.12,
+      "interval": 0.6204999999999999,
+      "radius": 0,
+      "kind": "aimed"
+    },
+    {
+      "arena": "profane",
+      "id": "halo",
+      "name": "Coroa de estilhaços",
+      "level": 1,
+      "damage": 54,
+      "interval": 1.05,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "profane",
+      "id": "halo",
+      "name": "Coroa de estilhaços",
+      "level": 7,
+      "damage": 138.24,
+      "interval": 0.7665,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "profane",
+      "id": "comet",
+      "name": "Cometa polar",
+      "level": 1,
+      "damage": 78,
+      "interval": 2.2,
+      "radius": 51,
+      "kind": "explosive"
+    },
+    {
+      "arena": "profane",
+      "id": "comet",
+      "name": "Cometa polar",
+      "level": 7,
+      "damage": 199.68,
+      "interval": 1.606,
+      "radius": 87.72,
+      "kind": "explosive"
+    },
+    {
+      "arena": "profane",
+      "id": "prism",
+      "name": "Prisma da aurora",
+      "level": 1,
+      "damage": 68,
+      "interval": 1.9,
+      "radius": 0,
+      "kind": "beam"
+    },
+    {
+      "arena": "profane",
+      "id": "prism",
+      "name": "Prisma da aurora",
+      "level": 7,
+      "damage": 174.08,
+      "interval": 1.387,
+      "radius": 0,
+      "kind": "beam"
+    },
+    {
+      "arena": "profane",
+      "id": "glaive",
+      "name": "Gume do inverno",
+      "level": 1,
+      "damage": 72,
+      "interval": 2,
+      "radius": 0,
+      "kind": "returning"
+    },
+    {
+      "arena": "profane",
+      "id": "glaive",
+      "name": "Gume do inverno",
+      "level": 7,
+      "damage": 184.32,
+      "interval": 1.46,
+      "radius": 0,
+      "kind": "returning"
+    },
+    {
+      "arena": "profane",
+      "id": "blizzard",
+      "name": "Cetro da nevasca",
+      "level": 1,
+      "damage": 56,
+      "interval": 4,
+      "radius": 64,
+      "duration": 2.8,
+      "kind": "storm"
+    },
+    {
+      "arena": "profane",
+      "id": "blizzard",
+      "name": "Cetro da nevasca",
+      "level": 7,
+      "damage": 143.36,
+      "interval": 2.92,
+      "radius": 110.08,
+      "duration": 2.8,
+      "kind": "storm"
+    },
+    {
+      "arena": "profane",
+      "id": "absolute",
+      "name": "Lâmina do Zero Absoluto",
+      "level": 1,
+      "damage": 108,
+      "interval": 3.5,
+      "radius": 82,
+      "duration": 2.4,
+      "kind": "storm"
+    },
+    {
+      "arena": "profane",
+      "id": "absolute",
+      "name": "Lâmina do Zero Absoluto",
+      "level": 7,
+      "damage": 276.48,
+      "interval": 3.5,
+      "radius": 141.04,
+      "duration": 2.4,
+      "kind": "storm"
+    },
+    {
+      "arena": "profane",
+      "id": "execution",
+      "name": "Machado da Execução",
+      "level": 1,
+      "damage": 180,
+      "interval": 1.95,
+      "radius": 0,
+      "kind": "cleave"
+    },
+    {
+      "arena": "profane",
+      "id": "execution",
+      "name": "Machado da Execução",
+      "level": 7,
+      "damage": 471.6,
+      "interval": 1.4235,
+      "radius": 0,
+      "kind": "cleave"
+    },
+    {
+      "arena": "profane",
+      "id": "bloodwhip",
+      "name": "Chicote de Sangue",
+      "level": 1,
+      "damage": 118,
+      "interval": 0.92,
+      "radius": 0,
+      "kind": "beam"
+    },
+    {
+      "arena": "profane",
+      "id": "bloodwhip",
+      "name": "Chicote de Sangue",
+      "level": 7,
+      "damage": 309.16,
+      "interval": 0.6716,
+      "radius": 0,
+      "kind": "beam"
+    },
+    {
+      "arena": "profane",
+      "id": "rosary",
+      "name": "Lâminas do Rosário",
+      "level": 1,
+      "damage": 85.28,
+      "interval": 0.68,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "profane",
+      "id": "rosary",
+      "name": "Lâminas do Rosário",
+      "level": 7,
+      "damage": 223.4336,
+      "interval": 0.4964,
+      "radius": 0,
+      "kind": "orbital"
+    },
+    {
+      "arena": "profane",
+      "id": "censer",
+      "name": "Turíbulo das Almas",
+      "level": 1,
+      "damage": 100,
+      "interval": 3.8,
+      "radius": 81,
+      "duration": 3,
+      "kind": "storm"
+    },
+    {
+      "arena": "profane",
+      "id": "censer",
+      "name": "Turíbulo das Almas",
+      "level": 7,
+      "damage": 262,
+      "interval": 3.2,
+      "radius": 139.32000000000002,
+      "duration": 3,
+      "kind": "storm"
+    },
+    {
+      "arena": "profane",
+      "id": "knell",
+      "name": "Sino da Ruína",
+      "level": 1,
+      "damage": 175,
+      "interval": 2.2,
+      "radius": 96,
+      "kind": "area"
+    },
+    {
+      "arena": "profane",
+      "id": "knell",
+      "name": "Sino da Ruína",
+      "level": 7,
+      "damage": 458.5,
+      "interval": 1.606,
+      "radius": 165.12,
+      "kind": "area"
+    },
+    {
+      "arena": "profane",
+      "id": "nails",
+      "name": "Pregos do Mártir",
+      "level": 1,
+      "damage": 112,
+      "interval": 1.05,
+      "radius": 0,
+      "kind": "piercing"
+    },
+    {
+      "arena": "profane",
+      "id": "nails",
+      "name": "Pregos do Mártir",
+      "level": 7,
+      "damage": 293.44,
+      "interval": 0.7665,
+      "radius": 0,
+      "kind": "piercing"
+    },
+    {
+      "arena": "profane",
+      "id": "heresy",
+      "name": "Evangelho das Sombras",
+      "level": 1,
+      "damage": 124,
+      "interval": 1.45,
+      "radius": 0,
+      "kind": "chain"
+    },
+    {
+      "arena": "profane",
+      "id": "heresy",
+      "name": "Evangelho das Sombras",
+      "level": 7,
+      "damage": 324.88,
+      "interval": 1.0585,
+      "radius": 0,
+      "kind": "chain"
+    },
+    {
+      "arena": "profane",
+      "id": "verdict",
+      "name": "Édito do Inquisidor",
+      "level": 1,
+      "damage": 163.20000000000002,
+      "interval": 3.7,
+      "radius": 100.8,
+      "duration": 2.6,
+      "kind": "storm"
+    },
+    {
+      "arena": "profane",
+      "id": "verdict",
+      "name": "Édito do Inquisidor",
+      "level": 7,
+      "damage": 427.58400000000006,
+      "interval": 3.7,
+      "radius": 173.376,
+      "duration": 2.6,
+      "kind": "storm"
+    }
+  ],
+  "heroes": [
+    {
+      "id": "noctis",
+      "name": "Noctis",
+      "hp": 5,
+      "speed": 158,
+      "damage": 1,
+      "attackSpeed": 1,
+      "weapon": "dagger",
+      "price": 0
+    },
+    {
+      "id": "rubra",
+      "name": "Rubra",
+      "hp": 6,
+      "speed": 151,
+      "damage": 1.1,
+      "attackSpeed": 1,
+      "weapon": "blade",
+      "price": 0
+    },
+    {
+      "id": "ignivar",
+      "name": "Ignivar",
+      "hp": 7,
+      "speed": 158,
+      "damage": 1.25,
+      "attackSpeed": 1,
+      "weapon": "cinder",
+      "price": 500
+    },
+    {
+      "id": "nivor",
+      "name": "Nivor",
+      "hp": 7,
+      "speed": 162,
+      "damage": 1.3,
+      "attackSpeed": 1.04,
+      "weapon": "frostbolt",
+      "price": 0
+    },
+    {
+      "id": "vael",
+      "name": "Vael, o Criomante",
+      "hp": 8,
+      "speed": 164,
+      "damage": 1.4,
+      "attackSpeed": 1.16,
+      "weapon": "blizzard",
+      "price": 800
+    },
+    {
+      "id": "aelthir",
+      "name": "Aelthir",
+      "hp": 9,
+      "speed": 174,
+      "damage": 1.6,
+      "attackSpeed": 1.3,
+      "weapon": "glaive",
+      "price": 1200
+    },
+    {
+      "id": "karn",
+      "name": "Karn, o Carrasco",
+      "hp": 10,
+      "speed": 136,
+      "damage": 1.75,
+      "attackSpeed": 0.95,
+      "weapon": "execution",
+      "price": 0
+    },
+    {
+      "id": "malthor",
+      "name": "Malthor, o Herege",
+      "hp": 11,
+      "speed": 182,
+      "damage": 1.85,
+      "attackSpeed": 1.5,
+      "weapon": "bloodwhip",
+      "price": 1500
+    },
+    {
+      "id": "vespera",
+      "name": "Vespera, a Devota Sombria",
+      "hp": 12,
+      "speed": 192,
+      "damage": 2.05,
+      "attackSpeed": 1.85,
+      "weapon": "rosary",
+      "price": 2000
+    }
+  ],
+  "scenes": [
+    {
+      "arena": "necropolis",
+      "enemies": 65,
+      "meanMs": 5.082499999801318,
+      "p95Ms": 2.600000023841858,
+      "samples": 120
+    },
+    {
+      "arena": "ice",
+      "enemies": 65,
+      "meanMs": 7.536666666467984,
+      "p95Ms": 10.099999904632568,
+      "samples": 120
+    },
+    {
+      "arena": "profane",
+      "enemies": 110,
+      "meanMs": 4.110833332935969,
+      "p95Ms": 7,
+      "samples": 120
+    }
+  ]
+}

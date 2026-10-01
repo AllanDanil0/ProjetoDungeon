@@ -1,0 +1,38 @@
+[
+  {
+    "hero": "malthor",
+    "group": "gargoyle",
+    "seconds": 15.6,
+    "damageTaken": 42,
+    "telegraphsReleased": 3,
+    "peakStorms": 3,
+    "remaining": 0
+  },
+  {
+    "hero": "malthor",
+    "group": "melee",
+    "seconds": 4,
+    "damageTaken": 3,
+    "telegraphsReleased": 1,
+    "peakStorms": 3,
+    "remaining": 0
+  },
+  {
+    "hero": "vespera",
+    "group": "gargoyle",
+    "seconds": 12.4,
+    "damageTaken": 33,
+    "telegraphsReleased": 2,
+    "peakStorms": 3,
+    "remaining": 0
+  },
+  {
+    "hero": "vespera",
+    "group": "melee",
+    "seconds": 4,
+    "damageTaken": 0,
+    "telegraphsReleased": 1,
+    "peakStorms": 3,
+    "remaining": 0
+  }
+]

@@ -51,5 +51,6 @@ jobs:
           if (!(Test-Path $exe)) { throw 'Executavel nao encontrado' }
           $hash = (Get-FileHash $exe -Algorithm SHA256).Hash
           "$hash  RUBRA.exe" | Set-Content dist/SHA256.txt
-          gh release create $env:RELEASE_TAG $exe dist/SHA256.txt --target $env:COMMIT_SHA --title "RUBRA - Windows $env:RELEASE_TAG" --notes "Baixe RUBRA.exe e abra com dois cliques. Windows 10/11 x64; funciona offline, sem instalacao. Executavel sem assinatura digital." --latest
+          $version = (Get-Content package.json -Raw | ConvertFrom-Json).version
+          gh release create $env:RELEASE_TAG $exe dist/SHA256.txt --target $env:COMMIT_SHA --title "RUBRA $version - Windows" --notes "Baixe RUBRA.exe e abra com dois cliques. Windows 10/11 x64; funciona offline, sem instalacao. Novidades e validacao: https://github.com/AllanDanil0/ProjetoDungeon/blob/$env:COMMIT_SHA/docs/ATUALIZACAO-$version.md . Executavel sem assinatura digital. Android permanece no release separado." --latest
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

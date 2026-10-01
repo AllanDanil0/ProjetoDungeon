@@ -1,3 +1,15 @@
+# Publicação PC 1.14.1 — 01/10/2026
+
+Publicação solicitada após a entrega local da Atualização 01. Versão Windows atualizada para 1.14.1, Android mantido em 1.14.0. Passaram novamente check, 36 regras, 14 boot, compilação portátil, verify:package, 14 verificações de qualidade no ASAR e 27 no executável real (incluindo os três eventos, cliques, retratos e reabertura de campanha). Integração com 62 verificações e crônicas com 34 já aprovadas na implementação; o CI repetirá a suíte antes de publicar. Saves de teste isolados; nenhum APK gerado. Aguardando CI e conferência do download público.
+
+---
+# Projeto RUBRA — Atualização 01, 01/10/2026
+
+Base 78a49f5, árvore inicialmente limpa. Etapa de diagnóstico e direção em PROJETO-RUBRA-01.md; melhoria visual solicitada entregue em src/event-art.js e integrada a chronicles.js. Três sprites transparentes em cache, velas/partículas/selo animados e anel de progresso; regras de evento e balanceamento preservados. Catálogos e medições em qualidade-01.json, armas-01.json e profano-01.json.
+
+Passaram check, 36 regras, 62 integração, 34 crônicas e 14 verificações de qualidade; 124 cenários de armas medidos e ensaio do Profano repetido. Teste visual corrigido para aguardar compositor e evitar retorno de função pelo IPC. Capturas revisadas no cenário e no atlas. Sem uso de saves reais. Não houve build, publicação Windows ou APK: downloads 1.14 preservados. Parte local entregue; playtests externos, desempenho físico e futura validação de pacote continuam pendentes. Não declarar superioridade sobre outros jogos nem equilíbrio definitivo a partir dos ensaios controlados.
+
+---
 # Android 1.14 — 28/09/2026
 
 Edição Android adicionada em `android/`, com assets locais via WebViewAssetLoader, sem permissões de rede/arquivos, orientação horizontal, tela cheia, controles por toque e pausa/checkpoint ao trocar de aplicativo. `src/mobile.js` e `src/mobile.css` atuam apenas na UA do shell Android. Windows 1.14 e saves reais preservados. Chave e senha de assinatura estão na pasta privada ignorada `.android-signing/`; preservar em backup privado e reutilizar nas atualizações. Não publicar esses arquivos.

@@ -1,6 +1,6 @@
 # RUBRA
 
-Jogo offline em pixel art, HTML/JavaScript e aplicativos para Windows 10/11 x64 e Android 8 ou superior. **Versão 1.14.0:** eventos opcionais, relatório de combate, bestiário e relíquias, seletor de músicas e revisão das áreas e tropas físicas do Profano. [Novidades](docs/ATUALIZACAO-1.14.md). [Músicas: ordem e duração](docs/ATUALIZACAO-1.12.md).
+Jogo offline em pixel art, HTML/JavaScript e aplicativos para Windows 10/11 x64 e Android 8 ou superior. **PC 1.14.1:** nova arte animada para altar, cristais de corrupção e inimigo marcado, com diagnóstico de qualidade e balanceamento documentado. **Android permanece na 1.14.0.** [Novidades para PC](docs/ATUALIZACAO-1.14.1.md). [Músicas: ordem e duração](docs/ATUALIZACAO-1.12.md).
 
 [Baixar para PC — RUBRA.exe](https://github.com/AllanDanil0/ProjetoDungeon/releases/latest/download/RUBRA.exe)
 
@@ -11,6 +11,10 @@ Abra o arquivo com dois cliques. Não é necessário instalar Node.js nem ter in
 O executável Windows não tem assinatura digital de editor.
 
 No Android, baixe e abra o APK; autorize a instalação dessa origem quando o sistema solicitar. Jogue offline na horizontal, com joystick à esquerda e esquiva à direita. Mantenha o Android System WebView atualizado. O progresso fica no celular, separado do PC; atualizar pelo APK preserva os dados, mas desinstalar apaga o progresso local. [Detalhes da edição Android](docs/ANDROID.md).
+
+## Desenvolvimento em andamento
+
+[Atualização 01 — diagnóstico, critérios de qualidade e nova arte dos eventos](docs/PROJETO-RUBRA-01.md). A revisão visual integra a versão PC 1.14.1. Avaliações com jogadores e desempenho em aparelhos físicos seguem pendentes; APK novo adiado.
 
 ## Novidades e desbloqueios
 
