@@ -67,5 +67,8 @@ Object.assign(C.enemies.profaneGargoyle,{behavior:'chase',speed:85,attackInterva
 C.events={fractions:[.22,.5,.74],duration:45,altarDuration:50,altarGoal:22,altarRadius:100,gold:35,xp:45};
 C.enemies.eventCrystal={name:'Cristal de corrupção',hp:180,damage:0,speed:0,xp:0,gold:0,goldChance:0,r:16,behavior:'object',object:true};
 C.assets.absoluteArt='assets/profane/absolute-v2.png';
+// Eastern lower colonnade: missing projected pillar, mirrored by the western pillar at (127,771).
+C.profane.pillars.push([1401,775,27,20,103]);
+C.maps.profane.obstacles.push({x:(1401-27)*2.5,y:(775-103)*2.5,w:54*2.5,h:123*2.5,shape:"rect",r:0,kind:"pillar"});
 if(typeof module!=='undefined')module.exports=C;
 })(typeof RubraConfig!=='undefined'?RubraConfig:module.exports);

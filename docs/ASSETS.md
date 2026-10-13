@@ -33,3 +33,9 @@ As imagens têm compressão JPEG e diferenças de desenho entre poses. O alinham
 - Vhalkar: sprite original preservado com ornamentação procedural de galhadas e luz do bosque.
 
 Os arquivos restantes continuam disponíveis em assets/ para expansões. Numeração de arquivos não foi interpretada automaticamente como animação.
+
+## PC 1.15.0 — animações e textura
+
+`assets/animation-update/`: folhas Noctis (8 × 4), Karn/Malthor/Vespera (6 × 4), geradas a partir da identidade visual existente com ImageGen. Fundo verde sólido removido pelo importador Canvas, com componente conectado e margens transparentes; os PNGs de origem mantêm o fundo de produção. `src/hero-motion.js` contém os limites explícitos das células, normalização proporcional, ciclos e poses. Os sprites anteriores permanecem no repositório. Caminhadas de Rubra e dos personagens anteriores do gelo/fogo são preservadas.
+
+`profane-detail.png`: referência refinada pelo ImageGen. Apenas diferenças pequenas de luminosidade no interior das pedras coincidentes são aproveitadas por `src/sanctuary-detail.js`; não substitui o mapa inteiro. `assets/profane/map.png` permanece byte a byte igual à versão anterior. Não há mudança de licença dos assets fornecidos pelo usuário.

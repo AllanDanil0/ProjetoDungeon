@@ -1,6 +1,6 @@
 # RUBRA
 
-Jogo offline em pixel art, HTML/JavaScript e aplicativos para Windows 10/11 x64 e Android 8 ou superior. **PC 1.14.1:** nova arte animada para altar, cristais de corrupção e inimigo marcado, com diagnóstico de qualidade e balanceamento documentado. **Android permanece na 1.14.0.** [Novidades para PC](docs/ATUALIZACAO-1.14.1.md). [Músicas: ordem e duração](docs/ATUALIZACAO-1.12.md).
+Jogo offline em pixel art, HTML/JavaScript e aplicativos para Windows 10/11 x64 e Android 8 ou superior. **PC 1.15.0:** Noctis e caçadores do Profano com animações direcionais, esquiva revisada nos nove personagens e refinamento das pedras do Profano com colisões verificadas. **Android permanece na 1.14.0.** [Novidades para PC](docs/ATUALIZACAO-1.15.0.md). [Músicas: ordem e duração](docs/ATUALIZACAO-1.12.md).
 
 [Baixar para PC — RUBRA.exe](https://github.com/AllanDanil0/ProjetoDungeon/releases/latest/download/RUBRA.exe)
 

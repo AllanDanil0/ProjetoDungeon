@@ -111,5 +111,6 @@ Object.assign(C.assets,{prismArt:'assets/ice/prism-aurora.png',iceClean:'assets/
 // Map-local pressure leaves every tutorial statistic and spawn rule unchanged.
 C.pressure={necropolis:{interval:1.2,packAt:.85,hp:.75,hpGrowth:.35,speed:1,bossHp:1.3,bossInterval:1.65},ice:{interval:1.35,packAt:.85,hp:.65,hpGrowth:.45,speed:1,bossHp:1.35,bossInterval:1.55},profane:{cap:110,packs:[{at:0,count:1},{at:60,count:2},{at:150,count:3},{at:300,count:4},{at:450,count:5}],interval:.8,packAt:.4,hp:1.2,hpGrowth:.3,speed:1.07,bossHp:1.3,bossInterval:1.45}};
 for(const id of ['frostbolt','halo','comet','glaive','blizzard'])C.assets[id+'Art']='assets/ice/'+id+'-v2.png';
+Object.assign(C.assets,{noctisMotion:'assets/animation-update/noctis.png',karnMotion:'assets/animation-update/karn.png',malthorMotion:'assets/animation-update/malthor.png',vesperaMotion:'assets/animation-update/vespera.png',profaneDetail:'assets/animation-update/profane-detail.png'});
 root.RubraConfig=C;if(typeof module!=='undefined'){module.exports=C;require('./profane-config.js');}
 })(globalThis);

@@ -1,5 +1,7 @@
 # The night is yours — arquitetura e continuidade
 
+**PC 1.15.0:** animação unificada em `src/hero-motion.js`, textura restrita às pedras em `src/sanctuary-detail.js` e testes em `tests/motion-collision.cjs`. [Detalhes](ATUALIZACAO-1.15.0.md).
+
 **PC 1.14.1:** [arte dos eventos e validação](ATUALIZACAO-1.14.1.md). Android permanece 1.14.0.
 
 **Versão 1.14:** [ATUALIZACAO-1.14.md](ATUALIZACAO-1.14.md). Estatísticas e normalização em `src/chronicle-core.js`; eventos e aproximação física do Profano em `src/chronicles.js`; bestiário, relatório e músicas em `src/collections.js`.
